@@ -1,0 +1,5971 @@
+{
+  "claim_scope": "fixed-seed sampled sensitivity audit in the frozen braking domain; not exhaustive verification and not a second domain",
+  "completed_at": "2026-07-24T19:37:12+08:00",
+  "detection_semantics": {
+    "independent_oracle_detected": "at least one exact trace or downstream signature differs from the independent frozen oracle",
+    "oracle_comparison_detected": "at least one exact trace or downstream signature differs from the independent frozen oracle",
+    "signature_detected": "at least one six-bit pairwise behavioral signature differs; this is a lower-resolution downstream check",
+    "trace_detected": "at least one complete observation/action/status trace differs exactly from the oracle"
+  },
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "records": [
+    {
+      "affected_kernels": 81,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:44+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_000_c0ffce5c52",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": -1
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 0,
+        "mutation_id": "agent_policy_000_c0ffce5c52",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": -1
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 264,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 359
+    },
+    {
+      "affected_kernels": 90,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:44+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_001_90c1c2dd4e",
+        "observed_trace_sha256": "3b839408d6ddcb9f0d74be72e11ebbeaaddc3e547fe0d32c1c619b87bc0531ef",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": 2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 1,
+        "mutation_id": "agent_policy_001_90c1c2dd4e",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": 2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 403,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 672
+    },
+    {
+      "affected_kernels": 82,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:45+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "agent_policy_002_2872f544de",
+        "observed_trace_sha256": "3b839408d6ddcb9f0d74be72e11ebbeaaddc3e547fe0d32c1c619b87bc0531ef",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "instant_stop",
+          "margin": 2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 2,
+        "mutation_id": "agent_policy_002_2872f544de",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "instant_stop",
+          "margin": 2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 398,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 494
+    },
+    {
+      "affected_kernels": 114,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:45+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 47,
+        "mutation_id": "agent_policy_003_4b585e934b",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "reference",
+          "threshold_shift": -3
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 3,
+        "mutation_id": "agent_policy_003_4b585e934b",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "reference",
+          "threshold_shift": -3
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 1135,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1353
+    },
+    {
+      "affected_kernels": 94,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:45+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_004_b7a6653ad9",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 4,
+        "mutation_id": "agent_policy_004_b7a6653ad9",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 564,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 772
+    },
+    {
+      "affected_kernels": 73,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:45+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_005_645f6458de",
+        "observed_trace_sha256": "a63a52e64806faaf42fe567ac30f50bce54ae258b066fbf30d5fe11b7445b1f2",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": 1
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 5,
+        "mutation_id": "agent_policy_005_645f6458de",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": 1
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 283,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 392
+    },
+    {
+      "affected_kernels": 106,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:44+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 47,
+        "mutation_id": "agent_policy_006_b26f40fec9",
+        "observed_trace_sha256": "234f005c85c1c73c53e8300ab4e590daaf411abe71a36c00721a846397b87bd7",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "134fc2a2048b0ed859431823fbdee03307851d1f8288fbc91440d5d15255834b",
+        "parameters": {
+          "agent": "reference",
+          "margin": 0
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_02_exact_coarse_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 6,
+        "mutation_id": "agent_policy_006_b26f40fec9",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "reference",
+          "margin": 0
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 715,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 961
+    },
+    {
+      "affected_kernels": 78,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:46+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 1,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0004",
+          "start_position": 0,
+          "start_speed": 4
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 63,
+        "mutation_id": "agent_policy_007_596b55e27a",
+        "observed_trace_sha256": "78f432d8ea7d4997126e4ecf4dfabd8c02d84b705a7c57b65d447723248ade14",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 31,
+        "oracle_trace_sha256": "ca220914f293caa0b0e7e9964f950626965aa1cf053ff12c94829b3801aa7a07",
+        "parameters": {
+          "agent": "speed_only",
+          "margin": 1
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 1
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 7,
+        "mutation_id": "agent_policy_007_596b55e27a",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "speed_only",
+          "margin": 1
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 415,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1047
+    },
+    {
+      "affected_kernels": 57,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:46+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "win"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 3
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "agent_policy_008_1cf1eb5b18",
+        "observed_trace_sha256": "7f7f2cf5aa86f10613d3361560513c1f45e3a5d248846073e0ff4579fd8960e0",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "f49959a67f91dca7fd49e3c499c80d68b3a98a6dd9f496e8e3d84b3d8b717bac",
+        "parameters": {
+          "agent": "speed_only",
+          "margin": -2
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 8,
+        "mutation_id": "agent_policy_008_1cf1eb5b18",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "speed_only",
+          "margin": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 108,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 453
+    },
+    {
+      "affected_kernels": 92,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:47+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "agent_policy_009_c70bc2ceea",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 9,
+        "mutation_id": "agent_policy_009_c70bc2ceea",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 359,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 559
+    },
+    {
+      "affected_kernels": 92,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:47+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "agent_policy_010_2150e2b294",
+        "observed_trace_sha256": "3b839408d6ddcb9f0d74be72e11ebbeaaddc3e547fe0d32c1c619b87bc0531ef",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "c06c3daf1d5c41f24a086c5baec0174e293c71f2406ac82d772f90355d785685",
+        "parameters": {
+          "agent": "speed_only",
+          "threshold_shift": 2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 10,
+        "mutation_id": "agent_policy_010_2150e2b294",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "speed_only",
+          "threshold_shift": 2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 546,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1293
+    },
+    {
+      "affected_kernels": 109,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:47+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "agent_policy_011_3b94d03f7c",
+        "observed_trace_sha256": "3b839408d6ddcb9f0d74be72e11ebbeaaddc3e547fe0d32c1c619b87bc0531ef",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": 3
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 11,
+        "mutation_id": "agent_policy_011_3b94d03f7c",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": 3
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 871,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1116
+    },
+    {
+      "affected_kernels": 113,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:49+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_012_c2fe4f451d",
+        "observed_trace_sha256": "234f005c85c1c73c53e8300ab4e590daaf411abe71a36c00721a846397b87bd7",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "134fc2a2048b0ed859431823fbdee03307851d1f8288fbc91440d5d15255834b",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": 1
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_02_exact_coarse_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 12,
+        "mutation_id": "agent_policy_012_c2fe4f451d",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "friction_blind",
+          "threshold_shift": 1
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 566,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 809
+    },
+    {
+      "affected_kernels": 96,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:48+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 47,
+        "mutation_id": "agent_policy_013_1ea2e08e26",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "reference",
+          "threshold_shift": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 13,
+        "mutation_id": "agent_policy_013_1ea2e08e26",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "reference",
+          "threshold_shift": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 778,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 913
+    },
+    {
+      "affected_kernels": 81,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:48+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 47,
+        "mutation_id": "agent_policy_014_3bf37fb805",
+        "observed_trace_sha256": "409ca178234613d9877870de8d06eec906d746aa8828f7b0c09cb2bba7840e3e",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "5f67fdfdbaa979dd73a942b661c37454ebf3f5809e097147b3fd5c82224cb577",
+        "parameters": {
+          "agent": "reference",
+          "margin": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_08_coarse_coarse_d0",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 14,
+        "mutation_id": "agent_policy_014_3bf37fb805",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "reference",
+          "margin": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 395,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 495
+    },
+    {
+      "affected_kernels": 82,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:49+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "friction_blind",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 62,
+        "mutation_id": "agent_policy_015_5395acb57f",
+        "observed_trace_sha256": "409ca178234613d9877870de8d06eec906d746aa8828f7b0c09cb2bba7840e3e",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "5f67fdfdbaa979dd73a942b661c37454ebf3f5809e097147b3fd5c82224cb577",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_08_coarse_coarse_d0",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 15,
+        "mutation_id": "agent_policy_015_5395acb57f",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "friction_blind",
+          "margin": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 328,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 464
+    },
+    {
+      "affected_kernels": 95,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:49+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "agent_policy_016_5010b6b273",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": -3
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 16,
+        "mutation_id": "agent_policy_016_5010b6b273",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "instant_stop",
+          "threshold_shift": -3
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 571,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 857
+    },
+    {
+      "affected_kernels": 107,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:50+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "agent_policy_017_de7acba9f2",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "threshold_shift",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "c06c3daf1d5c41f24a086c5baec0174e293c71f2406ac82d772f90355d785685",
+        "parameters": {
+          "agent": "speed_only",
+          "threshold_shift": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 17,
+        "mutation_id": "agent_policy_017_de7acba9f2",
+        "operator": "threshold_shift",
+        "parameters": {
+          "agent": "speed_only",
+          "threshold_shift": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 430,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1266
+    },
+    {
+      "affected_kernels": 83,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:51+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "agent_policy_018_1b4e603ede",
+        "observed_trace_sha256": "2f2bfb12b5fb3721f7ff423a9b04ccabc4ccaedf70b639e6dcef06d4d7386255",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "11c6d730f5e26d66e085bb30f3c388390332582ff00d0ac5b51eed405d6c094f",
+        "parameters": {
+          "agent": "instant_stop",
+          "margin": -2
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_06_coarse_exact_d0",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 18,
+        "mutation_id": "agent_policy_018_1b4e603ede",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "instant_stop",
+          "margin": -2
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 198,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 334
+    },
+    {
+      "affected_kernels": 64,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:50+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "agent_policy",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 47,
+        "mutation_id": "agent_policy_019_cee6c53ca1",
+        "observed_trace_sha256": "1189924cc9b6c0efd1f55935ef6354fd91e9c36e9657456822b48050bf88d3c2",
+        "operator": "flip_action_at_margin",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "agent": "reference",
+          "margin": -1
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "agent_policy",
+        "family_index": 19,
+        "mutation_id": "agent_policy_019_cee6c53ca1",
+        "operator": "flip_action_at_margin",
+        "parameters": {
+          "agent": "reference",
+          "margin": -1
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 377,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 451
+    },
+    {
+      "affected_kernels": 26,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:53+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 11,
+          "observed_step": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 10,
+          "oracle_step": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            "coast",
+            "timeout"
+          ],
+          "step_index": 9
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 4,
+          "friction": 0,
+          "goal_end": 19,
+          "goal_start": 18,
+          "horizon": 10,
+          "name": "brake_10170",
+          "start_position": 0,
+          "start_speed": 9
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "boundary_offset_000_88b4a16fb0",
+        "observed_trace_sha256": "31404e3fb9b9a0716a60ff88311e2717db852e0da195ef854ad03d83d7ae9a06",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "8f1e9363492c79d489f9a74428c4a75924a51d4de7822471aa4c4c8b9c36f601",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 31
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 0,
+        "mutation_id": "boundary_offset_000_88b4a16fb0",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 288
+    },
+    {
+      "affected_kernels": 108,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:52+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_001_7ecc377473",
+        "observed_trace_sha256": "39c91d55b34d02dc74628a64f0791f48302a043bd16fed8690442ad2d10d33d3",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 1,
+        "mutation_id": "boundary_offset_001_7ecc377473",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 59,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 2434
+    },
+    {
+      "affected_kernels": 46,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:52+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "stopped"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "win"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 1,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0004",
+          "start_position": 0,
+          "start_speed": 4
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 7,
+        "mutation_id": "boundary_offset_002_8fbee4a5ea",
+        "observed_trace_sha256": "06693afc8d10fae132f2ebbe937c6530a13cc35ee9314319353ceb3b7c444a6c",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 7,
+        "oracle_trace_sha256": "793e80831245a9eb4917bd41df2f014cdc693088bad81213f49fa5f2f0ac0fe7",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 1
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 2,
+        "mutation_id": "boundary_offset_002_8fbee4a5ea",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 689
+    },
+    {
+      "affected_kernels": 113,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:53+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_003_feed9e7d95",
+        "observed_trace_sha256": "dddc5bc45d822edac2d3f05314954bf8d10384c5f684433abacfc78c48edf967",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 3,
+        "mutation_id": "boundary_offset_003_feed9e7d95",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 59,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 2324
+    },
+    {
+      "affected_kernels": 96,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:53+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_004_b39335ff0e",
+        "observed_trace_sha256": "5a89de518c04b1bb8d9d6606cb6ee7528580c6e13abb5ee03366d2e1d8901529",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "c06c3daf1d5c41f24a086c5baec0174e293c71f2406ac82d772f90355d785685",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 4,
+        "mutation_id": "boundary_offset_004_b39335ff0e",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1747
+    },
+    {
+      "affected_kernels": 110,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:55+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_005_3a631a37e5",
+        "observed_trace_sha256": "eb12ac0ac6079fbae7ea6bfdf61835e87a23197c0d9a7e0fc2f3454376f0143a",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_start": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 5,
+        "mutation_id": "boundary_offset_005_3a631a37e5",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_start": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 40,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 2411
+    },
+    {
+      "affected_kernels": 64,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:55+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              1,
+              1,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_006_746b946c40",
+        "observed_trace_sha256": "54e0cd13a4f8a7abb0e4295bd56c2bbf096bd806ecddbf016d4d9d8b572107d9",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 6,
+        "mutation_id": "boundary_offset_006_746b946c40",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1315
+    },
+    {
+      "affected_kernels": 109,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:54+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_007_2cb056c703",
+        "observed_trace_sha256": "5a89de518c04b1bb8d9d6606cb6ee7528580c6e13abb5ee03366d2e1d8901529",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "c06c3daf1d5c41f24a086c5baec0174e293c71f2406ac82d772f90355d785685",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": 1,
+            "terminal_goal_start": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 7,
+        "mutation_id": "boundary_offset_007_2cb056c703",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_start": 1,
+            "terminal_goal_start": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 2244
+    },
+    {
+      "affected_kernels": 70,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:55+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_008_7c810fe0a8",
+        "observed_trace_sha256": "eb12ac0ac6079fbae7ea6bfdf61835e87a23197c0d9a7e0fc2f3454376f0143a",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "terminal_overshoot_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 8,
+        "mutation_id": "boundary_offset_008_7c810fe0a8",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_overshoot_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 40,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1429
+    },
+    {
+      "affected_kernels": 29,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:56+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 9,
+          "observed_step": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            "coast",
+            "timeout"
+          ],
+          "oracle_length": 10,
+          "oracle_step": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 8
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 4,
+          "friction": 0,
+          "goal_end": 19,
+          "goal_start": 18,
+          "horizon": 10,
+          "name": "brake_10170",
+          "start_position": 0,
+          "start_speed": 9
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "boundary_offset_009_270303aa0e",
+        "observed_trace_sha256": "dfba9b8f2fb82935ae509b7141bd8ad9f75399ab05a330d901d68b60147e840e",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "8f1e9363492c79d489f9a74428c4a75924a51d4de7822471aa4c4c8b9c36f601",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 31
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 9,
+        "mutation_id": "boundary_offset_009_270303aa0e",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 3,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 362
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:56+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_010_be404988a9",
+        "observed_trace_sha256": "b1d7583cbe566be5fa66edb16c7edd8c557a8c2b297e17ec3d4ee131b4f1ca94",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 10,
+        "mutation_id": "boundary_offset_010_be404988a9",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 313,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 5083
+    },
+    {
+      "affected_kernels": 95,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:56+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_011_994565e0ac",
+        "observed_trace_sha256": "b626cc5296642fdc7d5176785a9d95def24269c02ec0b6b8d88053882a1d54ea",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": 1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 11,
+        "mutation_id": "boundary_offset_011_994565e0ac",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": 1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 59,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1745
+    },
+    {
+      "affected_kernels": 100,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:57+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_012_a613dfb085",
+        "observed_trace_sha256": "39c91d55b34d02dc74628a64f0791f48302a043bd16fed8690442ad2d10d33d3",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 12,
+        "mutation_id": "boundary_offset_012_a613dfb085",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_horizon": -1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 62,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 2095
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:59+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_013_919ef29ce1",
+        "observed_trace_sha256": "952d9e77ad37469570a9c13454606dbb1a706bb77f54e37d09bf5f554fe02f52",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 13,
+        "mutation_id": "boundary_offset_013_919ef29ce1",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 288,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 4384
+    },
+    {
+      "affected_kernels": 70,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:59+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 2,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_014_0232e2e45e",
+        "observed_trace_sha256": "eb12ac0ac6079fbae7ea6bfdf61835e87a23197c0d9a7e0fc2f3454376f0143a",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 14,
+        "mutation_id": "boundary_offset_014_0232e2e45e",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": 1,
+            "terminal_overshoot_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 40,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1429
+    },
+    {
+      "affected_kernels": 69,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:57+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_015_491c74f3e8",
+        "observed_trace_sha256": "92adfa4638cd93ada0f819d0121e84a1d3b945e9d3921c94e04b9b57463039fd",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 15,
+        "mutation_id": "boundary_offset_015_491c74f3e8",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_goal_end": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 756
+    },
+    {
+      "affected_kernels": 60,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:58+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "win"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "stopped"
+          ],
+          "step_index": 2
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_016_945ef0b6c6",
+        "observed_trace_sha256": "389f2fd39c00e13de8dc96aa87c8f189fc99679fa2945c3360702dc1ba7d230e",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "134fc2a2048b0ed859431823fbdee03307851d1f8288fbc91440d5d15255834b",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1,
+            "terminal_goal_start": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_02_exact_coarse_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 16,
+        "mutation_id": "boundary_offset_016_945ef0b6c6",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": -1,
+            "terminal_goal_start": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 1186
+    },
+    {
+      "affected_kernels": 0,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:36:59+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": null,
+      "independent_oracle_detected": false,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 17,
+        "mutation_id": "boundary_offset_017_c3e07b56ad",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "terminal_goal_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": false,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 9216,
+      "trace_detected": false,
+      "trace_mismatches": 0
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:37:01+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_018_fe5dfe6610",
+        "observed_trace_sha256": "7812ded561a5c26afbcc99579b25fc687956454dfad483db94c142965e5d37eb",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 18,
+        "mutation_id": "boundary_offset_018_fe5dfe6610",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": 1,
+            "terminal_overshoot_end": 1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 390,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 5227
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "completed_at": "2026-07-24T19:37:01+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 0
+        },
+        "family": "boundary_offset",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "boundary_offset_019_91c9e1c996",
+        "observed_trace_sha256": "7a2241b2f822b5450db11fd203f3becc9cac9df5ec00a29bfb8dcea600f16e40",
+        "operator": "boundary_offsets",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": -1
+          }
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "not_applicable",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "boundary_offset",
+        "family_index": 19,
+        "mutation_id": "boundary_offset_019_91c9e1c996",
+        "operator": "boundary_offsets",
+        "parameters": {
+          "offsets": {
+            "observation_distance_goal_start": -1
+          }
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 2304,
+      "signature_detected": true,
+      "signature_mismatches": 292,
+      "trace_cases": 9216,
+      "trace_detected": true,
+      "trace_mismatches": 4766
+    },
+    {
+      "affected_kernels": 0,
+      "cache_hits": 27968,
+      "cache_misses": 49872,
+      "completed_at": "2026-07-24T19:37:02+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": null,
+      "independent_oracle_detected": false,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 0,
+        "mutation_id": "cache_key_projection_000_a24d459ce7",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.step",
+            "memory.believed_speed",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": false,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 18432,
+      "trace_detected": false,
+      "trace_mismatches": 0
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 77175,
+      "cache_misses": 5112,
+      "completed_at": "2026-07-24T19:37:01+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_001_158edaa82d",
+        "observed_trace_sha256": "5c7f640cd63e08d673adba5cf98fe07ab2e8c7de32fb80beabec9a4f3dc560fb",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.used_brake",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 1,
+        "mutation_id": "cache_key_projection_001_158edaa82d",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.used_brake",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2034,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 7771
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 63779,
+      "cache_misses": 14917,
+      "completed_at": "2026-07-24T19:37:03+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_002_cdd6ddf020",
+        "observed_trace_sha256": "5c7f640cd63e08d673adba5cf98fe07ab2e8c7de32fb80beabec9a4f3dc560fb",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 2,
+        "mutation_id": "cache_key_projection_002_cdd6ddf020",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1535,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 5044
+    },
+    {
+      "affected_kernels": 119,
+      "cache_hits": 60589,
+      "cache_misses": 18650,
+      "completed_at": "2026-07-24T19:37:03+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_003_a62a93d8e3",
+        "observed_trace_sha256": "9170eb52c91f16f1c230038c071ddf8424ede675fd662631d9fa7fdf858847cf",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d42607ffabd3d5b1591355898aec1c7aa9227532229105eea94f247e422b7142",
+        "parameters": {
+          "deleted_fields": [
+            "memory.previous_action",
+            "observation.speed",
+            "observation.within_goal",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.distance"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 3,
+        "mutation_id": "cache_key_projection_003_a62a93d8e3",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "memory.previous_action",
+            "observation.speed",
+            "observation.within_goal",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.distance"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1150,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 3974
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 64043,
+      "cache_misses": 14701,
+      "completed_at": "2026-07-24T19:37:02+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_004_00bf2a94e5",
+        "observed_trace_sha256": "5c7f640cd63e08d673adba5cf98fe07ab2e8c7de32fb80beabec9a4f3dc560fb",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 4,
+        "mutation_id": "cache_key_projection_004_00bf2a94e5",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1535,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 5092
+    },
+    {
+      "affected_kernels": 119,
+      "cache_hits": 62446,
+      "cache_misses": 16919,
+      "completed_at": "2026-07-24T19:37:04+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_005_bcf5e9ed85",
+        "observed_trace_sha256": "9170eb52c91f16f1c230038c071ddf8424ede675fd662631d9fa7fdf858847cf",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d42607ffabd3d5b1591355898aec1c7aa9227532229105eea94f247e422b7142",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.step",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 5,
+        "mutation_id": "cache_key_projection_005_bcf5e9ed85",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.step",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1174,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 3995
+    },
+    {
+      "affected_kernels": 0,
+      "cache_hits": 27878,
+      "cache_misses": 49962,
+      "completed_at": "2026-07-24T19:37:06+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": null,
+      "independent_oracle_detected": false,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 6,
+        "mutation_id": "cache_key_projection_006_9bb6e35fa9",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": false,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 18432,
+      "trace_detected": false,
+      "trace_mismatches": 0
+    },
+    {
+      "affected_kernels": 16,
+      "cache_hits": 32174,
+      "cache_misses": 45687,
+      "completed_at": "2026-07-24T19:37:07+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 8,
+          "observed_step": [
+            [
+              2,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 7,
+          "oracle_step": [
+            [
+              2,
+              -1,
+              1,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 6
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 22,
+          "goal_start": 20,
+          "horizon": 8,
+          "name": "brake_10413",
+          "start_position": 0,
+          "start_speed": 6
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_007_77d88d6059",
+        "observed_trace_sha256": "54f669073e78b2262c7426aeb22c584a69328af7a4fea9592ca782f06e11ae96",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "64e53264b542395447d8b9a1a7a349bf67f8264b71b9804a3987500490f55e9a",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_distance"
+          ],
+          "kept_fields": [
+            "state.step",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 34
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 7,
+        "mutation_id": "cache_key_projection_007_77d88d6059",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_distance"
+          ],
+          "kept_fields": [
+            "state.step",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 6,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 69
+    },
+    {
+      "affected_kernels": 45,
+      "cache_hits": 42612,
+      "cache_misses": 46525,
+      "completed_at": "2026-07-24T19:37:07+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "instant_stop",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_008_f417edfc05",
+        "observed_trace_sha256": "0f2045c69cd38eb7daa2374b55889ccfefaeea9466645696dffbd1e61cd435e3",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "memory.believed_speed",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 8,
+        "mutation_id": "cache_key_projection_008_f417edfc05",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "memory.believed_speed",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 585,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 260,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 2043
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 243931,
+      "cache_misses": 5006,
+      "completed_at": "2026-07-24T19:37:09+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 21,
+          "observed_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_009_5a23bdec96",
+        "observed_trace_sha256": "13977a888ad0a0dcd9523fb3ab4f339fedf5fcb13200b298d20d819e98570655",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "observation.speed",
+            "observation.within_goal"
+          ]
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 9,
+        "mutation_id": "cache_key_projection_009_5a23bdec96",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "observation.speed",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 8823,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2619,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 14737
+    },
+    {
+      "affected_kernels": 119,
+      "cache_hits": 60589,
+      "cache_misses": 18650,
+      "completed_at": "2026-07-24T19:37:07+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_010_ea2fcc24e6",
+        "observed_trace_sha256": "9170eb52c91f16f1c230038c071ddf8424ede675fd662631d9fa7fdf858847cf",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d42607ffabd3d5b1591355898aec1c7aa9227532229105eea94f247e422b7142",
+        "parameters": {
+          "deleted_fields": [
+            "observation.speed",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 10,
+        "mutation_id": "cache_key_projection_010_ea2fcc24e6",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "observation.speed",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1150,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 3974
+    },
+    {
+      "affected_kernels": 37,
+      "cache_hits": 33754,
+      "cache_misses": 44115,
+      "completed_at": "2026-07-24T19:37:07+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_011_4c82dd1136",
+        "observed_trace_sha256": "c1b9583099ec604bcb6e67a9e7021e6550624c765ed230a67d4e70318f338ba2",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "f366221e53fc3b9b07171f561020c4da8ae85eded76be47b6056903178b4488d",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action"
+          ],
+          "kept_fields": [
+            "state.position",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_08_coarse_coarse_d0",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 11,
+        "mutation_id": "cache_key_projection_011_4c82dd1136",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action"
+          ],
+          "kept_fields": [
+            "state.position",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 44,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 180
+    },
+    {
+      "affected_kernels": 15,
+      "cache_hits": 28765,
+      "cache_misses": 49065,
+      "completed_at": "2026-07-24T19:37:09+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              2,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              2,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "step_index": 2
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_012_0639e12425",
+        "observed_trace_sha256": "41f51769d4648acbb4f95c124953e3f7fb8cd41f2e3a770eb357b70f683ce15a",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d42607ffabd3d5b1591355898aec1c7aa9227532229105eea94f247e422b7142",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "memory.previous_action",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.speed",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 12,
+        "mutation_id": "cache_key_projection_012_0639e12425",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "memory.previous_action",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.speed",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 118
+    },
+    {
+      "affected_kernels": 0,
+      "cache_hits": 28664,
+      "cache_misses": 49176,
+      "completed_at": "2026-07-24T19:37:07+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": null,
+      "independent_oracle_detected": false,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 13,
+        "mutation_id": "cache_key_projection_013_7fdecb1e30",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.used_brake",
+            "memory.believed_speed",
+            "observation.within_goal",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "state.step",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": false,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": false,
+      "signature_mismatches": 0,
+      "trace_cases": 18432,
+      "trace_detected": false,
+      "trace_mismatches": 0
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 89712,
+      "cache_misses": 5049,
+      "completed_at": "2026-07-24T19:37:11+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_014_e9a96ac4dc",
+        "observed_trace_sha256": "5c7f640cd63e08d673adba5cf98fe07ab2e8c7de32fb80beabec9a4f3dc560fb",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "observation.speed",
+            "observation.distance"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 14,
+        "mutation_id": "cache_key_projection_014_e9a96ac4dc",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "observation.speed",
+            "observation.distance"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 648,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2016,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 8154
+    },
+    {
+      "affected_kernels": 119,
+      "cache_hits": 61833,
+      "cache_misses": 17532,
+      "completed_at": "2026-07-24T19:37:10+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "speed_only",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "running"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              3,
+              -1,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_015_873a8d136b",
+        "observed_trace_sha256": "9170eb52c91f16f1c230038c071ddf8424ede675fd662631d9fa7fdf858847cf",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d42607ffabd3d5b1591355898aec1c7aa9227532229105eea94f247e422b7142",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.speed",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 15,
+        "mutation_id": "cache_key_projection_015_873a8d136b",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.speed",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.step",
+            "state.used_brake",
+            "memory.previous_action",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1174,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 3995
+    },
+    {
+      "affected_kernels": 44,
+      "cache_hits": 40341,
+      "cache_misses": 47036,
+      "completed_at": "2026-07-24T19:37:12+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              -1,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              -1,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 59,
+        "mutation_id": "cache_key_projection_016_3868450a85",
+        "observed_trace_sha256": "0bd26e9dfbbf96ea4e68b365107ffd32affe3ac8db347996f9c1c3d9be156143",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "d95f65a2149983c57e6167ce88b329c085dcb451075b10090d28a37e204cd238",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "coarse",
+          "name": "view_15_hidden_coarse_d1",
+          "speed_mode": "hidden"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 16,
+        "mutation_id": "cache_key_projection_016_3868450a85",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "observation.status"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 512,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 66,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 1872
+    },
+    {
+      "affected_kernels": 128,
+      "cache_hits": 77758,
+      "cache_misses": 4574,
+      "completed_at": "2026-07-24T19:37:11+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 3,
+          "observed_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 2,
+          "oracle_step": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "step_index": 1
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_017_23a57c6443",
+        "observed_trace_sha256": "5c7f640cd63e08d673adba5cf98fe07ab2e8c7de32fb80beabec9a4f3dc560fb",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 17,
+        "mutation_id": "cache_key_projection_017_23a57c6443",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.speed",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2034,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 7898
+    },
+    {
+      "affected_kernels": 1,
+      "cache_hits": 32820,
+      "cache_misses": 45020,
+      "completed_at": "2026-07-24T19:37:11+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 5,
+          "observed_step": [
+            [
+              4,
+              -1,
+              0,
+              0
+            ],
+            "coast",
+            "overshoot"
+          ],
+          "oracle_length": 5,
+          "oracle_step": [
+            [
+              4,
+              -1,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 4
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 21,
+          "goal_start": 18,
+          "horizon": 10,
+          "name": "brake_9906",
+          "start_position": 0,
+          "start_speed": 5
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_018_ada1244168",
+        "observed_trace_sha256": "eff1cbff020282b7c8a0e99d9e3eaa1eb5f35fc3c5f28778d8cc53d1cc3d96c3",
+        "operator": "delete_fields",
+        "oracle_signature_mask": 59,
+        "oracle_trace_sha256": "3a01b87987175535af150947f9ef250e66840db62e60587ad1904e18634eaca5",
+        "parameters": {
+          "deleted_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_11_coarse_hidden_d1",
+          "speed_mode": "coarse"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 127
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 18,
+        "mutation_id": "cache_key_projection_018_ada1244168",
+        "operator": "delete_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.step",
+            "state.used_brake",
+            "memory.believed_distance",
+            "observation.within_goal"
+          ],
+          "kept_fields": [
+            "state.position",
+            "state.speed",
+            "memory.believed_speed",
+            "memory.previous_action",
+            "observation.speed",
+            "observation.distance",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 0,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 2,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 4
+    },
+    {
+      "affected_kernels": 119,
+      "cache_hits": 69956,
+      "cache_misses": 17857,
+      "completed_at": "2026-07-24T19:37:11+08:00",
+      "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+      "first_witness": {
+        "agent": "reference",
+        "difference": {
+          "observed_length": 4,
+          "observed_step": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "running"
+          ],
+          "oracle_length": 3,
+          "oracle_step": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            "brake",
+            "overshoot"
+          ],
+          "step_index": 2
+        },
+        "family": "cache_key_projection",
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 5,
+          "goal_start": 4,
+          "horizon": 8,
+          "name": "brake_0000",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kind": "randomized_mutation_trace",
+        "mutant_signature_mask": 42,
+        "mutation_id": "cache_key_projection_019_657d7ecd23",
+        "observed_trace_sha256": "17c67a86050c81e0f0d1449f0bb87dafbd8bd2b2dfaa223689d22116a55c86a5",
+        "operator": "project_keep_fields",
+        "oracle_signature_mask": 42,
+        "oracle_trace_sha256": "347bb649e55fa988d0bd4fb1dbe3ac7c77775b1c84e7f5135c07287a79fc478e",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "memory.previous_action",
+            "observation.speed"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "coarse",
+          "name": "view_03_exact_coarse_d1",
+          "speed_mode": "exact"
+        },
+        "replay_order": "canonical",
+        "sample_rank": 0
+      },
+      "independent_oracle_detected": true,
+      "mutation": {
+        "family": "cache_key_projection",
+        "family_index": 19,
+        "mutation_id": "cache_key_projection_019_657d7ecd23",
+        "operator": "project_keep_fields",
+        "parameters": {
+          "deleted_fields": [
+            "state.position",
+            "state.step",
+            "memory.previous_action",
+            "observation.speed"
+          ],
+          "kept_fields": [
+            "state.speed",
+            "state.used_brake",
+            "memory.believed_speed",
+            "memory.believed_distance",
+            "observation.distance",
+            "observation.within_goal",
+            "observation.status"
+          ]
+        },
+        "seed": 20260724
+      },
+      "nontermination_guards": 486,
+      "oracle_comparison_detected": true,
+      "sample_scope": {
+        "agents": 4,
+        "kernels": 128,
+        "key_replay_orders": [
+          "canonical",
+          "reverse"
+        ],
+        "presentations": 18
+      },
+      "schema_version": 1,
+      "signature_cases": 4608,
+      "signature_detected": true,
+      "signature_mismatches": 1182,
+      "trace_cases": 18432,
+      "trace_detected": true,
+      "trace_mismatches": 5648
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "by_family": {
+      "agent_policy": {
+        "affected_kernel_observations": 1789,
+        "independent_oracle_detected": 20,
+        "independent_oracle_detection_rate": 1.0,
+        "mutants": 20,
+        "nontermination_guards": 0,
+        "oracle_comparison_detected": 20,
+        "oracle_comparison_detection_rate": 1.0,
+        "signature_cases": 46080,
+        "signature_detected": 20,
+        "signature_detection_rate": 1.0,
+        "signature_mismatches": 9704,
+        "trace_cases": 184320,
+        "trace_detected": 20,
+        "trace_detection_rate": 1.0,
+        "trace_mismatches": 15060
+      },
+      "boundary_offset": {
+        "affected_kernel_observations": 1677,
+        "independent_oracle_detected": 19,
+        "independent_oracle_detection_rate": 0.95,
+        "mutants": 20,
+        "nontermination_guards": 0,
+        "oracle_comparison_detected": 19,
+        "oracle_comparison_detection_rate": 0.95,
+        "signature_cases": 46080,
+        "signature_detected": 12,
+        "signature_detection_rate": 0.6,
+        "signature_mismatches": 1645,
+        "trace_cases": 184320,
+        "trace_detected": 19,
+        "trace_detection_rate": 0.95,
+        "trace_mismatches": 41914
+      },
+      "cache_key_projection": {
+        "affected_kernel_observations": 1521,
+        "independent_oracle_detected": 17,
+        "independent_oracle_detection_rate": 0.85,
+        "mutants": 20,
+        "nontermination_guards": 11054,
+        "oracle_comparison_detected": 17,
+        "oracle_comparison_detection_rate": 0.85,
+        "signature_cases": 92160,
+        "signature_detected": 17,
+        "signature_detection_rate": 0.85,
+        "signature_mismatches": 17983,
+        "trace_cases": 368640,
+        "trace_detected": 17,
+        "trace_detection_rate": 0.85,
+        "trace_mismatches": 74568
+      }
+    },
+    "family_counts": {
+      "agent_policy": 20,
+      "boundary_offset": 20,
+      "cache_key_projection": 20
+    },
+    "independent_oracle_detected": 56,
+    "mutants": 60,
+    "oracle_comparison_detected": 56,
+    "signature_detected": 49,
+    "trace_detected": 56
+  }
+}

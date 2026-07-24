@@ -1,0 +1,424 @@
+{
+  "status": "PASS_independent_trace_oracle_full_domain",
+  "mode": "full_domain",
+  "started_at": "2026-07-23T23:18:57.410427+08:00",
+  "completed_at": "2026-07-23T23:19:57.220278+08:00",
+  "elapsed_s": 59.80956620000006,
+  "workers": 8,
+  "comparison": {
+    "counts": {
+      "requested_kernels": 24624,
+      "processed_kernels": 24624,
+      "oracle_valid_kernels": 10544,
+      "sut_valid_kernels": 10544,
+      "factorized_valid_kernels": 10544,
+      "validity_mismatch_count": 0,
+      "factorized_validity_mismatch_count": 0,
+      "trace_cases": 759168,
+      "flat_trace_comparisons": 759168,
+      "factorized_trace_comparisons": 759168,
+      "flat_trace_mismatch_count": 0,
+      "factorized_trace_mismatch_count": 0,
+      "candidate_comparisons": 189792,
+      "direct_candidate_mismatch_count": 0,
+      "factorized_candidate_mismatch_count": 0,
+      "oracle_trace_steps": 3382177,
+      "flat_trace_steps": 3382177,
+      "factorized_trace_steps": 3382177
+    },
+    "hashes": {
+      "oracle_valid_kernel_sha256": "89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f",
+      "sut_valid_kernel_sha256": "89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f",
+      "factorized_valid_kernel_sha256": "89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f",
+      "oracle_trace_sha256": "49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf",
+      "flat_trace_sha256": "49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf",
+      "factorized_trace_sha256": "49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf",
+      "oracle_candidate_sha256": "be8c2d3e6f4fb7c03430d0bec2d8809eae7cde7d94fee4f5087c2b74977fbdf3",
+      "sut_candidate_sha256": "be8c2d3e6f4fb7c03430d0bec2d8809eae7cde7d94fee4f5087c2b74977fbdf3",
+      "factorized_candidate_sha256": "be8c2d3e6f4fb7c03430d0bec2d8809eae7cde7d94fee4f5087c2b74977fbdf3"
+    },
+    "first_witness": null
+  },
+  "mutant_smoke": {
+    "requested_kernels_examined": 1,
+    "valid_kernels_examined": 1,
+    "mutants_total": 7,
+    "mutants_detected": 7,
+    "all_detected": true,
+    "undetected_mutants": [],
+    "mutants": [
+      {
+        "mutant": "cache_key_observation_only",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 5,
+        "first_witness": {
+          "kind": "semantic_mutant:cache_key_observation_only",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_01_exact_exact_d1",
+            "speed_mode": "exact",
+            "distance_mode": "exact",
+            "delay": 1
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 1,
+            "oracle_step": [
+              [
+                3,
+                4,
+                0,
+                0
+              ],
+              "coast",
+              "overshoot"
+            ],
+            "observed_step": [
+              [
+                3,
+                4,
+                0,
+                0
+              ],
+              "coast",
+              "running"
+            ],
+            "oracle_length": 2,
+            "observed_length": 5
+          },
+          "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+          "observed_trace_sha256": "6ab476641dc02042febf5ed685731062a31c2f47b2788e7d15a5cc1a17c81123"
+        }
+      },
+      {
+        "mutant": "cache_scope_cross_agent",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 3,
+        "first_witness": {
+          "kind": "semantic_mutant:cache_scope_cross_agent",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_00_exact_exact_d0",
+            "speed_mode": "exact",
+            "distance_mode": "exact",
+            "delay": 0
+          },
+          "agent": "speed_only",
+          "difference": {
+            "step_index": 0,
+            "oracle_step": [
+              [
+                3,
+                4,
+                0,
+                0
+              ],
+              "brake",
+              "running"
+            ],
+            "observed_step": [
+              [
+                3,
+                4,
+                0,
+                0
+              ],
+              "coast",
+              "running"
+            ],
+            "oracle_length": 3,
+            "observed_length": 3
+          },
+          "oracle_trace_sha256": "c06c3daf1d5c41f24a086c5baec0174e293c71f2406ac82d772f90355d785685",
+          "observed_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38"
+        }
+      },
+      {
+        "mutant": "delay_returns_current",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 5,
+        "first_witness": {
+          "kind": "semantic_mutant:delay_returns_current",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_01_exact_exact_d1",
+            "speed_mode": "exact",
+            "distance_mode": "exact",
+            "delay": 1
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 0,
+            "oracle_step": [
+              [
+                -1,
+                -1,
+                0,
+                0
+              ],
+              "coast",
+              "running"
+            ],
+            "observed_step": [
+              [
+                3,
+                4,
+                0,
+                0
+              ],
+              "coast",
+              "running"
+            ],
+            "oracle_length": 2,
+            "observed_length": 3
+          },
+          "oracle_trace_sha256": "2c4649dc952678fc8e14118b59d4cfcb2ed3a4e5f42cc58eaaf1e9b6f2b73887",
+          "observed_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38"
+        }
+      },
+      {
+        "mutant": "coarse_rounds_to_nearest",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 9,
+        "first_witness": {
+          "kind": "semantic_mutant:coarse_rounds_to_nearest",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_02_exact_coarse_d0",
+            "speed_mode": "exact",
+            "distance_mode": "coarse",
+            "delay": 0
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 1,
+            "oracle_step": [
+              [
+                2,
+                0,
+                0,
+                0
+              ],
+              "brake",
+              "running"
+            ],
+            "observed_step": [
+              [
+                2,
+                3,
+                0,
+                0
+              ],
+              "coast",
+              "running"
+            ],
+            "oracle_length": 3,
+            "observed_length": 4
+          },
+          "oracle_trace_sha256": "134fc2a2048b0ed859431823fbdee03307851d1f8288fbc91440d5d15255834b",
+          "observed_trace_sha256": "a617db69eae3a55f688bed5ec27883b65b95e93f725b422e25c862f956d4eb5e"
+        }
+      },
+      {
+        "mutant": "presentation_intervenes_on_dynamics",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 17,
+        "first_witness": {
+          "kind": "semantic_mutant:presentation_intervenes_on_dynamics",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_04_exact_hidden_d0",
+            "speed_mode": "exact",
+            "distance_mode": "hidden",
+            "delay": 0
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 2,
+            "oracle_step": [
+              [
+                2,
+                -1,
+                1,
+                0
+              ],
+              "brake",
+              "overshoot"
+            ],
+            "observed_step": [
+              [
+                1,
+                -1,
+                1,
+                0
+              ],
+              "brake",
+              "win"
+            ],
+            "oracle_length": 3,
+            "observed_length": 3
+          },
+          "oracle_trace_sha256": "e79827d0087dcd64312348d618085752eb5ccd54b6865db484d0d2f07253ee8a",
+          "observed_trace_sha256": "d1867cc5503292a350c10588fea0129ba5edef532bca7d87508b74f7dca6e962"
+        }
+      },
+      {
+        "mutant": "goal_end_is_exclusive",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 1,
+        "first_witness": {
+          "kind": "semantic_mutant:goal_end_is_exclusive",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_00_exact_exact_d0",
+            "speed_mode": "exact",
+            "distance_mode": "exact",
+            "delay": 0
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 1,
+            "oracle_step": [
+              [
+                3,
+                1,
+                0,
+                0
+              ],
+              "brake",
+              "running"
+            ],
+            "observed_step": [
+              [
+                3,
+                1,
+                0,
+                0
+              ],
+              "brake",
+              "overshoot"
+            ],
+            "oracle_length": 3,
+            "observed_length": 2
+          },
+          "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+          "observed_trace_sha256": "eb12ac0ac6079fbae7ea6bfdf61835e87a23197c0d9a7e0fc2f3454376f0143a"
+        }
+      },
+      {
+        "mutant": "signed_distance_missing_collision",
+        "detected": true,
+        "valid_kernels_examined": 1,
+        "trace_comparisons": 1,
+        "first_witness": {
+          "kind": "semantic_mutant:signed_distance_missing_collision",
+          "kernel": {
+            "name": "brake_0000",
+            "start_speed": 3,
+            "friction": 0,
+            "brake_force": 1,
+            "goal_start": 4,
+            "goal_end": 5,
+            "horizon": 8,
+            "start_position": 0
+          },
+          "presentation": {
+            "name": "view_00_exact_exact_d0",
+            "speed_mode": "exact",
+            "distance_mode": "exact",
+            "delay": 0
+          },
+          "agent": "reference",
+          "difference": {
+            "step_index": 2,
+            "oracle_step": [
+              [
+                2,
+                0,
+                1,
+                0
+              ],
+              "brake",
+              "overshoot"
+            ],
+            "observed_step": [
+              [
+                2,
+                -1,
+                1,
+                0
+              ],
+              "brake",
+              "overshoot"
+            ],
+            "oracle_length": 3,
+            "observed_length": 3
+          },
+          "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+          "observed_trace_sha256": "40c590af96bb3318c8e8f0d6c33e6c877454bd99524f5b8396918396d4866f6a"
+        }
+      }
+    ]
+  },
+  "claim_boundary": "Independent differential evidence on the selected frozen finite domain; not a formal proof and not evidence about human users."
+}

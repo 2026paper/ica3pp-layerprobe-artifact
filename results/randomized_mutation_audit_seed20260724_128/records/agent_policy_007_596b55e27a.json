@@ -1,0 +1,92 @@
+{
+  "affected_kernels": 78,
+  "cache_hits": 0,
+  "cache_misses": 0,
+  "completed_at": "2026-07-24T19:36:46+08:00",
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "first_witness": {
+    "agent": "speed_only",
+    "difference": {
+      "observed_length": 3,
+      "observed_step": [
+        [
+          4,
+          4,
+          0,
+          0
+        ],
+        "coast",
+        "running"
+      ],
+      "oracle_length": 3,
+      "oracle_step": [
+        [
+          4,
+          4,
+          0,
+          0
+        ],
+        "brake",
+        "running"
+      ],
+      "step_index": 0
+    },
+    "family": "agent_policy",
+    "kernel": {
+      "brake_force": 1,
+      "friction": 1,
+      "goal_end": 5,
+      "goal_start": 4,
+      "horizon": 8,
+      "name": "brake_0004",
+      "start_position": 0,
+      "start_speed": 4
+    },
+    "kind": "randomized_mutation_trace",
+    "mutant_signature_mask": 63,
+    "mutation_id": "agent_policy_007_596b55e27a",
+    "observed_trace_sha256": "78f432d8ea7d4997126e4ecf4dfabd8c02d84b705a7c57b65d447723248ade14",
+    "operator": "flip_action_at_margin",
+    "oracle_signature_mask": 31,
+    "oracle_trace_sha256": "ca220914f293caa0b0e7e9964f950626965aa1cf053ff12c94829b3801aa7a07",
+    "parameters": {
+      "agent": "speed_only",
+      "margin": 1
+    },
+    "presentation": {
+      "delay": 0,
+      "distance_mode": "exact",
+      "name": "view_00_exact_exact_d0",
+      "speed_mode": "exact"
+    },
+    "replay_order": "not_applicable",
+    "sample_rank": 1
+  },
+  "independent_oracle_detected": true,
+  "mutation": {
+    "family": "agent_policy",
+    "family_index": 7,
+    "mutation_id": "agent_policy_007_596b55e27a",
+    "operator": "flip_action_at_margin",
+    "parameters": {
+      "agent": "speed_only",
+      "margin": 1
+    },
+    "seed": 20260724
+  },
+  "nontermination_guards": 0,
+  "oracle_comparison_detected": true,
+  "sample_scope": {
+    "agents": 4,
+    "kernels": 128,
+    "key_replay_orders": [],
+    "presentations": 18
+  },
+  "schema_version": 1,
+  "signature_cases": 2304,
+  "signature_detected": true,
+  "signature_mismatches": 415,
+  "trace_cases": 9216,
+  "trace_detected": true,
+  "trace_mismatches": 1047
+}

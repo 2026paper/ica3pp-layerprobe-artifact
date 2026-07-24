@@ -1,0 +1,1149 @@
+{
+  "schema_version": 1,
+  "overall": "PASS",
+  "verified_at": "2026-07-23T23:30:14.417389+08:00",
+  "verifier_mode": "read_only_inputs_no_simulator_import_or_execution",
+  "inputs": {
+    "oracle_dir": "${ARTIFACT_ROOT}\\results\\independent_trace_oracle_full_24624_distancefix_20260723_xeon",
+    "cache_dir": "${ARTIFACT_ROOT}\\results\\cache_key_ablation_full_24624_distancefix_20260723_xeon",
+    "agent_dir": "${ARTIFACT_ROOT}\\results\\agent_sensitivity_full_24624_distancefix_provenance_v2_20260723_xeon",
+    "stress_dir": "${ARTIFACT_ROOT}\\results\\range_extension_stress_distancefix_provenance_v2_20260723_xeon",
+    "communication_dir": "${ARTIFACT_ROOT}\\results\\communication_full_24624_distancefix_provenance_v2_20260723_xeon"
+  },
+  "checks": [
+    {
+      "group": "independent_trace_oracle",
+      "check": "required artifacts exist",
+      "status": "PASS",
+      "observed": {
+        "directory": "${ARTIFACT_ROOT}\\results\\independent_trace_oracle_full_24624_distancefix_20260723_xeon",
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "full-domain status and mode",
+      "status": "PASS",
+      "observed": [
+        "PASS_independent_trace_oracle_full_domain",
+        "full_domain"
+      ],
+      "expected": [
+        "PASS_independent_trace_oracle_full_domain",
+        "full_domain"
+      ]
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "frozen full-domain totals and zero mismatches",
+      "status": "PASS",
+      "observed": "{\"requested_kernels\": 24624, \"processed_kernels\": 24624, \"oracle_valid_kernels\": 10544, \"sut_valid_kernels\": 10544, \"factorized_valid_kernels\": 10544, \"validity_mismatch_count\": 0, \"factorized_validity_mismatch_count\": 0, \"trace_cases\": 759168, \"flat_trace_comparisons\": 759168, \"factorized_trace_comparisons\": 759168, \"flat_trace_mismatch_count\": 0, \"factorized_trace_mismatch_count\": 0, \"candidate_comparisons\": 189792, \"direct_candidate_mismatch_count\": 0, \"factorized_candidate_mismatch_count\"...",
+      "expected": "{\"requested_kernels\": 24624, \"processed_kernels\": 24624, \"oracle_valid_kernels\": 10544, \"sut_valid_kernels\": 10544, \"factorized_valid_kernels\": 10544, \"validity_mismatch_count\": 0, \"factorized_validity_mismatch_count\": 0, \"trace_cases\": 759168, \"flat_trace_comparisons\": 759168, \"factorized_trace_comparisons\": 759168, \"flat_trace_mismatch_count\": 0, \"factorized_trace_mismatch_count\": 0, \"candidate_comparisons\": 189792, \"direct_candidate_mismatch_count\": 0, \"factorized_candidate_mismatch_count\"..."
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "no comparison witness exists",
+      "status": "PASS"
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "JSONL rows independently reproduce summary counts",
+      "status": "PASS",
+      "observed": "{\"requested_kernels\": 24624, \"processed_kernels\": 24624, \"oracle_valid_kernels\": 10544, \"sut_valid_kernels\": 10544, \"factorized_valid_kernels\": 10544, \"validity_mismatch_count\": 0, \"factorized_validity_mismatch_count\": 0, \"trace_cases\": 759168, \"flat_trace_comparisons\": 759168, \"factorized_trace_comparisons\": 759168, \"flat_trace_mismatch_count\": 0, \"factorized_trace_mismatch_count\": 0, \"candidate_comparisons\": 189792, \"direct_candidate_mismatch_count\": 0, \"factorized_candidate_mismatch_count\"...",
+      "expected": "{\"requested_kernels\": 24624, \"processed_kernels\": 24624, \"oracle_valid_kernels\": 10544, \"sut_valid_kernels\": 10544, \"factorized_valid_kernels\": 10544, \"validity_mismatch_count\": 0, \"factorized_validity_mismatch_count\": 0, \"trace_cases\": 759168, \"flat_trace_comparisons\": 759168, \"factorized_trace_comparisons\": 759168, \"flat_trace_mismatch_count\": 0, \"factorized_trace_mismatch_count\": 0, \"candidate_comparisons\": 189792, \"direct_candidate_mismatch_count\": 0, \"factorized_candidate_mismatch_count\"..."
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "every JSONL row has exact agreement",
+      "status": "PASS",
+      "observed": {
+        "rows": 24624,
+        "unique_kernels": 24624,
+        "error_count": 0,
+        "examples": []
+      },
+      "expected": {
+        "rows": 24624,
+        "unique_kernels": 24624,
+        "error_count": 0
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "JSONL rows independently reproduce aggregate hashes",
+      "status": "PASS",
+      "observed": "{\"oracle_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"sut_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"factorized_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"oracle_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"flat_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"factorized_trace_sha...",
+      "expected": "{\"oracle_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"sut_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"factorized_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"oracle_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"flat_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"factorized_trace_sha..."
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "all aggregate digests are SHA-256",
+      "status": "PASS",
+      "observed": "{\"oracle_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"sut_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"factorized_valid_kernel_sha256\": \"89f95f0b5b1a9fc9f7ad5dde658a533e5390696185aa5a40c1363bdf64db952f\", \"oracle_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"flat_trace_sha256\": \"49539793fe242650a591194868677cc315142880a0386eb57289c2bf288ed3bf\", \"factorized_trace_sha..."
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "mutant artifact matches embedded summary",
+      "status": "PASS",
+      "observed": "{\"requested_kernels_examined\": 1, \"valid_kernels_examined\": 1, \"mutants_total\": 7, \"mutants_detected\": 7, \"all_detected\": true, \"undetected_mutants\": [], \"mutants\": [{\"mutant\": \"cache_key_observation_only\", \"detected\": true, \"valid_kernels_examined\": 1, \"trace_comparisons\": 5, \"first_witness\": {\"kind\": \"semantic_mutant:cache_key_observation_only\", \"kernel\": {\"name\": \"brake_0000\", \"start_speed\": 3, \"friction\": 0, \"brake_force\": 1, \"goal_start\": 4, \"goal_end\": 5, \"horizon\": 8, \"start_position\":...",
+      "expected": "{\"requested_kernels_examined\": 1, \"valid_kernels_examined\": 1, \"mutants_total\": 7, \"mutants_detected\": 7, \"all_detected\": true, \"undetected_mutants\": [], \"mutants\": [{\"mutant\": \"cache_key_observation_only\", \"detected\": true, \"valid_kernels_examined\": 1, \"trace_comparisons\": 5, \"first_witness\": {\"kind\": \"semantic_mutant:cache_key_observation_only\", \"kernel\": {\"name\": \"brake_0000\", \"start_speed\": 3, \"friction\": 0, \"brake_force\": 1, \"goal_start\": 4, \"goal_end\": 5, \"horizon\": 8, \"start_position\":..."
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "all seven frozen semantic mutants are detected with witnesses",
+      "status": "PASS",
+      "observed": {
+        "mutants_total": 7,
+        "mutants_detected": 7,
+        "names": [
+          "cache_key_observation_only",
+          "cache_scope_cross_agent",
+          "delay_returns_current",
+          "coarse_rounds_to_nearest",
+          "presentation_intervenes_on_dynamics",
+          "goal_end_is_exclusive",
+          "signed_distance_missing_collision"
+        ],
+        "bad_witnesses": []
+      },
+      "expected": {
+        "mutants_total": 7,
+        "mutants_detected": 7,
+        "names": [
+          "cache_key_observation_only",
+          "cache_scope_cross_agent",
+          "delay_returns_current",
+          "coarse_rounds_to_nearest",
+          "presentation_intervenes_on_dynamics",
+          "goal_end_is_exclusive",
+          "signed_distance_missing_collision"
+        ],
+        "bad_witnesses": []
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "oracle static isolation boundary",
+      "status": "PASS",
+      "observed": {
+        "layerprobe_imports": [
+          "layerprobe.model"
+        ],
+        "model_names": [
+          "Action",
+          "AgentMemory",
+          "DisplayMemory",
+          "KernelSpec",
+          "Observation",
+          "PresentationSpec",
+          "Trace",
+          "WorldState"
+        ],
+        "oracle_function_count": 18,
+        "forbidden_oracle_calls": [],
+        "adapter_functions": [
+          "compare_kernel_task",
+          "load_system_under_test"
+        ]
+      },
+      "expected": "oracle_* functions import only layerprobe.model data types and do not call SUT adapters"
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "oracle code/config/SUT hashes still match recorded run",
+      "status": "PASS",
+      "observed": {
+        "script_sha256": "b3b591a2cfe951870160a92abcca80681667b81e0ca7bb8c58e4a96d93afac8d",
+        "config_sha256": "0f5d347b9d1c47c07b2da43aec6dbc70b28f4159742a5f61fd8e982ffab538db",
+        "system_under_test": {
+          "model": "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c",
+          "mechanics": "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5",
+          "evaluator": "c54155c207c48dec4ee1bb5653dcbbc53aabfa7aa2d5e50d3152ad989a30c5ea"
+        }
+      },
+      "expected": {
+        "script_sha256": "b3b591a2cfe951870160a92abcca80681667b81e0ca7bb8c58e4a96d93afac8d",
+        "config_sha256": "0f5d347b9d1c47c07b2da43aec6dbc70b28f4159742a5f61fd8e982ffab538db",
+        "system_under_test": {
+          "model": "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c",
+          "mechanics": "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5",
+          "evaluator": "c54155c207c48dec4ee1bb5653dcbbc53aabfa7aa2d5e50d3152ad989a30c5ea"
+        }
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "recorded separation contract has no false fields",
+      "status": "PASS",
+      "observed": {
+        "oracle_imports_only_model_data_types": true,
+        "oracle_reimplements_spec_generation": true,
+        "oracle_reimplements_validation": true,
+        "oracle_reimplements_transition_observation_and_agents": true,
+        "system_under_test_loaded_by_separate_adapter": true
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "metadata cardinalities match frozen comparison",
+      "status": "PASS",
+      "observed": {
+        "status": "PASS_independent_trace_oracle_full_domain",
+        "mode": "full_domain",
+        "kernel_count": 24624,
+        "presentation_count": 18,
+        "agent_count": 4,
+        "trace_comparisons_planned_upper_bound": 1772928
+      },
+      "expected": {
+        "status": "PASS_independent_trace_oracle_full_domain",
+        "mode": "full_domain",
+        "kernel_count": 24624,
+        "presentation_count": 18,
+        "agent_count": 4,
+        "trace_comparisons_planned_upper_bound": 1772928
+      }
+    },
+    {
+      "group": "independent_trace_oracle",
+      "check": "oracle claim boundary is explicit",
+      "status": "PASS",
+      "observed": "Independent differential evidence on the selected frozen finite domain; not a formal proof and not evidence about human users."
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "required artifacts exist",
+      "status": "PASS",
+      "observed": {
+        "directory": "${ARTIFACT_ROOT}\\results\\cache_key_ablation_full_24624_distancefix_20260723_xeon",
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "chunk directory exists",
+      "status": "PASS",
+      "observed": "${ARTIFACT_ROOT}\\results\\cache_key_ablation_full_24624_distancefix_20260723_xeon\\chunks"
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "manifest embeds the exact frozen plan",
+      "status": "PASS",
+      "observed": "{\"chunk_size\": 32, \"fingerprints\": {\"config_sha256\": \"c7f035ccc74b1398b06183a0958e0a8fa9e44680deaf04afae53313f0b784075\", \"core_source_sha256\": \"308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded\", \"experiment_fingerprint\": \"1b5d2b3b43c013cf32cedb93349200786f29385ef6bafdc8f630f4ddc1999eee\", \"run_fingerprint\": \"3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398\", \"script_sha256\": \"ce8c65265a7a42ddf8adb9b62c99f1509e43f765fee6c28ce30588991bd1b8bd\"}, \"frozen_grid_size\":...",
+      "expected": "{\"chunk_size\": 32, \"fingerprints\": {\"config_sha256\": \"c7f035ccc74b1398b06183a0958e0a8fa9e44680deaf04afae53313f0b784075\", \"core_source_sha256\": \"308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded\", \"experiment_fingerprint\": \"1b5d2b3b43c013cf32cedb93349200786f29385ef6bafdc8f630f4ddc1999eee\", \"run_fingerprint\": \"3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398\", \"script_sha256\": \"ce8c65265a7a42ddf8adb9b62c99f1509e43f765fee6c28ce30588991bd1b8bd\"}, \"frozen_grid_size\":..."
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "cache plan covers the complete frozen domain",
+      "status": "PASS",
+      "observed": {
+        "schema_version": 1,
+        "mode": "paper",
+        "paper_evidence_eligible": true,
+        "selection": "complete_grid",
+        "frozen_grid_size": 24624,
+        "selected_kernel_count": 24624,
+        "variants": [
+          "full",
+          "drop_state",
+          "drop_memory",
+          "drop_observation"
+        ],
+        "orders": [
+          "canonical",
+          "reverse"
+        ]
+      },
+      "expected": {
+        "schema_version": 1,
+        "mode": "paper",
+        "paper_evidence_eligible": true,
+        "selection": "complete_grid",
+        "frozen_grid_size": 24624,
+        "selected_kernel_count": 24624,
+        "variants": [
+          "full",
+          "drop_state",
+          "drop_memory",
+          "drop_observation"
+        ],
+        "orders": [
+          "canonical",
+          "reverse"
+        ]
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "complete-grid selection hash",
+      "status": "PASS",
+      "observed": "e6ec95804e816b7d265c8065374dc853d902cf21977a5912cdc3891667ea23ef",
+      "expected": "e6ec95804e816b7d265c8065374dc853d902cf21977a5912cdc3891667ea23ef"
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "cache code/config/source/run fingerprints",
+      "status": "PASS",
+      "observed": {
+        "config_sha256": "c7f035ccc74b1398b06183a0958e0a8fa9e44680deaf04afae53313f0b784075",
+        "core_source_sha256": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded",
+        "experiment_fingerprint": "1b5d2b3b43c013cf32cedb93349200786f29385ef6bafdc8f630f4ddc1999eee",
+        "run_fingerprint": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "script_sha256": "ce8c65265a7a42ddf8adb9b62c99f1509e43f765fee6c28ce30588991bd1b8bd"
+      },
+      "expected": {
+        "script_sha256": "ce8c65265a7a42ddf8adb9b62c99f1509e43f765fee6c28ce30588991bd1b8bd",
+        "config_sha256": "c7f035ccc74b1398b06183a0958e0a8fa9e44680deaf04afae53313f0b784075",
+        "core_source_sha256": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded",
+        "experiment_fingerprint": "1b5d2b3b43c013cf32cedb93349200786f29385ef6bafdc8f630f4ddc1999eee",
+        "run_fingerprint": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398"
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "cache run is fully complete",
+      "status": "PASS",
+      "observed": {
+        "manifest_status": "complete",
+        "manifest_completed_chunks": 770,
+        "manifest_total_chunks": 770,
+        "progress_status": "completed",
+        "progress_completed_chunks": 770,
+        "progress_total_chunks": 770,
+        "progress_completed_jobs": 24624,
+        "progress_planned_jobs": 24624
+      },
+      "expected": {
+        "manifest_status": "complete",
+        "manifest_completed_chunks": 770,
+        "manifest_total_chunks": 770,
+        "progress_status": "completed",
+        "progress_completed_chunks": 770,
+        "progress_total_chunks": 770,
+        "progress_completed_jobs": 24624,
+        "progress_planned_jobs": 24624
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "run fingerprint is consistent across top-level artifacts",
+      "status": "PASS",
+      "observed": {
+        "plan": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "progress": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "manifest": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "summary": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "counterexamples": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+        "recomputed": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398"
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "chunk sequence and job identities are complete and unique",
+      "status": "PASS",
+      "observed": {
+        "chunks": 770,
+        "jobs": 24624,
+        "unique_job_ids": 24624,
+        "unique_positions": 24624,
+        "error_count": 0,
+        "examples": []
+      },
+      "expected": {
+        "chunks": 770,
+        "jobs": 24624,
+        "unique_job_ids": 24624,
+        "unique_positions": 24624,
+        "error_count": 0
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "manifest chunk hash",
+      "status": "PASS",
+      "observed": "7013dd72d342faa5cbc01bface772407144e8a5f0542d03803be891ccdc55696",
+      "expected": "7013dd72d342faa5cbc01bface772407144e8a5f0542d03803be891ccdc55696"
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "manifest artifact hashes",
+      "status": "PASS",
+      "observed": {
+        "artifact_names": [
+          "SUMMARY.md",
+          "ablation_summary.csv",
+          "counterexamples.json",
+          "plan.json",
+          "progress.json",
+          "summary.json"
+        ],
+        "hash_errors": {}
+      },
+      "expected": {
+        "artifact_names": [
+          "SUMMARY.md",
+          "ablation_summary.csv",
+          "counterexamples.json",
+          "plan.json",
+          "progress.json",
+          "summary.json"
+        ],
+        "hash_errors": {}
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "chunk-derived full-domain cardinalities",
+      "status": "PASS",
+      "observed": {
+        "selected_kernel_count": 24624,
+        "valid_kernel_count": 10544,
+        "invalid_kernel_count": 14080,
+        "presentations": 18,
+        "agents": 4,
+        "oracle_contexts": 3382177
+      },
+      "expected": {
+        "selected_kernel_count": 24624,
+        "valid_kernel_count": 10544,
+        "invalid_kernel_count": 14080,
+        "presentations": 18,
+        "agents": 4,
+        "oracle_contexts": 3382177
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "chunk-derived collision census matches summary",
+      "status": "PASS",
+      "observed": "{\"full\": {\"semantic_contexts\": 3382177, \"unique_projected_keys\": 2288074, \"unsafe_key_classes\": 0, \"contexts_in_unsafe_classes\": 0, \"distinct_output_variants_in_unsafe_classes\": 0, \"conflicting_context_pairs\": 0, \"affected_kernel_agent_scopes\": 0, \"affected_valid_kernels\": 0}, \"drop_state\": {\"semantic_contexts\": 3382177, \"unique_projected_keys\": 1864297, \"unsafe_key_classes\": 389642, \"contexts_in_unsafe_classes\": 1041654, \"distinct_output_variants_in_unsafe_classes\": 813419, \"conflicting_cont...",
+      "expected": "{\"drop_memory\": {\"affected_kernel_agent_scopes\": 16436, \"affected_valid_kernels\": 7054, \"conflicting_context_pairs\": 53888, \"contexts_in_unsafe_classes\": 96823, \"distinct_output_variants_in_unsafe_classes\": 94246, \"semantic_contexts\": 3382177, \"unique_projected_keys\": 2023940, \"unsafe_key_classes\": 45727}, \"drop_observation\": {\"affected_kernel_agent_scopes\": 42124, \"affected_valid_kernels\": 10544, \"conflicting_context_pairs\": 6268287, \"contexts_in_unsafe_classes\": 2020161, \"distinct_output_va..."
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "chunk-derived fault replay matches summary",
+      "status": "PASS",
+      "observed": "{\"full\": {\"canonical\": {\"traces\": 759168, \"trace_mismatches\": 0, \"candidates\": 189792, \"candidate_signature_mismatches\": 0, \"signature_bit_flips\": 0, \"cache_hits\": 1094103, \"cache_misses\": 2288074, \"unsafe_cache_hits\": 0, \"nontermination_guards\": 0, \"trace_digest\": \"9d5bf43306b1cdd24ae29fa9c39b5d2a5fd8250d5ee7038238b6ae2006b67e27\", \"candidate_signature_digest\": \"0f6e5ffbce524eece93dbca417eb0fd59ba3cd209202e7d0ee2a2bd79c626cc2\", \"oracle_trace_digest\": \"9d5bf43306b1cdd24ae29fa9c39b5d2a5fd8250d5...",
+      "expected": "{\"drop_memory\": {\"canonical\": {\"cache_hits\": 1358398, \"cache_misses\": 2023756, \"candidate_signature_digest\": \"d645075fe151c16365a5ca2ddd7893eab656bbfcb280781e24569baf3a001c6a\", \"candidate_signature_mismatches\": 1238, \"candidates\": 189792, \"nontermination_guards\": 0, \"oracle_candidate_signature_digest\": \"0f6e5ffbce524eece93dbca417eb0fd59ba3cd209202e7d0ee2a2bd79c626cc2\", \"oracle_trace_digest\": \"9d5bf43306b1cdd24ae29fa9c39b5d2a5fd8250d5ee7038238b6ae2006b67e27\", \"signature_bit_flips\": 1550, \"trac..."
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "complete cache key is an exact zero-error control",
+      "status": "PASS",
+      "observed": {
+        "errors": []
+      },
+      "expected": {
+        "errors": []
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "each deleted component fails in both replay orders with witnesses",
+      "status": "PASS",
+      "observed": {
+        "errors": []
+      },
+      "expected": {
+        "errors": []
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "counterexamples are the earliest witnesses stored in chunks",
+      "status": "PASS",
+      "observed": "{\"collision_witnesses\": {\"drop_memory\": {\"differing_output_fields\": [\"action\", \"next_world_state\", \"next_agent_memory\", \"status\"], \"first_context\": {\"agent\": \"reference\", \"agent_memory\": {\"believed_distance\": 2, \"believed_speed\": 2, \"previous_action\": \"coast\"}, \"kernel\": {\"brake_force\": 1, \"friction\": 0, \"goal_end\": 5, \"goal_start\": 4, \"horizon\": 8, \"name\": \"brake_0000\", \"start_position\": 0, \"start_speed\": 3}, \"kernel_index\": 0, \"observation\": [2, -1, 0, 0], \"output\": {\"action\": \"coast\", \"nex...",
+      "expected": "{\"collision_witnesses\": {\"drop_memory\": {\"differing_output_fields\": [\"action\", \"next_world_state\", \"next_agent_memory\", \"status\"], \"first_context\": {\"agent\": \"reference\", \"agent_memory\": {\"believed_distance\": 2, \"believed_speed\": 2, \"previous_action\": \"coast\"}, \"kernel\": {\"brake_force\": 1, \"friction\": 0, \"goal_end\": 5, \"goal_start\": 4, \"horizon\": 8, \"name\": \"brake_0000\", \"start_position\": 0, \"start_speed\": 3}, \"kernel_index\": 0, \"observation\": [2, -1, 0, 0], \"output\": {\"action\": \"coast\", \"nex..."
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "cache acceptance gates",
+      "status": "PASS",
+      "observed": {
+        "all_component_necessity_witnesses_present": true,
+        "component_necessity_on_selected_domain": {
+          "drop_memory": true,
+          "drop_observation": true,
+          "drop_state": true
+        },
+        "end_to_end_trace_failure_observed": {
+          "drop_memory": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_observation": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_state": {
+            "canonical": true,
+            "reverse": true
+          }
+        },
+        "full_key_control_pass": true
+      },
+      "expected": {
+        "full_key_control_pass": true,
+        "component_necessity_on_selected_domain": {
+          "drop_state": true,
+          "drop_memory": true,
+          "drop_observation": true
+        },
+        "end_to_end_trace_failure_observed": {
+          "drop_state": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_memory": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_observation": {
+            "canonical": true,
+            "reverse": true
+          }
+        },
+        "all_component_necessity_witnesses_present": true
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "manifest repeats cache acceptance gates",
+      "status": "PASS",
+      "observed": {
+        "all_component_necessity_witnesses_present": true,
+        "component_necessity_on_selected_domain": {
+          "drop_memory": true,
+          "drop_observation": true,
+          "drop_state": true
+        },
+        "end_to_end_trace_failure_observed": {
+          "drop_memory": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_observation": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_state": {
+            "canonical": true,
+            "reverse": true
+          }
+        },
+        "full_key_control_pass": true
+      },
+      "expected": {
+        "full_key_control_pass": true,
+        "component_necessity_on_selected_domain": {
+          "drop_state": true,
+          "drop_memory": true,
+          "drop_observation": true
+        },
+        "end_to_end_trace_failure_observed": {
+          "drop_state": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_memory": {
+            "canonical": true,
+            "reverse": true
+          },
+          "drop_observation": {
+            "canonical": true,
+            "reverse": true
+          }
+        },
+        "all_component_necessity_witnesses_present": true
+      }
+    },
+    {
+      "group": "cache_key_ablation",
+      "check": "cache CSV exactly matches recomputed summary",
+      "status": "PASS",
+      "observed": {
+        "rows": 8,
+        "expected_rows": 8,
+        "error_count": 0,
+        "examples": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "required artifacts exist",
+      "status": "PASS",
+      "observed": {
+        "directory": "${ARTIFACT_ROOT}\\results\\agent_sensitivity_full_24624_distancefix_provenance_v2_20260723_xeon",
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "required artifacts exist",
+      "status": "PASS",
+      "observed": {
+        "directory": "${ARTIFACT_ROOT}\\results\\communication_full_24624_distancefix_provenance_v2_20260723_xeon",
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "communication producer provenance",
+      "status": "PASS",
+      "observed": {
+        "script_sha256": "fa82fdba99174a8d09438ca2785d6c411390c4fc522fe3de37d959008d33aafb",
+        "core_source_sha256": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded"
+      },
+      "expected": {
+        "script_sha256": "fa82fdba99174a8d09438ca2785d6c411390c4fc522fe3de37d959008d33aafb",
+        "core_source_sha256": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded"
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "saved-output full-domain cardinalities",
+      "status": "PASS",
+      "observed": {
+        "valid_kernels": 10544,
+        "presentations": 18,
+        "candidates": 189792,
+        "agents": [
+          "reference",
+          "instant_stop",
+          "speed_only",
+          "friction_blind"
+        ],
+        "model_pairs": [
+          [
+            "reference",
+            "instant_stop"
+          ],
+          [
+            "reference",
+            "speed_only"
+          ],
+          [
+            "reference",
+            "friction_blind"
+          ],
+          [
+            "instant_stop",
+            "speed_only"
+          ],
+          [
+            "instant_stop",
+            "friction_blind"
+          ],
+          [
+            "speed_only",
+            "friction_blind"
+          ]
+        ]
+      },
+      "expected": {
+        "valid_kernels": 10544,
+        "presentations": 18,
+        "candidates": 189792,
+        "agents": [
+          "reference",
+          "instant_stop",
+          "speed_only",
+          "friction_blind"
+        ],
+        "model_pairs": [
+          [
+            "reference",
+            "instant_stop"
+          ],
+          [
+            "reference",
+            "speed_only"
+          ],
+          [
+            "reference",
+            "friction_blind"
+          ],
+          [
+            "instant_stop",
+            "speed_only"
+          ],
+          [
+            "instant_stop",
+            "friction_blind"
+          ],
+          [
+            "speed_only",
+            "friction_blind"
+          ]
+        ]
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "agent-analysis source hashes",
+      "status": "PASS",
+      "observed": {
+        "summary.json": "6dbb98660d761c1b43d5369c8a4349e542166a667cc91b02a8b8db82add2a6a1",
+        "candidate_signatures.csv.gz": "3505e0be250e919e524281caf75a826b8580bdb46ba0206012aaafed4e7bbc72",
+        "script": "be4f07504a4fa75780f4699993a29c1015b184b34b53b20162f26a79258ce1c9"
+      },
+      "expected": {
+        "summary.json": "6dbb98660d761c1b43d5369c8a4349e542166a667cc91b02a8b8db82add2a6a1",
+        "candidate_signatures.csv.gz": "3505e0be250e919e524281caf75a826b8580bdb46ba0206012aaafed4e7bbc72",
+        "script": "be4f07504a4fa75780f4699993a29c1015b184b34b53b20162f26a79258ce1c9"
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "compressed signature table shape",
+      "status": "PASS",
+      "observed": {
+        "rows": 189792,
+        "kernels": 10544,
+        "presentations": 18,
+        "model_pairs": [
+          [
+            "reference",
+            "instant_stop"
+          ],
+          [
+            "reference",
+            "speed_only"
+          ],
+          [
+            "reference",
+            "friction_blind"
+          ],
+          [
+            "instant_stop",
+            "speed_only"
+          ],
+          [
+            "instant_stop",
+            "friction_blind"
+          ],
+          [
+            "speed_only",
+            "friction_blind"
+          ]
+        ]
+      },
+      "expected": {
+        "rows": 189792,
+        "kernels": 10544,
+        "presentations": 18,
+        "model_pairs": [
+          [
+            "reference",
+            "instant_stop"
+          ],
+          [
+            "reference",
+            "speed_only"
+          ],
+          [
+            "reference",
+            "friction_blind"
+          ],
+          [
+            "instant_stop",
+            "speed_only"
+          ],
+          [
+            "instant_stop",
+            "friction_blind"
+          ],
+          [
+            "speed_only",
+            "friction_blind"
+          ]
+        ]
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "pair-level delay and robustness statistics recomputed",
+      "status": "PASS",
+      "observed": "[{\"pair_index\": 0, \"left_agent\": \"reference\", \"right_agent\": \"instant_stop\", \"pair\": \"reference vs instant_stop\", \"candidate_count\": 189792, \"candidate_separated_count\": 126527, \"candidate_separation_rate\": 0.6666613977406846, \"robust_kernel_count\": 1855, \"robust_kernel_rate\": 0.17592943854324736, \"mechanism_presentation_bases\": 94896, \"immediate_rate\": 0.6966573933569381, \"delayed_rate\": 0.6366654021244309, \"delayed_minus_immediate_rate\": -0.05999199123250717, \"improved_count\": 1987, \"degrad...",
+      "expected": "[{\"pair_index\": 0, \"left_agent\": \"reference\", \"right_agent\": \"instant_stop\", \"pair\": \"reference vs instant_stop\", \"candidate_count\": 189792, \"candidate_separated_count\": 126527, \"candidate_separation_rate\": 0.6666613977406846, \"robust_kernel_count\": 1855, \"robust_kernel_rate\": 0.17592943854324736, \"mechanism_presentation_bases\": 94896, \"immediate_rate\": 0.6966573933569381, \"delayed_rate\": 0.6366654021244309, \"delayed_minus_immediate_rate\": -0.05999199123250717, \"improved_count\": 1987, \"degrad..."
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "leave-one-agent-out statistics and suites recomputed",
+      "status": "PASS",
+      "observed": "[{\"omitted_agent\": \"reference\", \"retained_pair_count\": 3, \"retained_pairs\": \"instant_stop__speed_only | instant_stop__friction_blind | speed_only__friction_blind\", \"target_mask\": 56, \"mean_pair_delta_delayed_minus_immediate\": -0.15841552857865454, \"delay_direction\": \"negative\", \"robust_nonzero_kernels\": 9050, \"robust_full_kernels\": 1362, \"robust_mean_pairs\": 1.8107928679817906, \"robust_minimum_suite_size\": 1, \"robust_minimum_suite\": \"brake_10057\", \"union_minimum_suite_size\": 1, \"union_minimum...",
+      "expected": "[{\"omitted_agent\": \"reference\", \"retained_pair_count\": 3, \"retained_pairs\": \"instant_stop__speed_only | instant_stop__friction_blind | speed_only__friction_blind\", \"target_mask\": 56, \"mean_pair_delta_delayed_minus_immediate\": -0.15841552857865454, \"delay_direction\": \"negative\", \"robust_nonzero_kernels\": 9050, \"robust_full_kernels\": 1362, \"robust_mean_pairs\": 1.8107928679817906, \"robust_minimum_suite_size\": 1, \"robust_minimum_suite\": \"brake_10057\", \"union_minimum_suite_size\": 1, \"union_minimum..."
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "construct negative-control statistics recomputed",
+      "status": "PASS",
+      "observed": "[{\"friction\": 0, \"valid_kernels\": 5094, \"candidate_count\": 91692, \"separated_candidates\": 0, \"separation_rate\": 0.0, \"expected_equivalent\": true, \"negative_control_pass\": true}, {\"friction\": 1, \"valid_kernels\": 3521, \"candidate_count\": 63378, \"separated_candidates\": 41611, \"separation_rate\": 0.6565527470100034, \"expected_equivalent\": false, \"negative_control_pass\": true}, {\"friction\": 2, \"valid_kernels\": 1929, \"candidate_count\": 34722, \"separated_candidates\": 27036, \"separation_rate\": 0.77864...",
+      "expected": "[{\"friction\": 0, \"valid_kernels\": 5094, \"candidate_count\": 91692, \"separated_candidates\": 0, \"separation_rate\": 0.0, \"expected_equivalent\": true, \"negative_control_pass\": true}, {\"friction\": 1, \"valid_kernels\": 3521, \"candidate_count\": 63378, \"separated_candidates\": 41611, \"separation_rate\": 0.6565527470100034, \"expected_equivalent\": false, \"negative_control_pass\": true}, {\"friction\": 2, \"valid_kernels\": 1929, \"candidate_count\": 34722, \"separated_candidates\": 27036, \"separation_rate\": 0.77864..."
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "friction-zero construct negative control",
+      "status": "PASS",
+      "observed": {
+        "friction": 0,
+        "valid_kernels": 5094,
+        "candidate_count": 91692,
+        "separated_candidates": 0,
+        "separation_rate": 0.0,
+        "expected_equivalent": true,
+        "negative_control_pass": true
+      },
+      "expected": {
+        "friction": 0,
+        "valid_kernels": 5094,
+        "candidate_count": 91692,
+        "separated_candidates": 0,
+        "separation_rate": 0.0,
+        "expected_equivalent": true,
+        "negative_control_pass": true
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "non-zero-friction construct separation counts",
+      "status": "PASS",
+      "observed": [
+        [
+          1,
+          3521,
+          63378,
+          41611
+        ],
+        [
+          2,
+          1929,
+          34722,
+          27036
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          3521,
+          63378,
+          41611
+        ],
+        [
+          2,
+          1929,
+          34722,
+          27036
+        ]
+      ]
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "agent sensitivity gates recomputed",
+      "status": "PASS",
+      "observed": {
+        "all_leave_one_out_delay_directions_negative": true,
+        "pair_direction_counts": {
+          "negative": 5,
+          "zero": 0,
+          "positive": 1
+        },
+        "all_leave_one_out_robust_suites_exist": true,
+        "friction_zero_negative_control_pass": true
+      },
+      "expected": {
+        "all_leave_one_out_delay_directions_negative": true,
+        "pair_direction_counts": {
+          "negative": 5,
+          "zero": 0,
+          "positive": 1
+        },
+        "all_leave_one_out_robust_suites_exist": true,
+        "friction_zero_negative_control_pass": true
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "pair_delay_sensitivity.csv exactly matches recomputation",
+      "status": "PASS",
+      "observed": {
+        "rows": 6,
+        "expected_rows": 6,
+        "error_count": 0,
+        "examples": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "leave_one_agent_out.csv exactly matches recomputation",
+      "status": "PASS",
+      "observed": {
+        "rows": 4,
+        "expected_rows": 4,
+        "error_count": 0,
+        "examples": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "construct_negative_control.csv exactly matches recomputation",
+      "status": "PASS",
+      "observed": {
+        "rows": 3,
+        "expected_rows": 3,
+        "error_count": 0,
+        "examples": []
+      }
+    },
+    {
+      "group": "agent_sensitivity",
+      "check": "agent-analysis interpretation boundary is explicit",
+      "status": "PASS",
+      "observed": {
+        "status": "saved_output_agent_sensitivity_not_human_effect_evidence",
+        "interpretation": "Finite-domain sensitivity for four declared computational agents; not evidence about human learning or communication effectiveness."
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "required artifacts exist",
+      "status": "PASS",
+      "observed": {
+        "directory": "${ARTIFACT_ROOT}\\results\\range_extension_stress_distancefix_provenance_v2_20260723_xeon",
+        "missing": []
+      },
+      "expected": {
+        "missing": []
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "pre-frozen config bytes and hashes",
+      "status": "PASS",
+      "observed": {
+        "summary": "dfb3b47b3b0f5a794c74d8ae549427d29d608fcfce11f5730d5f6510a6cfa16e",
+        "current": "dfb3b47b3b0f5a794c74d8ae549427d29d608fcfce11f5730d5f6510a6cfa16e",
+        "frozen": "dfb3b47b3b0f5a794c74d8ae549427d29d608fcfce11f5730d5f6510a6cfa16e",
+        "byte_identical": true
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "stress script hash",
+      "status": "PASS",
+      "observed": "d24268b5dc4dee9e0b8bb3b852c50dbdf71cc4ff4c849d56b7091c9633cd900a",
+      "expected": "d24268b5dc4dee9e0b8bb3b852c50dbdf71cc4ff4c849d56b7091c9633cd900a"
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "stress core-source provenance",
+      "status": "PASS",
+      "observed": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded",
+      "expected": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded"
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "predeclared range-extension grid",
+      "status": "PASS",
+      "observed": {
+        "frozen_before_execution": true,
+        "stress_grid": {
+          "goal_start": [
+            44,
+            64,
+            84
+          ],
+          "start_speed": [
+            15,
+            18,
+            21
+          ],
+          "horizon": [
+            16,
+            20
+          ],
+          "goal_width": [
+            1,
+            5
+          ],
+          "brake_force": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "friction": [
+            0,
+            1,
+            2
+          ]
+        },
+        "grid_size": 432,
+        "presentations": 18,
+        "factorized_workers": 8
+      },
+      "expected": {
+        "frozen_before_execution": true,
+        "stress_grid": {
+          "goal_start": [
+            44,
+            64,
+            84
+          ],
+          "start_speed": [
+            15,
+            18,
+            21
+          ],
+          "horizon": [
+            16,
+            20
+          ],
+          "goal_width": [
+            1,
+            5
+          ],
+          "brake_force": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "friction": [
+            0,
+            1,
+            2
+          ]
+        },
+        "grid_size": 432,
+        "presentations": 18,
+        "factorized_workers": 8
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "range-extension status, exactness gates, and no mismatch",
+      "status": "PASS",
+      "observed": {
+        "status": "PASS",
+        "requested_kernels": 432,
+        "presentations": 18,
+        "gates": {
+          "identical_valid_kernel_names": true,
+          "identical_candidate_signatures": true,
+          "identical_minimum_suite": true,
+          "flat_graph_builds_equal_requested_kernels_times_presentations": true,
+          "factorized_graph_builds_equal_requested_kernels": true
+        },
+        "first_mismatch": null
+      },
+      "expected": {
+        "status": "PASS",
+        "requested_kernels": 432,
+        "presentations": 18,
+        "gates": {
+          "identical_valid_kernel_names": true,
+          "identical_candidate_signatures": true,
+          "identical_minimum_suite": true,
+          "flat_graph_builds_equal_requested_kernels_times_presentations": true,
+          "factorized_graph_builds_equal_requested_kernels": true
+        },
+        "first_mismatch": null
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "stress candidate exactness and expected cardinality",
+      "status": "PASS",
+      "observed": {
+        "flat_valid": 272,
+        "factorized_valid": 272,
+        "flat_candidates": 4896,
+        "factorized_candidates": 4896,
+        "flat_metric_candidates": 4896,
+        "factorized_metric_candidates": 4896,
+        "signature_hash_equal": true,
+        "minimum_suite_equal": true
+      },
+      "expected": {
+        "flat_valid": 272,
+        "factorized_valid": 272,
+        "flat_candidates": 4896,
+        "factorized_candidates": 4896,
+        "flat_metric_candidates": 4896,
+        "factorized_metric_candidates": 4896,
+        "signature_hash_equal": true,
+        "minimum_suite_equal": true
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "stress work-accounting invariants",
+      "status": "PASS",
+      "observed": {
+        "errors": [],
+        "work_deltas": {
+          "graph_build_reduction": 0.9444444444444444,
+          "graph_build_ratio_flat_over_factorized": 18.0,
+          "policy_transition_call_reduction": 0.27299826805222493
+        }
+      },
+      "expected": {
+        "errors": [],
+        "work_deltas": {
+          "graph_build_reduction": 0.9444444444444444,
+          "graph_build_ratio_flat_over_factorized": 18.0,
+          "policy_transition_call_reduction": 0.27299826805222493
+        }
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "stress valid-kernel name list",
+      "status": "PASS",
+      "observed": {
+        "rows": 272,
+        "unique": 272,
+        "sorted": true,
+        "bad_names": []
+      },
+      "expected": {
+        "rows": 272,
+        "unique": 272,
+        "sorted": true,
+        "bad_names": []
+      }
+    },
+    {
+      "group": "range_extension_stress",
+      "check": "diagnostic timing is explicitly excluded from performance evidence",
+      "status": "PASS",
+      "observed": {
+        "reporting_boundary": "Elapsed time is retained only as a diagnostic and must not be used as performance evidence because this run is not a matched isolated timing schedule.",
+        "scientific_role": "Out-of-primary-grid braking range-extension stress test for exactness and work accounting; not a second mechanism family and not a timing benchmark.",
+        "elapsed_keys": [
+          "results.Flat.elapsed_diagnostic_seconds",
+          "results.LayerProbe-P8.elapsed_diagnostic_seconds"
+        ],
+        "forbidden_performance_keys": []
+      }
+    }
+  ],
+  "summary": {
+    "passed": 61,
+    "failed": 0,
+    "total": 61
+  }
+}

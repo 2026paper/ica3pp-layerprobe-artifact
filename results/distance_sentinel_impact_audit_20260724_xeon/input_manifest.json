@@ -1,0 +1,156 @@
+{
+  "all_frozen_hashes_match": true,
+  "audit_id": "distance_sentinel_impact_audit_20260724_xeon",
+  "audit_script_path": "experiments/distance_sentinel_impact_audit.py",
+  "audit_script_sha256": "9b4a73f4e2948c579d2673c987e3a00f6f584b41b434edc30bf23e1f64165f22",
+  "frozen_input_count": 16,
+  "inputs": [
+    {
+      "expected_sha256": "d285caebdbd6fad45682ff5598d54d2bb80267c5665157aba79631affbd8a5b7",
+      "id": "old_communication_candidates",
+      "observed_sha256": "d285caebdbd6fad45682ff5598d54d2bb80267c5665157aba79631affbd8a5b7",
+      "path": "results/communication_full_24624_20260723_xeon/candidate_signatures.csv.gz",
+      "role": "pre-repair full-domain candidate masks",
+      "size_bytes": 596196,
+      "verified": true
+    },
+    {
+      "expected_sha256": "306b8e5f41aae4726013947bcb75f612bee6720cd4d61a16779f0d86a37a879b",
+      "id": "old_communication_summary",
+      "observed_sha256": "306b8e5f41aae4726013947bcb75f612bee6720cd4d61a16779f0d86a37a879b",
+      "path": "results/communication_full_24624_20260723_xeon/summary.json",
+      "role": "pre-repair communication counts and model-pair order",
+      "size_bytes": 27058,
+      "verified": true
+    },
+    {
+      "expected_sha256": "3505e0be250e919e524281caf75a826b8580bdb46ba0206012aaafed4e7bbc72",
+      "id": "new_communication_candidates",
+      "observed_sha256": "3505e0be250e919e524281caf75a826b8580bdb46ba0206012aaafed4e7bbc72",
+      "path": "results/communication_full_24624_distancefix_provenance_v2_20260723_xeon/candidate_signatures.csv.gz",
+      "role": "corrected provenance-v2 full-domain candidate masks",
+      "size_bytes": 595465,
+      "verified": true
+    },
+    {
+      "expected_sha256": "6dbb98660d761c1b43d5369c8a4349e542166a667cc91b02a8b8db82add2a6a1",
+      "id": "new_communication_summary",
+      "observed_sha256": "6dbb98660d761c1b43d5369c8a4349e542166a667cc91b02a8b8db82add2a6a1",
+      "path": "results/communication_full_24624_distancefix_provenance_v2_20260723_xeon/summary.json",
+      "role": "corrected provenance-v2 communication counts and provenance",
+      "size_bytes": 27248,
+      "verified": true
+    },
+    {
+      "expected_sha256": "d8f22ad9ce3027f7e8c6907960d5e8fb1578ae3a37f55847e9fca3c8938a1340",
+      "id": "old_oracle_kernel_checks",
+      "observed_sha256": "d8f22ad9ce3027f7e8c6907960d5e8fb1578ae3a37f55847e9fca3c8938a1340",
+      "path": "results/independent_trace_oracle_full_24624_20260723_xeon/kernel_checks.jsonl",
+      "role": "pre-repair per-kernel independent-oracle checks",
+      "size_bytes": 26879344,
+      "verified": true
+    },
+    {
+      "expected_sha256": "7655b92946fbd038961d417e5c4a48a796888978c7b0117f8743af62801f1c2a",
+      "id": "old_oracle_summary",
+      "observed_sha256": "7655b92946fbd038961d417e5c4a48a796888978c7b0117f8743af62801f1c2a",
+      "path": "results/independent_trace_oracle_full_24624_20260723_xeon/summary.json",
+      "role": "pre-repair independent-oracle aggregate",
+      "size_bytes": 11578,
+      "verified": true
+    },
+    {
+      "expected_sha256": "7342039e177175cdefbfd064fdc6b91304e8560013dab3c8a58f07f6073eeba1",
+      "id": "new_oracle_kernel_checks",
+      "observed_sha256": "7342039e177175cdefbfd064fdc6b91304e8560013dab3c8a58f07f6073eeba1",
+      "path": "results/independent_trace_oracle_full_24624_distancefix_20260723_xeon/kernel_checks.jsonl",
+      "role": "corrected per-kernel independent-oracle checks",
+      "size_bytes": 26879344,
+      "verified": true
+    },
+    {
+      "expected_sha256": "a5d6531a346092b8185aab916515de9a69729981770823ab5b2b5b70614e64e7",
+      "id": "new_oracle_summary",
+      "observed_sha256": "a5d6531a346092b8185aab916515de9a69729981770823ab5b2b5b70614e64e7",
+      "path": "results/independent_trace_oracle_full_24624_distancefix_20260723_xeon/summary.json",
+      "role": "corrected independent-oracle aggregate and seven-mutant gate",
+      "size_bytes": 13139,
+      "verified": true
+    },
+    {
+      "expected_sha256": "fc040dbb6ba04be16296d8c0a79811e6aa4be73fe6dc0b97b803651eedd440c1",
+      "id": "old_cache_summary",
+      "observed_sha256": "fc040dbb6ba04be16296d8c0a79811e6aa4be73fe6dc0b97b803651eedd440c1",
+      "path": "results/cache_key_ablation_full_24624_20260723_xeon/summary.json",
+      "role": "pre-repair cache-key control aggregate",
+      "size_bytes": 8567,
+      "verified": true
+    },
+    {
+      "expected_sha256": "babe4e941e22495d42f84b89d842d1b102edabf926989c40c51b1425d99aab76",
+      "id": "new_cache_summary",
+      "observed_sha256": "babe4e941e22495d42f84b89d842d1b102edabf926989c40c51b1425d99aab76",
+      "path": "results/cache_key_ablation_full_24624_distancefix_20260723_xeon/summary.json",
+      "role": "corrected cache-key control aggregate",
+      "size_bytes": 8565,
+      "verified": true
+    },
+    {
+      "expected_sha256": "7531b9b29aeccc9f327f1a2e5071d88c3b2a501f78a6e356b24e73a96e5c7ed7",
+      "id": "old_range_summary",
+      "observed_sha256": "7531b9b29aeccc9f327f1a2e5071d88c3b2a501f78a6e356b24e73a96e5c7ed7",
+      "path": "results/range_extension_stress_20260723_xeon/summary.json",
+      "role": "pre-repair range-extension stress summary",
+      "size_bytes": 2507,
+      "verified": true
+    },
+    {
+      "expected_sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "id": "old_range_valid_names",
+      "observed_sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "path": "results/range_extension_stress_20260723_xeon/valid_kernel_names.txt",
+      "role": "pre-repair range-extension valid-set certificate",
+      "size_bytes": 5168,
+      "verified": true
+    },
+    {
+      "expected_sha256": "0698995bdd05e98bca00b08480a151f0e278acd3bdcca7d997befbec44588d59",
+      "id": "new_range_summary",
+      "observed_sha256": "0698995bdd05e98bca00b08480a151f0e278acd3bdcca7d997befbec44588d59",
+      "path": "results/range_extension_stress_distancefix_provenance_v2_20260723_xeon/summary.json",
+      "role": "corrected provenance-v2 range-extension stress summary",
+      "size_bytes": 2600,
+      "verified": true
+    },
+    {
+      "expected_sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "id": "new_range_valid_names",
+      "observed_sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "path": "results/range_extension_stress_distancefix_provenance_v2_20260723_xeon/valid_kernel_names.txt",
+      "role": "corrected range-extension valid-set certificate",
+      "size_bytes": 5168,
+      "verified": true
+    },
+    {
+      "expected_sha256": "2b43dc03509a1a1ad2975b2194cf3d7edecfe9dffd17b814376a8e4c48fcf611",
+      "id": "new_enhanced_verifier_report",
+      "observed_sha256": "2b43dc03509a1a1ad2975b2194cf3d7edecfe9dffd17b814376a8e4c48fcf611",
+      "path": "results/enhanced_output_verification_distancefix_provenance_v3_20260723_xeon/verification_report.json",
+      "role": "corrected provenance-v3 read-only enhanced-bundle verification",
+      "size_bytes": 47445,
+      "verified": true
+    },
+    {
+      "expected_sha256": "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5",
+      "id": "corrected_mechanics_source",
+      "observed_sha256": "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5",
+      "path": "src/layerprobe/mechanics.py",
+      "role": "corrected visible-distance semantics under audit",
+      "size_bytes": 7817,
+      "verified": true
+    }
+  ],
+  "schema_version": 1,
+  "spec_path": "experiments/distance_sentinel_impact_audit_spec.json",
+  "spec_sha256": "249a7043cfd1e8affe7c067fee336de8bc1de411c4d853fb34173d0229bb2665"
+}

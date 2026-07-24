@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "analysis_id": "parameter_heterogeneity_full_24624_distancefix_20260724_xeon",
+  "analysis_question": "Does presentation-robust computational distinguishability exhibit materially heterogeneous behavior across pre-specified mechanism-parameter strata in the frozen braking domain?",
+  "claim_scope": "Complete finite-domain descriptive census for the declared braking grid, 18 presentations, four computational agents, and six agent pairs; not a human-effect, causal, or cross-domain analysis.",
+  "inputs": {
+    "candidate_signatures": {
+      "relative_path": "results/communication_full_24624_distancefix_20260723_xeon/candidate_signatures.csv.gz",
+      "sha256": "40e547e5ee06b03bc19e6f0cde3145dfbdbe442963fe0bd875261ec8c47cd162"
+    },
+    "communication_summary": {
+      "relative_path": "results/communication_full_24624_distancefix_20260723_xeon/summary.json",
+      "sha256": "298294cac0098b839322d80de5b33b107397c832d5fe65a3741e9d32e098c4aa"
+    },
+    "frozen_grid_config": {
+      "relative_path": "experiments/independent_trace_oracle_config.json",
+      "sha256": "0f5d347b9d1c47c07b2da43aec6dbc70b28f4159742a5f61fd8e982ffab538db"
+    }
+  },
+  "expected_domain": {
+    "requested_kernels": 24624,
+    "valid_kernels": 10544,
+    "presentations": 18,
+    "agents": 4,
+    "agent_pairs": 6,
+    "candidates": 189792,
+    "all_18_robust_nonzero_kernels": 9494,
+    "all_18_robust_full_kernels": 0,
+    "aggregate_delay_delta": -0.240473781824313
+  },
+  "primary_stratification": {
+    "factors": [
+      "friction",
+      "start_speed_band"
+    ],
+    "friction_levels": [
+      0,
+      1,
+      2
+    ],
+    "start_speed_bands": [
+      {
+        "name": "low",
+        "minimum": 3,
+        "maximum": 6
+      },
+      {
+        "name": "medium",
+        "minimum": 7,
+        "maximum": 10
+      },
+      {
+        "name": "high",
+        "minimum": 11,
+        "maximum": 14
+      }
+    ]
+  },
+  "secondary_marginals": {
+    "brake_force": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "goal_width": [
+      1,
+      2,
+      3
+    ],
+    "horizon": [
+      8,
+      10,
+      12
+    ],
+    "goal_start_bands": [
+      {
+        "name": "near",
+        "minimum": 4,
+        "maximum": 14
+      },
+      {
+        "name": "middle",
+        "minimum": 16,
+        "maximum": 26
+      },
+      {
+        "name": "far",
+        "minimum": 28,
+        "maximum": 40
+      }
+    ]
+  },
+  "frozen_metrics": [
+    "requested_kernels",
+    "valid_kernels",
+    "validity_rate",
+    "robust_nonzero_rate",
+    "robust_full_rate",
+    "mean_robust_pairs",
+    "mean_union_pairs",
+    "mean_presentation_gap",
+    "mean_delay_delta",
+    "delay_positive_zero_negative_rates",
+    "reference_friction_blind_candidate_rate",
+    "reference_friction_blind_robust_rate"
+  ],
+  "main_text_promotion": {
+    "primary_metric": "robust_nonzero_rate",
+    "minimum_primary_range": 0.1,
+    "minimum_valid_kernels_per_primary_cell": 100,
+    "secondary_mean_robust_pairs_range": 0.5,
+    "secondary_delay_sign_change_minimum_range": 0.25,
+    "rule": "Promote to the main text only if the primary robust-nonzero range reaches 0.10 and every primary cell contains at least 100 valid kernels. Secondary thresholds are descriptive support and cannot substitute for the primary threshold."
+  },
+  "anti_data_mining_boundaries": [
+    "The nine friction-by-speed cells and all marginal levels are fixed before computing their outputs.",
+    "No additional interaction, adaptive binning, best-cell search, per-cell minimum-cover search, p-value, or sampled confidence interval is permitted.",
+    "Positive or negative delay deltas describe only the six declared computational-agent pairs and carry no human-learning or diagnostic-effect interpretation.",
+    "A primary cell below 100 valid kernels is not merged or re-binned; it makes the analysis appendix-only."
+  ]
+}

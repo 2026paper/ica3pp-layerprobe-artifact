@@ -1,0 +1,200 @@
+{
+    "schema_version":  1,
+    "start_time_utc":  "2026-07-24T18:38:03.7212792Z",
+    "end_time_utc":  "2026-07-24T18:40:06.5561855Z",
+    "duration_seconds":  122.834906,
+    "wrapper_pid":  32300,
+    "runner_pid":  32588,
+    "runner_exit_code":  0,
+    "output_label":  "cost_profile_full_24624",
+    "host":  {
+                 "os_caption":  "Microsoft Windows 10 专业版",
+                 "os_version":  "10.0.19045",
+                 "cpu_models":  [
+                                    "Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz"
+                                ],
+                 "physical_cores":  8,
+                 "logical_processors":  16,
+                 "total_memory_bytes":  34179989504
+             },
+    "preflight_stable_seconds":  30,
+    "pre_run_system_load":  {
+                                "time_utc":  "2026-07-24T18:38:03.7012908Z",
+                                "free_physical_memory_bytes":  17870962688,
+                                "cpu_load_percent":  [
+                                                         26
+                                                     ]
+                            },
+    "post_run_system_load":  {
+                                 "time_utc":  "2026-07-24T18:40:07.8250092Z",
+                                 "free_physical_memory_bytes":  17917820928,
+                                 "cpu_load_percent":  [
+                                                          33
+                                                      ]
+                             },
+    "command":  {
+                    "python_executable":  "python.exe",
+                    "script_path":  "${ARTIFACT_ROOT}\\experiments\\cost_profile.py",
+                    "script":  {
+                                   "path_relative_to_repo":  "experiments/cost_profile.py",
+                                   "bytes":  25277,
+                                   "sha256":  "3221d46faa9092236fdc7fbb7ab9c94ade416fbfb38a5a550bbb6b7085ab94ed"
+                               },
+                    "input_files":  [
+                                        {
+                                            "path_relative_to_repo":  "pyproject.toml",
+                                            "bytes":  513,
+                                            "sha256":  "51aa721ac2e129bc0029df253eaeb9d2f6f59bcb482b36b8229e48d3922d80a3"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                            "bytes":  397,
+                                            "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                            "bytes":  4124,
+                                            "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                            "bytes":  18497,
+                                            "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                            "bytes":  7817,
+                                            "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/model.py",
+                                            "bytes":  3747,
+                                            "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                            "bytes":  2126,
+                                            "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                            "bytes":  40763,
+                                            "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                            "bytes":  12503,
+                                            "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                        }
+                                    ],
+                    "argument_list":  [
+                                          "--output",
+                                          "results\\cost_profile_full_24624_n10_local_20260724c",
+                                          "--kernels",
+                                          "24624",
+                                          "--presentations",
+                                          "18"
+                                      ],
+                    "rendered":  "python.exe ${ARTIFACT_ROOT}\\experiments\\cost_profile.py --output results\\cost_profile_full_24624_n10_local_20260724c --kernels 24624 --presentations 18"
+                },
+    "poll_interval_seconds":  1,
+    "source_input_integrity":  {
+                                   "complete":  true,
+                                   "unchanged":  true,
+                                   "source_script":  {
+                                                         "path_relative_to_repo":  "experiments/cost_profile.py",
+                                                         "bytes":  25277,
+                                                         "sha256":  "3221d46faa9092236fdc7fbb7ab9c94ade416fbfb38a5a550bbb6b7085ab94ed"
+                                                     },
+                                   "input_files":  [
+                                                       {
+                                                           "path_relative_to_repo":  "pyproject.toml",
+                                                           "bytes":  513,
+                                                           "sha256":  "51aa721ac2e129bc0029df253eaeb9d2f6f59bcb482b36b8229e48d3922d80a3"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                                           "bytes":  397,
+                                                           "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                                           "bytes":  4124,
+                                                           "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                                           "bytes":  18497,
+                                                           "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                                           "bytes":  7817,
+                                                           "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/model.py",
+                                                           "bytes":  3747,
+                                                           "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                                           "bytes":  2126,
+                                                           "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                                           "bytes":  40763,
+                                                           "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                                           "bytes":  12503,
+                                                           "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                                       }
+                                                   ],
+                                   "error":  null
+                               },
+    "foreign_python_count":  0,
+    "expected_output_dir":  "results/cost_profile_full_24624_n10_local_20260724c",
+    "ignored_control_probe_count":  0,
+    "ignored_control_probe_processes":  [
+
+                                        ],
+    "result_tree":  {
+                        "path_relative_to_repo":  "results/cost_profile_full_24624_n10_local_20260724c",
+                        "file_count":  4,
+                        "tree_sha256":  "745c92c4fe9f37af6b7c8a777a80d96ff2ff4146a89564ef3901bff060713e81",
+                        "files":  [
+                                      {
+                                          "path":  "functions.csv",
+                                          "bytes":  6151,
+                                          "sha256":  "ae851408eaab0b48506f317fb403cfd4dc2776efc6561df5c3cc0e8d857c574d"
+                                      },
+                                      {
+                                          "path":  "layerprobe_profile.prof",
+                                          "bytes":  5930,
+                                          "sha256":  "684c4cc249d5fc2642dfe708ffcc8af91a571b6e68841b2241da77f94e325cb2"
+                                      },
+                                      {
+                                          "path":  "metadata.json",
+                                          "bytes":  3108,
+                                          "sha256":  "200deb9f1bd78c46f902dfd2a7a73c4c212fd8f71a6e8c5791bc78c8fc9833d2"
+                                      },
+                                      {
+                                          "path":  "summary.json",
+                                          "bytes":  12823,
+                                          "sha256":  "0e8b25c742560c541c03fc903c042480e5b620b29ac12875ba298ed0cbdc5045"
+                                      }
+                                  ]
+                    },
+    "logs":  {
+                 "stdout_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\cost_profile_full_24624_20260724T183731018Z_wrapper32300_5421f3b7\\stdout.log",
+                 "stderr_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\cost_profile_full_24624_20260724T183731018Z_wrapper32300_5421f3b7\\stderr.log",
+                 "hashes":  {
+                                "stdout_sha256":  "af6dd2c88cf7f8efab002e3862d4bdd09b339445b05c058bc657a5d82950764f",
+                                "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                            }
+             },
+    "status":  "clean_run"
+}

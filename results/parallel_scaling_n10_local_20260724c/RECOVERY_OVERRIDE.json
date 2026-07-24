@@ -1,0 +1,213 @@
+{
+    "schema_version":  2,
+    "status":  "recovery_override",
+    "authorization":  "explicit_local_wrapper_recovery_2026-07-25",
+    "issued_at_utc":  "2026-07-24T18:57:19.2856685Z",
+    "output_label":  "parallel_scaling_n10",
+    "expected_output_dir":  "results/parallel_scaling_n10_local_20260724c",
+    "study":  "parallel_scaling",
+    "recovery_class":  "wrapper_only_post_success_sidecar_failure",
+    "native_clean_run_present":  true,
+    "validation":  {
+                       "expected_rows":  70,
+                       "observed_rows":  70,
+                       "progress_status":  "completed",
+                       "progress_planned_jobs":  70,
+                       "progress_completed_jobs":  70,
+                       "summary_status":  "selected_results_semantics_checked",
+                       "summary_run_count":  70,
+                       "semantic_check_count":  10,
+                       "semantic_checks_all_pass":  true,
+                       "repeats":  10,
+                       "rows_per_repeat":  7,
+                       "unique_semantic_digests":  1
+                   },
+    "source_fingerprint":  {
+                               "metadata_sha256":  "05888e8e60bcb8c3a997548bc601daed9ef7bc29fff49d6156a741811e7cc58a",
+                               "recovery_time_sha256":  "05888e8e60bcb8c3a997548bc601daed9ef7bc29fff49d6156a741811e7cc58a",
+                               "recovery_time_match":  true,
+                               "limitation":  "For a recovered result, this match proves the presently retained target code/config matches the fingerprint saved by the runner; only a native CLEAN_RUN can prove wrapper-observed pre/post identity during the timed interval."
+                           },
+    "target_binding":  {
+                           "source_script":  {
+                                                 "role":  "target_source_script",
+                                                 "path_relative_to_repo":  "experiments/deadline_runner.py",
+                                                 "bytes":  44030,
+                                                 "sha256":  "abe6a5267d3dc2aefa124429ac3d4e46d7f59faae7a86cde364ca88aa4c84520"
+                                             },
+                           "input_files":  [
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "experiments/deadline_profile_review_8c32g.json",
+                                                   "bytes":  1329,
+                                                   "sha256":  "299fa3608e533fd8c00843d43e1dbc3732753520ec26170a9c51ff84e8b928b5"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                                   "bytes":  397,
+                                                   "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                                   "bytes":  4124,
+                                                   "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                                   "bytes":  18497,
+                                                   "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                                   "bytes":  7817,
+                                                   "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/model.py",
+                                                   "bytes":  3747,
+                                                   "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                               },
+                                               {
+                                                   "role":  "target_declared_input",
+                                                   "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                                   "bytes":  2126,
+                                                   "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                               }
+                                           ],
+                           "scope":  "target_code_and_config_at_recovery_time"
+                       },
+    "argument_list":  [
+                          "--config",
+                          "experiments\\deadline_profile_review_8c32g.json",
+                          "--mode",
+                          "paper",
+                          "--only",
+                          "parallel_scaling",
+                          "--output",
+                          "results\\parallel_scaling_n10_local_20260724c",
+                          "--ignore-freeze"
+                      ],
+    "result_tree":  {
+                        "path_relative_to_repo":  "results/parallel_scaling_n10_local_20260724c",
+                        "file_count":  7,
+                        "tree_sha256":  "1396339aa9851152c46831ac8fe331d434252afb2c09484f33bd22d0e620eeb8",
+                        "files":  [
+                                      {
+                                          "path":  "frozen_config.json",
+                                          "bytes":  1634,
+                                          "sha256":  "01953cacc8d5101989e47f5b434ff2d0cdff10802a38c1e5d3016ecd5aef069c"
+                                      },
+                                      {
+                                          "path":  "metadata.json",
+                                          "bytes":  1260,
+                                          "sha256":  "9c40bd1282ab12bdde2fafa25c06dae4e8aba58c0bb113d6b620996ced90d358"
+                                      },
+                                      {
+                                          "path":  "progress.json",
+                                          "bytes":  154,
+                                          "sha256":  "bf1a3e95d77ebe1e7791ede61d3b7e45effaa961d00c7287a70d635aa6dae1f2"
+                                      },
+                                      {
+                                          "path":  "runs.csv",
+                                          "bytes":  52700,
+                                          "sha256":  "c143f4d7e1bff4ba158ede2dc9691a221d84c9fda27606009ec319cf0362f74c"
+                                      },
+                                      {
+                                          "path":  "semantic_checks.json",
+                                          "bytes":  1473,
+                                          "sha256":  "85dc146f8b112c5c4c18fccb9fb2cb4c48a59fc325718072ec5f55ce31fcee8c"
+                                      },
+                                      {
+                                          "path":  "summary.json",
+                                          "bytes":  4892,
+                                          "sha256":  "d4641c76a2831a8d4156b67958f4cfe4c5a80ee42e002847b7ddbc54b8ffcdab"
+                                      },
+                                      {
+                                          "path":  "SUMMARY.md",
+                                          "bytes":  1503,
+                                          "sha256":  "fe76e7b5db56d824ea6ecf72d054c539899b29143db8fd0089201f310ba995a0"
+                                      }
+                                  ]
+                    },
+    "machine_evidence":  [
+                             {
+                                 "role":  "native_clean_run",
+                                 "path_relative_to_repo":  "formal_isolation_records/parallel_scaling_n10_local_20260724c/CLEAN_RUN.json",
+                                 "bytes":  14888,
+                                 "sha256":  "ea30cfe93fbb3f724cb21d18cca5760a3a06b783bf1601880efea8d55924d72d",
+                                 "original_path_relative_to_repo":  "artifact_runs/formal_isolation/parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15/CLEAN_RUN.json",
+                                 "original_sha256":  "929e316e455a4e78fc137ffb3235819beea7016970c2abeeb250d99f9416de07",
+                                 "original_bytes":  15156
+                             },
+                             {
+                                 "role":  "wrapper_failed_record",
+                                 "path_relative_to_repo":  "formal_recovery_evidence/parallel_scaling_n10_local_20260724c/wrapper_failed_record.json",
+                                 "bytes":  851,
+                                 "sha256":  "cc076a168a76ebe223e2455ba31d09d88589d56fb36ef085c74db270e43f4830",
+                                 "original_path_relative_to_repo":  "artifact_runs/formal_isolation/parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15/FAILED.json",
+                                 "original_sha256":  "3d9b09e7441e3eab9e962c6732314fadc0af22ac4bdfe4282e617a89b29067a6",
+                                 "original_bytes":  925
+                             },
+                             {
+                                 "role":  "target_stdout",
+                                 "path_relative_to_repo":  "formal_recovery_evidence/parallel_scaling_n10_local_20260724c/target_stdout.log",
+                                 "bytes":  6673,
+                                 "sha256":  "8148d3a323a86d4c2d1f0c16a5b9e8b6c7954b0e8ca833fa1cb4503f64d45bd3",
+                                 "original_path_relative_to_repo":  "artifact_runs/formal_isolation/parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15/stdout.log",
+                                 "original_sha256":  "7343186b0a2f090aee6c23bd5c920009161d74fb68795cfaf5fbc05e610b070f",
+                                 "original_bytes":  6640
+                             },
+                             {
+                                 "role":  "target_stderr",
+                                 "path_relative_to_repo":  "formal_recovery_evidence/parallel_scaling_n10_local_20260724c/target_stderr.log",
+                                 "bytes":  0,
+                                 "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                 "original_path_relative_to_repo":  "artifact_runs/formal_isolation/parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15/stderr.log",
+                                 "original_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                 "original_bytes":  0
+                             },
+                             {
+                                 "role":  "original_queue_log",
+                                 "path_relative_to_repo":  "formal_recovery_evidence/parallel_scaling_n10_local_20260724c/original_queue_log.log",
+                                 "bytes":  915,
+                                 "sha256":  "3a24fc094adf687045305caf11f433fcab97af18a3ea2fcd0cb7f836d8f29ce9",
+                                 "original_path_relative_to_repo":  "artifact_runs/formal_queue/singlehost_20260724T175256300Z_pid32044/queue.log",
+                                 "original_sha256":  "3a24fc094adf687045305caf11f433fcab97af18a3ea2fcd0cb7f836d8f29ce9",
+                                 "original_bytes":  915
+                             },
+                             {
+                                 "role":  "preserved_do_not_use_marker",
+                                 "path_relative_to_repo":  "formal_recovery_evidence/parallel_scaling_n10_local_20260724c/preserved_do_not_use_marker.json",
+                                 "bytes":  334,
+                                 "sha256":  "09d8721cd31f0939ac8e7e751fd4d5fdaaf22928b0f3f5cccf1e27f586beead9",
+                                 "original_path_relative_to_repo":  "results/parallel_scaling_n10_local_20260724c/DO_NOT_USE_20260724T181927463Z.json",
+                                 "original_sha256":  "09d8721cd31f0939ac8e7e751fd4d5fdaaf22928b0f3f5cccf1e27f586beead9",
+                                 "original_bytes":  334
+                             }
+                         ],
+    "known_wrapper_issue":  {
+                                "phase":  "after_clean_record_write_during_sidecar_creation",
+                                "missing_property":  "expected_output_dir",
+                                "description":  "The old wrapper wrote a valid native CLEAN_RUN after the runner exited 0, then tried to read a property absent from that record while creating FORMAL_PROVENANCE. Its outer catch wrote FAILED.json and the preserved DO_NOT_USE marker."
+                            },
+    "claim_boundary":  {
+                           "target_completed":  true,
+                           "raw_rows_and_semantics_verified":  true,
+                           "native_clean_run":  true,
+                           "runner_exit_code_from_native_record":  0,
+                           "full_interval_foreign_python_count":  0,
+                           "wrapper_observed_source_inputs_unchanged":  true,
+                           "statement":  "The recovery overrides only the wrapper\u0027s post-success sidecar failure. It does not erase or reinterpret the preserved DO_NOT_USE marker."
+                       },
+    "generator":  {
+                      "role":  "recovery_certificate_generator",
+                      "path_relative_to_repo":  "scripts/recover_completed_formal_results.ps1",
+                      "bytes":  36580,
+                      "sha256":  "8a99459c444cb1b7b13ae49bf74ebfe3cf6fea3cde3aa571be27561e9854a5cf"
+                  }
+}

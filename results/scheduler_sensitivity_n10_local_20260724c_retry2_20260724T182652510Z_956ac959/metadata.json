@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-07-25T02:27:25.727471+08:00",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "python_executable": "python.exe",
+  "configuration": {
+    "workers": 8,
+    "kernels": 24624,
+    "presentations": 18,
+    "repeats": 10,
+    "warmup_kernels": 256,
+    "smoke": false
+  },
+  "workload_implementation": "layerprobe.evaluator._factorized_kernel_group from the production evaluator; the benchmark wrapper adds only outer group timing and worker PID",
+  "schedules": {
+    "current_chunksize": "ProcessPoolExecutor.map with max(1, kernels // (workers * 4))",
+    "fine_chunksize_1": "ProcessPoolExecutor.map with chunksize=1",
+    "static_contiguous": "one independently spawned OS process per logical slot; each process executes one indivisible contiguous batch"
+  },
+  "code_fingerprint_sha256": "65ff1ceed1a1b1b7ed30706da23fb192534c8ccf6c765378fb51e2abf2720a68",
+  "claim_scope": "single-host scheduling sensitivity with unchanged semantic work, worker count, cache scope, and deterministic sorted candidate-signature reduction",
+  "reportable": true,
+  "finished_at": "2026-07-25T02:34:00.944126+08:00",
+  "status": "complete_semantics_checked"
+}

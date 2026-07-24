@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_name": "independent_trace_oracle",
+  "paper_scope": "single-domain frozen braking grid",
+  "default_workers": 8,
+  "maximum_workers": 16,
+  "full_domain_kernel_count": 24624,
+  "smoke": {
+    "kernel_count": 64,
+    "mutant_search_kernel_count": 64
+  },
+  "kernel_grid": {
+    "goal_start": {
+      "start": 4,
+      "stop_inclusive": 40,
+      "step": 2
+    },
+    "brake_force": [1, 2, 3, 4],
+    "horizon": [8, 10, 12],
+    "goal_width": [1, 2, 3],
+    "start_speed": {
+      "start": 3,
+      "stop_inclusive": 14,
+      "step": 1
+    },
+    "friction": [0, 1, 2]
+  },
+  "presentations": {
+    "speed_modes": ["exact", "coarse", "hidden"],
+    "distance_modes": ["exact", "coarse", "hidden"],
+    "delays": [0, 1]
+  },
+  "agents": [
+    "reference",
+    "instant_stop",
+    "speed_only",
+    "friction_blind"
+  ],
+  "semantic_mutants": [
+    "cache_key_observation_only",
+    "cache_scope_cross_agent",
+    "delay_returns_current",
+    "coarse_rounds_to_nearest",
+    "presentation_intervenes_on_dynamics",
+    "goal_end_is_exclusive",
+    "signed_distance_missing_collision"
+  ]
+}

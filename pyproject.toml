@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layerprobe-prototype"
+version = "0.1.0"
+description = "Single-workstation prototype for factorized science-game probe synthesis"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+layerprobe = "layerprobe.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+

@@ -1,0 +1,3489 @@
+{
+  "chunk_index": 61,
+  "first_collision_witnesses": {
+    "drop_memory": {
+      "differing_output_fields": [
+        "next_agent_memory"
+      ],
+      "first_context": {
+        "agent": "speed_only",
+        "agent_memory": {
+          "believed_distance": 2,
+          "believed_speed": 4,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "observation": [
+          4,
+          -1,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": 1,
+            "believed_speed": 1,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 5,
+            "speed": 1,
+            "step": 2,
+            "used_brake": true
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 2,
+          "believed_speed": 4,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_04_exact_hidden_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 4,
+        "step": 1,
+        "world_state": {
+          "position": 4,
+          "speed": 4,
+          "step": 1,
+          "used_brake": true
+        }
+      },
+      "key_repr_for_debugging": "(WorldState(position=4, speed=4, step=1, used_brake=True), (4, -1, 0, 0))",
+      "omitted_component": "agent_memory",
+      "projected_key": {
+        "observation": [
+          4,
+          -1,
+          0,
+          0
+        ],
+        "world_state": {
+          "position": 4,
+          "speed": 4,
+          "step": 1,
+          "used_brake": true
+        }
+      },
+      "projected_key_sha256": "5fbf53570af174eb99179bf51259135decd59ce65d086b0cf62af4abcc1571a1",
+      "rank": [
+        1956,
+        2,
+        4,
+        1,
+        10,
+        1
+      ],
+      "scope": {
+        "agent": "speed_only",
+        "kernel": "brake_1956"
+      },
+      "second_context": {
+        "agent": "speed_only",
+        "agent_memory": {
+          "believed_distance": 3,
+          "believed_speed": 3,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "observation": [
+          4,
+          -1,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": 2,
+            "believed_speed": 1,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 5,
+            "speed": 1,
+            "step": 2,
+            "used_brake": true
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 3,
+          "believed_speed": 4,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 10,
+        "step": 1,
+        "world_state": {
+          "position": 4,
+          "speed": 4,
+          "step": 1,
+          "used_brake": true
+        }
+      },
+      "variant": "drop_memory"
+    },
+    "drop_observation": {
+      "differing_output_fields": [
+        "action",
+        "next_world_state",
+        "next_agent_memory"
+      ],
+      "first_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 0,
+          "believed_speed": 6,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1953",
+          "start_position": 0,
+          "start_speed": 6
+        },
+        "kernel_index": 1953,
+        "observation": [
+          6,
+          0,
+          1,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": -3,
+            "believed_speed": 3,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 9,
+            "speed": 3,
+            "step": 2,
+            "used_brake": true
+          },
+          "status": "overshoot"
+        },
+        "perceived_memory": {
+          "believed_distance": 0,
+          "believed_speed": 6,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 0,
+        "step": 1,
+        "world_state": {
+          "position": 6,
+          "speed": 6,
+          "step": 1,
+          "used_brake": false
+        }
+      },
+      "key_repr_for_debugging": "(WorldState(position=6, speed=6, step=1, used_brake=False), AgentMemory(believed_speed=6, believed_distance=0, previous_action='coast'))",
+      "omitted_component": "observation",
+      "projected_key": {
+        "agent_memory": {
+          "believed_distance": 0,
+          "believed_speed": 6,
+          "previous_action": "coast"
+        },
+        "world_state": {
+          "position": 6,
+          "speed": 6,
+          "step": 1,
+          "used_brake": false
+        }
+      },
+      "projected_key_sha256": "64c34b8432f11dae5e80deebdb54f5420a86a7a34351deb42e6a5627ac3b13c9",
+      "rank": [
+        1953,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "scope": {
+        "agent": "reference",
+        "kernel": "brake_1953"
+      },
+      "second_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 0,
+          "believed_speed": 6,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1953",
+          "start_position": 0,
+          "start_speed": 6
+        },
+        "kernel_index": 1953,
+        "observation": [
+          6,
+          6,
+          0,
+          0
+        ],
+        "output": {
+          "action": "coast",
+          "next_agent_memory": {
+            "believed_distance": 0,
+            "believed_speed": 6,
+            "previous_action": "coast"
+          },
+          "next_world_state": {
+            "position": 12,
+            "speed": 6,
+            "step": 2,
+            "used_brake": false
+          },
+          "status": "overshoot"
+        },
+        "perceived_memory": {
+          "believed_distance": 6,
+          "believed_speed": 6,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "step": 1,
+        "world_state": {
+          "position": 6,
+          "speed": 6,
+          "step": 1,
+          "used_brake": false
+        }
+      },
+      "variant": "drop_observation"
+    },
+    "drop_state": {
+      "differing_output_fields": [
+        "next_world_state",
+        "status"
+      ],
+      "first_context": {
+        "agent": "instant_stop",
+        "agent_memory": {
+          "believed_distance": 6,
+          "believed_speed": 0,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "observation": [
+          4,
+          2,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": 2,
+            "believed_speed": 0,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 5,
+            "speed": 1,
+            "step": 2,
+            "used_brake": true
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 2,
+          "believed_speed": 4,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 0,
+        "step": 1,
+        "world_state": {
+          "position": 4,
+          "speed": 4,
+          "step": 1,
+          "used_brake": true
+        }
+      },
+      "key_repr_for_debugging": "(AgentMemory(believed_speed=0, believed_distance=6, previous_action='brake'), (4, 2, 0, 0))",
+      "omitted_component": "world_state",
+      "projected_key": {
+        "agent_memory": {
+          "believed_distance": 6,
+          "believed_speed": 0,
+          "previous_action": "brake"
+        },
+        "observation": [
+          4,
+          2,
+          0,
+          0
+        ]
+      },
+      "projected_key_sha256": "6a07e042ae86dbf17e956fd88033bab8b3baf65a136e6660ab50de7014600e29",
+      "rank": [
+        1956,
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "scope": {
+        "agent": "instant_stop",
+        "kernel": "brake_1956"
+      },
+      "second_context": {
+        "agent": "instant_stop",
+        "agent_memory": {
+          "believed_distance": 6,
+          "believed_speed": 0,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "observation": [
+          4,
+          2,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": 2,
+            "believed_speed": 0,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 5,
+            "speed": 0,
+            "step": 3,
+            "used_brake": true
+          },
+          "status": "stopped"
+        },
+        "perceived_memory": {
+          "believed_distance": 2,
+          "believed_speed": 4,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "step": 2,
+        "world_state": {
+          "position": 5,
+          "speed": 1,
+          "step": 2,
+          "used_brake": true
+        }
+      },
+      "variant": "drop_state"
+    }
+  },
+  "first_nontermination_witnesses": {
+    "drop_state": {
+      "canonical": {
+        "agent": "speed_only",
+        "agent_memory": {
+          "believed_distance": 2,
+          "believed_speed": 0,
+          "previous_action": "coast"
+        },
+        "display_memory": {
+          "previous": null
+        },
+        "guard": 64,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "order": "canonical",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 10,
+        "rank": [
+          1956,
+          2,
+          10,
+          10,
+          64
+        ],
+        "step": 64,
+        "variant": "drop_state",
+        "world_state": {
+          "position": 7,
+          "speed": 1,
+          "step": 4,
+          "used_brake": true
+        }
+      },
+      "reverse": {
+        "agent": "speed_only",
+        "agent_memory": {
+          "believed_distance": 2,
+          "believed_speed": 0,
+          "previous_action": "coast"
+        },
+        "display_memory": {
+          "previous": null
+        },
+        "guard": 64,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "order": "reverse",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 10,
+        "rank": [
+          1956,
+          2,
+          7,
+          10,
+          64
+        ],
+        "step": 64,
+        "variant": "drop_state",
+        "world_state": {
+          "position": 7,
+          "speed": 1,
+          "step": 4,
+          "used_brake": true
+        }
+      }
+    }
+  },
+  "first_trace_mismatch_witnesses": {
+    "drop_observation": {
+      "canonical": {
+        "agent": "reference",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1953",
+          "start_position": 0,
+          "start_speed": 6
+        },
+        "kernel_index": 1953,
+        "oracle_step": {
+          "action": "coast",
+          "observation": [
+            6,
+            6,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "oracle_trace_length": 2,
+        "order": "canonical",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "rank": [
+          1953,
+          0,
+          1,
+          1,
+          1
+        ],
+        "variant": "drop_observation",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            6,
+            6,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "weak_trace_length": 2
+      },
+      "reverse": {
+        "agent": "reference",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1953",
+          "start_position": 0,
+          "start_speed": 6
+        },
+        "kernel_index": 1953,
+        "oracle_step": {
+          "action": "coast",
+          "observation": [
+            -1,
+            6,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "oracle_trace_length": 2,
+        "order": "reverse",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "coarse",
+          "name": "view_15_hidden_coarse_d1",
+          "speed_mode": "hidden"
+        },
+        "presentation_index": 15,
+        "rank": [
+          1953,
+          0,
+          2,
+          15,
+          1
+        ],
+        "variant": "drop_observation",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            -1,
+            6,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "weak_trace_length": 2
+      }
+    },
+    "drop_state": {
+      "canonical": {
+        "agent": "instant_stop",
+        "first_difference_step": 2,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "oracle_step": {
+          "action": "brake",
+          "observation": [
+            4,
+            2,
+            0,
+            0
+          ],
+          "status": "stopped"
+        },
+        "oracle_trace_length": 3,
+        "order": "canonical",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "rank": [
+          1956,
+          1,
+          1,
+          1,
+          2
+        ],
+        "variant": "drop_state",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            4,
+            2,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 4
+      },
+      "reverse": {
+        "agent": "instant_stop",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 3,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 6,
+          "horizon": 8,
+          "name": "brake_1956",
+          "start_position": 0,
+          "start_speed": 7
+        },
+        "kernel_index": 1956,
+        "oracle_step": {
+          "action": "coast",
+          "observation": [
+            4,
+            -1,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "oracle_trace_length": 2,
+        "order": "reverse",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 10,
+        "rank": [
+          1956,
+          1,
+          7,
+          10,
+          1
+        ],
+        "variant": "drop_state",
+        "weak_step": {
+          "action": "coast",
+          "observation": [
+            4,
+            -1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 3
+      }
+    }
+  },
+  "jobs": [
+    {
+      "collision": {},
+      "elapsed_s": 0.00011459999996077386,
+      "job_id": "kernel-01952",
+      "kernel_index": 1952,
+      "kernel_name": "brake_1952",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1952,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 7,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 157,
+          "unique_projected_keys": 59,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 391,
+          "contexts_in_unsafe_classes": 81,
+          "distinct_output_variants_in_unsafe_classes": 17,
+          "semantic_contexts": 157,
+          "unique_projected_keys": 11,
+          "unsafe_key_classes": 6
+        },
+        "drop_state": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 157,
+          "unique_projected_keys": 59,
+          "unsafe_key_classes": 0
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 157,
+          "unique_projected_keys": 59,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.10186190000013085,
+      "job_id": "kernel-01953",
+      "kernel_index": 1953,
+      "kernel_name": "brake_1953",
+      "oracle_contexts": 157,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 136,
+            "cache_misses": 8,
+            "candidate_signature_digest": "78deb635c0135a1ca53b840060174aef0ab820e165c0aa2fdd7c53a8aa2abacf",
+            "candidate_signature_mismatches": 9,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 9,
+            "trace_digest": "165432dce7958e1f7de0b9a70856d9eb488fe1013ab9e1ec85c312093094c200",
+            "trace_mismatches": 25,
+            "traces": 72,
+            "unsafe_cache_hits": 39
+          },
+          "reverse": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "618ba527afda02bb870648c3e1bc492a7a5f9271250cc626bbb797b938035a72",
+            "candidate_signature_mismatches": 9,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 9,
+            "trace_digest": "943dde38eac85b061f08c8ada3bfbbb2ced9899dd9094f8f3507f47c76d528b4",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 47
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 59,
+            "candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "74a8ca233794f66152da0baa2268ab35b5426b8d596582e165f48d6ab5baa537",
+            "oracle_trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec6b8e90aedca9ced289758006ff3272fc421986254daf1f97f3f15645c6e783",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1953,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 9,
+        "transitions": 8,
+        "witness": [
+          "brake",
+          "coast",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 190,
+          "unique_projected_keys": 89,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 519,
+          "contexts_in_unsafe_classes": 91,
+          "distinct_output_variants_in_unsafe_classes": 38,
+          "semantic_contexts": 190,
+          "unique_projected_keys": 24,
+          "unsafe_key_classes": 10
+        },
+        "drop_state": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 190,
+          "unique_projected_keys": 102,
+          "unsafe_key_classes": 0
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 190,
+          "unique_projected_keys": 102,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.07583159999967393,
+      "job_id": "kernel-01954",
+      "kernel_index": 1954,
+      "kernel_name": "brake_1954",
+      "oracle_contexts": 190,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 101,
+            "cache_misses": 89,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 101,
+            "cache_misses": 89,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "0bfa9dbb080de9c1109a77d039a386952d6fe5ad5633b1500bee69f40a0f91e4",
+            "candidate_signature_mismatches": 2,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 2,
+            "trace_digest": "53601856d14aa58095eb955ee44ee8a00e7ffeae2dca3a15261c4e28e0305728",
+            "trace_mismatches": 26,
+            "traces": 72,
+            "unsafe_cache_hits": 88
+          },
+          "reverse": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "0bfa9dbb080de9c1109a77d039a386952d6fe5ad5633b1500bee69f40a0f91e4",
+            "candidate_signature_mismatches": 2,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 2,
+            "trace_digest": "53601856d14aa58095eb955ee44ee8a00e7ffeae2dca3a15261c4e28e0305728",
+            "trace_mismatches": 26,
+            "traces": 72,
+            "unsafe_cache_hits": 87
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 88,
+            "cache_misses": 102,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 88,
+            "cache_misses": 102,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 88,
+            "cache_misses": 102,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 88,
+            "cache_misses": 102,
+            "candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "baa99c4e5b15b12ee228bbc39cd08fb2265d9b2a0d9c8d721941b2ab4162ef34",
+            "oracle_trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "signature_bit_flips": 0,
+            "trace_digest": "de91b2a0d4c8115035079d4536c218feb457776dfd3bcc315f64935ea868c219",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1954,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 9,
+        "transitions": 10,
+        "witness": [
+          "coast",
+          "brake",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.0001247000000148546,
+      "job_id": "kernel-01955",
+      "kernel_index": 1955,
+      "kernel_name": "brake_1955",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1955,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": true,
+        "states": 8,
+        "transitions": 8,
+        "witness": [
+          "coast",
+          "coast",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 1,
+          "conflicting_context_pairs": 2,
+          "contexts_in_unsafe_classes": 4,
+          "distinct_output_variants_in_unsafe_classes": 4,
+          "semantic_contexts": 201,
+          "unique_projected_keys": 110,
+          "unsafe_key_classes": 2
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 557,
+          "contexts_in_unsafe_classes": 149,
+          "distinct_output_variants_in_unsafe_classes": 46,
+          "semantic_contexts": 201,
+          "unique_projected_keys": 34,
+          "unsafe_key_classes": 15
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 2,
+          "conflicting_context_pairs": 25,
+          "contexts_in_unsafe_classes": 34,
+          "distinct_output_variants_in_unsafe_classes": 24,
+          "semantic_contexts": 201,
+          "unique_projected_keys": 109,
+          "unsafe_key_classes": 12
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 201,
+          "unique_projected_keys": 121,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.12121669999987716,
+      "job_id": "kernel-01956",
+      "kernel_index": 1956,
+      "kernel_name": "brake_1956",
+      "oracle_contexts": 201,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 91,
+            "cache_misses": 110,
+            "candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 0,
+            "trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          },
+          "reverse": {
+            "cache_hits": 91,
+            "cache_misses": 110,
+            "candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 0,
+            "trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "8a48aea24cbc1229168229784feafe16e5eb317f63ec4fef48c4e992b08facfb",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 4,
+            "trace_digest": "8f75f6baa6a7b4cfdac550dd26f3a92ea8f62e6e6fff2bf4c62261e18b837403",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 110
+          },
+          "reverse": {
+            "cache_hits": 187,
+            "cache_misses": 11,
+            "candidate_signature_digest": "8a48aea24cbc1229168229784feafe16e5eb317f63ec4fef48c4e992b08facfb",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 4,
+            "trace_digest": "495e0d297b94bc96fbae6feb5d5038c85404bf15a15d1220b4744f1e968967a5",
+            "trace_mismatches": 29,
+            "traces": 72,
+            "unsafe_cache_hits": 95
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 163,
+            "cache_misses": 109,
+            "candidate_signature_digest": "8a48aea24cbc1229168229784feafe16e5eb317f63ec4fef48c4e992b08facfb",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 1,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 4,
+            "trace_digest": "7f6793f664ef6eed469e9933a57d55d78ef6602511025f01b35bf068d3596852",
+            "trace_mismatches": 15,
+            "traces": 72,
+            "unsafe_cache_hits": 76
+          },
+          "reverse": {
+            "cache_hits": 147,
+            "cache_misses": 97,
+            "candidate_signature_digest": "26ae6b564254cf49ff6e77ce91dbfcc8dc404a5cfbe4d848d13c583a2d25eaa2",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 1,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 4,
+            "trace_digest": "aa95c1375d767dada24abd96145641596a57a1b67d1e65fee4b3a8da6eb8b8f1",
+            "trace_mismatches": 13,
+            "traces": 72,
+            "unsafe_cache_hits": 74
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 80,
+            "cache_misses": 121,
+            "candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 0,
+            "trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 80,
+            "cache_misses": 121,
+            "candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "f80dd98fc97a53f55892c8a0ba2f6f4745706f5cf8cc7afedfab90845f26d8e7",
+            "oracle_trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "signature_bit_flips": 0,
+            "trace_digest": "42b54d1b632c3a0e8f0ae337937b8c3732658c3b659e5460552ed0a390d237c4",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1956,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 13,
+        "transitions": 12,
+        "witness": [
+          "brake",
+          "brake",
+          "coast",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 2,
+          "conflicting_context_pairs": 2,
+          "contexts_in_unsafe_classes": 4,
+          "distinct_output_variants_in_unsafe_classes": 4,
+          "semantic_contexts": 166,
+          "unique_projected_keys": 84,
+          "unsafe_key_classes": 2
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 512,
+          "contexts_in_unsafe_classes": 137,
+          "distinct_output_variants_in_unsafe_classes": 38,
+          "semantic_contexts": 166,
+          "unique_projected_keys": 20,
+          "unsafe_key_classes": 13
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 1,
+          "conflicting_context_pairs": 4,
+          "contexts_in_unsafe_classes": 7,
+          "distinct_output_variants_in_unsafe_classes": 6,
+          "semantic_contexts": 166,
+          "unique_projected_keys": 86,
+          "unsafe_key_classes": 3
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 166,
+          "unique_projected_keys": 89,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.07742640000014944,
+      "job_id": "kernel-01957",
+      "kernel_index": 1957,
+      "kernel_name": "brake_1957",
+      "oracle_contexts": 166,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 82,
+            "cache_misses": 84,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          },
+          "reverse": {
+            "cache_hits": 82,
+            "cache_misses": 84,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 136,
+            "cache_misses": 8,
+            "candidate_signature_digest": "63ff1f26650b87aa2f6f390a62a40a7480d6558fd09d50f1b7c8f0c69d1a3ed6",
+            "candidate_signature_mismatches": 9,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 9,
+            "trace_digest": "03cf9ae81a3a61e5b066aa2087b09fc4ba6180de3f9ed5d3e03a3e8163b2eb85",
+            "trace_mismatches": 25,
+            "traces": 72,
+            "unsafe_cache_hits": 57
+          },
+          "reverse": {
+            "cache_hits": 170,
+            "cache_misses": 10,
+            "candidate_signature_digest": "75b16baf764f15d4d8ea32a571e970d3a17311dc9a83c475795591634fb69c9d",
+            "candidate_signature_mismatches": 9,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 9,
+            "trace_digest": "ccbc9be0a7dc56173be00f4fd0c526c31a40a7ebdad25b066d76bd09d609dc4d",
+            "trace_mismatches": 29,
+            "traces": 72,
+            "unsafe_cache_hits": 78
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 81,
+            "cache_misses": 86,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "53f33ea55491f4ed1c6fd239f3e594939d71eafac370faa71427d735c0fdaeb1",
+            "trace_mismatches": 3,
+            "traces": 72,
+            "unsafe_cache_hits": 3
+          },
+          "reverse": {
+            "cache_hits": 81,
+            "cache_misses": 86,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "4da228548cf77bf1e2a6ee2acbdd1219b33aaa368fc487a21cca6fc00122dd6c",
+            "trace_mismatches": 3,
+            "traces": 72,
+            "unsafe_cache_hits": 3
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 77,
+            "cache_misses": 89,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 77,
+            "cache_misses": 89,
+            "candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "b95b2bdd711b04e272375d9722c57c383198e1e4669d100fa425eb2f1a09a724",
+            "oracle_trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "signature_bit_flips": 0,
+            "trace_digest": "f8b5eed05c7d2188dd41177b9c5db282bf747d0ddcbecc51e4868f4a215adf7b",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1957,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 10,
+        "transitions": 10,
+        "witness": [
+          "brake",
+          "coast",
+          "coast",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.03204969999978857,
+      "job_id": "kernel-01958",
+      "kernel_index": 1958,
+      "kernel_name": "brake_1958",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1958,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 6,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 3,
+          "conflicting_context_pairs": 3,
+          "contexts_in_unsafe_classes": 6,
+          "distinct_output_variants_in_unsafe_classes": 6,
+          "semantic_contexts": 206,
+          "unique_projected_keys": 107,
+          "unsafe_key_classes": 3
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 568,
+          "contexts_in_unsafe_classes": 113,
+          "distinct_output_variants_in_unsafe_classes": 54,
+          "semantic_contexts": 206,
+          "unique_projected_keys": 30,
+          "unsafe_key_classes": 15
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 18,
+          "contexts_in_unsafe_classes": 36,
+          "distinct_output_variants_in_unsafe_classes": 36,
+          "semantic_contexts": 206,
+          "unique_projected_keys": 106,
+          "unsafe_key_classes": 18
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 206,
+          "unique_projected_keys": 124,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.0907083999995848,
+      "job_id": "kernel-01959",
+      "kernel_index": 1959,
+      "kernel_name": "brake_1959",
+      "oracle_contexts": 206,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 99,
+            "cache_misses": 107,
+            "candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 0,
+            "trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 3
+          },
+          "reverse": {
+            "cache_hits": 99,
+            "cache_misses": 107,
+            "candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 0,
+            "trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 3
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "abe5c5837bf6c62ac6cbf8b86ba06ad2e1209f5bf98ef8f727cc25b778c0f069",
+            "candidate_signature_mismatches": 10,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 28,
+            "trace_digest": "5a8fc8e7ea4b864da502448402d0cddbaf67746d51f5bea35934dc481ab6ab4a",
+            "trace_mismatches": 18,
+            "traces": 72,
+            "unsafe_cache_hits": 96
+          },
+          "reverse": {
+            "cache_hits": 187,
+            "cache_misses": 11,
+            "candidate_signature_digest": "3489dec11ab6e257037d932a4a167797b1b76055e7a9050d7a41e129dd053d33",
+            "candidate_signature_mismatches": 14,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 40,
+            "trace_digest": "dbdf1766f280c35397d9c84a1d1b3e2dbac6d75133cc575490833f6711fe355e",
+            "trace_mismatches": 22,
+            "traces": 72,
+            "unsafe_cache_hits": 93
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 116,
+            "cache_misses": 106,
+            "candidate_signature_digest": "c59f6a63cdd1f4a4a03260f3fe16bb36e724b0b158dc5f6ac1eb6cfc8547f6ee",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 12,
+            "trace_digest": "c16f953741aabcf3a9358448a88471fe3682933e70fe9f4755cbb36227a6aef8",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 18
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 92,
+            "candidate_signature_digest": "e68e1286581aace7c39a0829f4cfd52daf2503100417098100fa67baf681b647",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 12,
+            "trace_digest": "5a4899d7cb5edc0d8c789947dc52f4498c895efce72044416a45119f6e4f5b1d",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 18
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 82,
+            "cache_misses": 124,
+            "candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 0,
+            "trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 82,
+            "cache_misses": 124,
+            "candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "caeccf4e3db15b719f86613efcf770e109da98dd5d981a60a776ad9d2e14aa7a",
+            "oracle_trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "signature_bit_flips": 0,
+            "trace_digest": "ffb608808d4afc68f15e386c4404bed815ed21ae4f19f17c93303c8fcf44372c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1959,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 7,
+        "transitions": 6,
+        "witness": [
+          "brake",
+          "brake",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 64,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 526,
+          "contexts_in_unsafe_classes": 80,
+          "distinct_output_variants_in_unsafe_classes": 31,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 12,
+          "unsafe_key_classes": 6
+        },
+        "drop_state": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 64,
+          "unsafe_key_classes": 0
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 64,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.06819739999991725,
+      "job_id": "kernel-01960",
+      "kernel_index": 1960,
+      "kernel_name": "brake_1960",
+      "oracle_contexts": 155,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "ba90e5baaadce06e1a7c3d85a8744653af8d39931df3d4865d5440396d54ec65",
+            "candidate_signature_mismatches": 16,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 31,
+            "trace_digest": "55c5a856bc7fef2093ffa97b24867c4fde6dce84bdf35294f7dc686781c7e784",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 71
+          },
+          "reverse": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "0d51d99ecd3c231b8b9495d3466f41a4ada2c2804fb04f47a7255d30fa7d08ba",
+            "candidate_signature_mismatches": 13,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 25,
+            "trace_digest": "c878f6907ca7347adfb7ad1293a0cd8587e886285298a4c7ce0795d1ec95c6e4",
+            "trace_mismatches": 23,
+            "traces": 72,
+            "unsafe_cache_hits": 66
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 91,
+            "cache_misses": 64,
+            "candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "61a40e7f1fedae9f36d5a4503bb3639e052fa2f43043e9f47bb1ac2e7fb6f703",
+            "oracle_trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "signature_bit_flips": 0,
+            "trace_digest": "a9cc0714abac7a08af6855c5f266ccbaa7d5543029eada502ce5d22487aeeb34",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1960,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 9,
+        "transitions": 8,
+        "witness": [
+          "brake",
+          "coast",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 179,
+          "unique_projected_keys": 78,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 520,
+          "contexts_in_unsafe_classes": 101,
+          "distinct_output_variants_in_unsafe_classes": 37,
+          "semantic_contexts": 179,
+          "unique_projected_keys": 19,
+          "unsafe_key_classes": 11
+        },
+        "drop_state": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 179,
+          "unique_projected_keys": 78,
+          "unsafe_key_classes": 0
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 179,
+          "unique_projected_keys": 78,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.08971310000015364,
+      "job_id": "kernel-01961",
+      "kernel_index": 1961,
+      "kernel_name": "brake_1961",
+      "oracle_contexts": 179,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 170,
+            "cache_misses": 10,
+            "candidate_signature_digest": "632c9ff91edfec4988964b366c653e9ea585aaa76c22f9211b8b4f6a82218c81",
+            "candidate_signature_mismatches": 15,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 28,
+            "trace_digest": "e67c3249e54d96085febecf34de69dac6360fd62b17d38ac648668d3bcb10326",
+            "trace_mismatches": 33,
+            "traces": 72,
+            "unsafe_cache_hits": 78
+          },
+          "reverse": {
+            "cache_hits": 170,
+            "cache_misses": 10,
+            "candidate_signature_digest": "75306d1bfa7667ecef3e7e1085af69f281f11f4c62578b459883853e790e8fff",
+            "candidate_signature_mismatches": 16,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 30,
+            "trace_digest": "4d9214b89f20f157e864c6e6b359be46aa2d4a3658e7df543f060b0b05c637a6",
+            "trace_mismatches": 29,
+            "traces": 72,
+            "unsafe_cache_hits": 73
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 101,
+            "cache_misses": 78,
+            "candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bc069d556584efd90b3e07a07b05f7211d7f32cf3545845ea055cef4f0e66bb6",
+            "oracle_trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "signature_bit_flips": 0,
+            "trace_digest": "6208a6ecf4c184d237d368dc3ff004c3eba497c0b0ff3e19c7b5bf83f379ef71",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1961,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 9,
+        "transitions": 10,
+        "witness": [
+          "coast",
+          "brake",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.959999993545352e-05,
+      "job_id": "kernel-01962",
+      "kernel_index": 1962,
+      "kernel_name": "brake_1962",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1962,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 198,
+          "unique_projected_keys": 123,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 558,
+          "contexts_in_unsafe_classes": 146,
+          "distinct_output_variants_in_unsafe_classes": 57,
+          "semantic_contexts": 198,
+          "unique_projected_keys": 38,
+          "unsafe_key_classes": 18
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 16,
+          "contexts_in_unsafe_classes": 32,
+          "distinct_output_variants_in_unsafe_classes": 32,
+          "semantic_contexts": 198,
+          "unique_projected_keys": 118,
+          "unsafe_key_classes": 16
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 198,
+          "unique_projected_keys": 134,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.09546819999968648,
+      "job_id": "kernel-01963",
+      "kernel_index": 1963,
+      "kernel_name": "brake_1963",
+      "oracle_contexts": 198,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 75,
+            "cache_misses": 123,
+            "candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 0,
+            "trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 75,
+            "cache_misses": 123,
+            "candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 0,
+            "trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "27307116f54de417458384c81a78cd22df109223e062beef2a3d84c7071fdf4d",
+            "candidate_signature_mismatches": 12,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 35,
+            "trace_digest": "0521f1932193ee6ace889af4616e6d2435969096b05e46f62a938af04fa34f73",
+            "trace_mismatches": 23,
+            "traces": 72,
+            "unsafe_cache_hits": 99
+          },
+          "reverse": {
+            "cache_hits": 187,
+            "cache_misses": 11,
+            "candidate_signature_digest": "d4acd7f1f3ad95034f510598168b15dbd7c0f98efd3bd36b11721e97010c48bd",
+            "candidate_signature_mismatches": 15,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 39,
+            "trace_digest": "9e6d3474222bf6f1f8d4609c30df78a687dea9d3c5ed6cf464c5fa265b407faa",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 88
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 94,
+            "cache_misses": 118,
+            "candidate_signature_digest": "507f9121d56c747a58180cfe0c09113f694f95d36f174def52953f45c8fa0a3e",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 10,
+            "trace_digest": "40d08a4924c70de4678fa7b27d71618ff8c89c9ff2e79c5daf52c369463168f4",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 16
+          },
+          "reverse": {
+            "cache_hits": 80,
+            "cache_misses": 104,
+            "candidate_signature_digest": "de7f1e8881d449889f24506297c01b5a738993edcbeab751f4f6353052145053",
+            "candidate_signature_mismatches": 4,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 10,
+            "trace_digest": "4d2deec13ebbe2f881179e0fbc871a1307d788be7df9c3a19e01c1f2bb340b04",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 16
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 64,
+            "cache_misses": 134,
+            "candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 0,
+            "trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 64,
+            "cache_misses": 134,
+            "candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "e3a246c3e3625b2ad9130abed63399f5f85fb95b1fdb08ec9ad95a0a8b86fc02",
+            "oracle_trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "signature_bit_flips": 0,
+            "trace_digest": "9a51dbd2a9aa92ebdcedbb43c3e3804e1cbdd6aaa19de01b7ddf2cab3497e27c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1963,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 6,
+        "transitions": 6,
+        "witness": [
+          "brake",
+          "brake",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 2,
+          "conflicting_context_pairs": 2,
+          "contexts_in_unsafe_classes": 4,
+          "distinct_output_variants_in_unsafe_classes": 4,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 78,
+          "unsafe_key_classes": 2
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 552,
+          "contexts_in_unsafe_classes": 131,
+          "distinct_output_variants_in_unsafe_classes": 45,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 15,
+          "unsafe_key_classes": 11
+        },
+        "drop_state": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 84,
+          "unsafe_key_classes": 0
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 155,
+          "unique_projected_keys": 84,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.07648710000012215,
+      "job_id": "kernel-01964",
+      "kernel_index": 1964,
+      "kernel_name": "brake_1964",
+      "oracle_contexts": 155,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 77,
+            "cache_misses": 78,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          },
+          "reverse": {
+            "cache_hits": 77,
+            "cache_misses": 78,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "b6dd479f75b9d30c9b7a7ca79137bcc6f6725a7f0b33214b0a8f8b2f94968f56",
+            "candidate_signature_mismatches": 16,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 31,
+            "trace_digest": "20cdac28df168243fd9184f33a0489f687f5777c4781a15362b2b254a630362c",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 80
+          },
+          "reverse": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "3c3745e8eb97b6e0aff40091cd4db5e60ff4f6daa66dcf1be718cf09e70b3d48",
+            "candidate_signature_mismatches": 13,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 25,
+            "trace_digest": "d4e0328539d3afb5d6dcc74925a8a97ef6fb6574dd7acc71b136cc56cada5fa2",
+            "trace_mismatches": 23,
+            "traces": 72,
+            "unsafe_cache_hits": 74
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 71,
+            "cache_misses": 84,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 71,
+            "cache_misses": 84,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 71,
+            "cache_misses": 84,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 71,
+            "cache_misses": 84,
+            "candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "a59cc275228b200b4443350d33cf60821e440ed8d8cbfa4ee5a4042cee290b5e",
+            "oracle_trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "signature_bit_flips": 0,
+            "trace_digest": "85213572c87683ae7f6684025a0e116510ff80ee74292aae76392e494e03cf59",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1964,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 8,
+        "transitions": 8,
+        "witness": [
+          "brake",
+          "coast",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.709999999860884e-05,
+      "job_id": "kernel-01965",
+      "kernel_index": 1965,
+      "kernel_name": "brake_1965",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1965,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.069999992381781e-05,
+      "job_id": "kernel-01966",
+      "kernel_index": 1966,
+      "kernel_name": "brake_1966",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1966,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.020000020929729e-05,
+      "job_id": "kernel-01967",
+      "kernel_index": 1967,
+      "kernel_name": "brake_1967",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1967,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 4.8099999730766285e-05,
+      "job_id": "kernel-01968",
+      "kernel_index": 1968,
+      "kernel_name": "brake_1968",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1968,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.030000006125192e-05,
+      "job_id": "kernel-01969",
+      "kernel_index": 1969,
+      "kernel_name": "brake_1969",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1969,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 3,
+          "conflicting_context_pairs": 5,
+          "contexts_in_unsafe_classes": 10,
+          "distinct_output_variants_in_unsafe_classes": 10,
+          "semantic_contexts": 202,
+          "unique_projected_keys": 93,
+          "unsafe_key_classes": 5
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 554,
+          "contexts_in_unsafe_classes": 147,
+          "distinct_output_variants_in_unsafe_classes": 41,
+          "semantic_contexts": 202,
+          "unique_projected_keys": 33,
+          "unsafe_key_classes": 12
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 40,
+          "contexts_in_unsafe_classes": 32,
+          "distinct_output_variants_in_unsafe_classes": 14,
+          "semantic_contexts": 202,
+          "unique_projected_keys": 97,
+          "unsafe_key_classes": 7
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 202,
+          "unique_projected_keys": 104,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.08869819999972606,
+      "job_id": "kernel-01970",
+      "kernel_index": 1970,
+      "kernel_name": "brake_1970",
+      "oracle_contexts": 202,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 109,
+            "cache_misses": 93,
+            "candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 0,
+            "trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 5
+          },
+          "reverse": {
+            "cache_hits": 109,
+            "cache_misses": 93,
+            "candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 0,
+            "trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 5
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "977ea2aa7d6a0a16f50629ca135613f3d2a97b19ddd471a691e37deb9a564014",
+            "candidate_signature_mismatches": 14,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 39,
+            "trace_digest": "cf9b752637fe49f4f21f3e975e23686a9c7929fbeeb5b379dc0e7b2114a00acf",
+            "trace_mismatches": 19,
+            "traces": 72,
+            "unsafe_cache_hits": 81
+          },
+          "reverse": {
+            "cache_hits": 187,
+            "cache_misses": 11,
+            "candidate_signature_digest": "b71abd0b34e04c0a5c05aacd77f90b3450cc2a340db3f6dbe530eaa6e5637912",
+            "candidate_signature_mismatches": 16,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 47,
+            "trace_digest": "588b1dc5d9d084d5c2cb2ba5332dab5424b5ae6d14fb8553b6c35d1915890cfc",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 99
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 121,
+            "cache_misses": 97,
+            "candidate_signature_digest": "6573f98f40e14b4fab15118fa31ccd675d2b16dd46c2593967c2e57d3923e949",
+            "candidate_signature_mismatches": 6,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 16,
+            "trace_digest": "0b9a84c7501509e63b435b3fb5af24dfcfeff00b71d5f694678d4393c344a008",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 16
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 88,
+            "candidate_signature_digest": "309595649bd4b59f09c5004eebab8eca80bb4610e803dd4782562f121198aee4",
+            "candidate_signature_mismatches": 6,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 12,
+            "trace_digest": "f8ce63ed185efbeaf0207c15b0d2e817e795b2b05589a03b7be12bc09f600fec",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 16
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 98,
+            "cache_misses": 104,
+            "candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 0,
+            "trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 98,
+            "cache_misses": 104,
+            "candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "2d7c9ad75c721786f2e572fdc86d9ec992103960773ed47da255c9894fe597c4",
+            "oracle_trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "signature_bit_flips": 0,
+            "trace_digest": "c7bc2f63c0f54f502b14274c33ffa463152021ffa133578d4bdc14e46a02af2c",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1970,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 6,
+        "transitions": 6,
+        "witness": [
+          "brake",
+          "brake",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.2800000048591755e-05,
+      "job_id": "kernel-01971",
+      "kernel_index": 1971,
+      "kernel_name": "brake_1971",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1971,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.3700000080425525e-05,
+      "job_id": "kernel-01972",
+      "kernel_index": 1972,
+      "kernel_name": "brake_1972",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1972,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.829999983892776e-05,
+      "job_id": "kernel-01973",
+      "kernel_index": 1973,
+      "kernel_name": "brake_1973",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1973,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.2599999889935134e-05,
+      "job_id": "kernel-01974",
+      "kernel_index": 1974,
+      "kernel_name": "brake_1974",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1974,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.120000014358084e-05,
+      "job_id": "kernel-01975",
+      "kernel_index": 1975,
+      "kernel_name": "brake_1975",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1975,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.2599999889935134e-05,
+      "job_id": "kernel-01976",
+      "kernel_index": 1976,
+      "kernel_name": "brake_1976",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1976,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.199999986871262e-05,
+      "job_id": "kernel-01977",
+      "kernel_index": 1977,
+      "kernel_name": "brake_1977",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1977,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.4799999816168565e-05,
+      "job_id": "kernel-01978",
+      "kernel_index": 1978,
+      "kernel_name": "brake_1978",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1978,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.339999961506692e-05,
+      "job_id": "kernel-01979",
+      "kernel_index": 1979,
+      "kernel_name": "brake_1979",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1979,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 2,
+          "conflicting_context_pairs": 2,
+          "contexts_in_unsafe_classes": 4,
+          "distinct_output_variants_in_unsafe_classes": 4,
+          "semantic_contexts": 184,
+          "unique_projected_keys": 90,
+          "unsafe_key_classes": 2
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 409,
+          "contexts_in_unsafe_classes": 129,
+          "distinct_output_variants_in_unsafe_classes": 30,
+          "semantic_contexts": 184,
+          "unique_projected_keys": 24,
+          "unsafe_key_classes": 12
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 3,
+          "conflicting_context_pairs": 42,
+          "contexts_in_unsafe_classes": 45,
+          "distinct_output_variants_in_unsafe_classes": 24,
+          "semantic_contexts": 184,
+          "unique_projected_keys": 80,
+          "unsafe_key_classes": 12
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 184,
+          "unique_projected_keys": 92,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.08508579999988797,
+      "job_id": "kernel-01980",
+      "kernel_index": 1980,
+      "kernel_name": "brake_1980",
+      "oracle_contexts": 184,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 94,
+            "cache_misses": 90,
+            "candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 0,
+            "trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          },
+          "reverse": {
+            "cache_hits": 94,
+            "cache_misses": 90,
+            "candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 0,
+            "trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 153,
+            "cache_misses": 9,
+            "candidate_signature_digest": "810c68313c60901fe2a244add9134d0ab97be903e3de3e67ac0783a09fb34e8b",
+            "candidate_signature_mismatches": 10,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 23,
+            "trace_digest": "47ba4504ba8687edfb264185107badbf54806898e350e3355228c1a080562afe",
+            "trace_mismatches": 35,
+            "traces": 72,
+            "unsafe_cache_hits": 57
+          },
+          "reverse": {
+            "cache_hits": 170,
+            "cache_misses": 10,
+            "candidate_signature_digest": "810c68313c60901fe2a244add9134d0ab97be903e3de3e67ac0783a09fb34e8b",
+            "candidate_signature_mismatches": 10,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 23,
+            "trace_digest": "497a9863b550d7bea39155c8fd55ea5d4be4edd0341e112138fb9a3ce2b50e58",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 59
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 123,
+            "cache_misses": 80,
+            "candidate_signature_digest": "f3068be734d98f09f671d8e68c5ecc7e20602314af80ff72318c7c9d58f9cdbc",
+            "candidate_signature_mismatches": 1,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 2,
+            "trace_digest": "cb1a30f4bd62810883ce06c202dfd3910a08bc32a10b45850e95acf8cedbff50",
+            "trace_mismatches": 21,
+            "traces": 72,
+            "unsafe_cache_hits": 21
+          },
+          "reverse": {
+            "cache_hits": 99,
+            "cache_misses": 72,
+            "candidate_signature_digest": "f3068be734d98f09f671d8e68c5ecc7e20602314af80ff72318c7c9d58f9cdbc",
+            "candidate_signature_mismatches": 1,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 2,
+            "trace_digest": "8a1acab7b20476fbe0d278b1a9b45bd961f5f1dcb8840ccf02cff9dd6bf18b91",
+            "trace_mismatches": 21,
+            "traces": 72,
+            "unsafe_cache_hits": 21
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 92,
+            "cache_misses": 92,
+            "candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 0,
+            "trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 92,
+            "cache_misses": 92,
+            "candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "34d587e1438e49c1903cf0b4d15cf92f8098ecd240c85ba8785f2e99b67b7d9e",
+            "oracle_trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "signature_bit_flips": 0,
+            "trace_digest": "0ee822a690c5845b90fa8ec2e90f856e7cb91e6a5ba5877e2541eee874a6dec8",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1980,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 7,
+        "transitions": 6,
+        "witness": [
+          "coast",
+          "coast",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 9.370000043418258e-05,
+      "job_id": "kernel-01981",
+      "kernel_index": 1981,
+      "kernel_name": "brake_1981",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1981,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 7,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.869999970149365e-05,
+      "job_id": "kernel-01982",
+      "kernel_index": 1982,
+      "kernel_name": "brake_1982",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 1982,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 270,
+          "unique_projected_keys": 144,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 551,
+          "contexts_in_unsafe_classes": 138,
+          "distinct_output_variants_in_unsafe_classes": 42,
+          "semantic_contexts": 270,
+          "unique_projected_keys": 49,
+          "unsafe_key_classes": 15
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 68,
+          "contexts_in_unsafe_classes": 83,
+          "distinct_output_variants_in_unsafe_classes": 61,
+          "semantic_contexts": 270,
+          "unique_projected_keys": 122,
+          "unsafe_key_classes": 29
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 270,
+          "unique_projected_keys": 154,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.12271710000004532,
+      "job_id": "kernel-01983",
+      "kernel_index": 1983,
+      "kernel_name": "brake_1983",
+      "oracle_contexts": 270,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 126,
+            "cache_misses": 144,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 126,
+            "cache_misses": 144,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 289,
+            "cache_misses": 17,
+            "candidate_signature_digest": "1b70bd335bf8383ec8fbb4ed28607cf1ae3501b00dcc1210908ee44899e53212",
+            "candidate_signature_mismatches": 8,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 16,
+            "trace_digest": "e2d37df294413205f32d2112844ab99756be9a16284642d6dd17e3d1c90a7d6c",
+            "trace_mismatches": 31,
+            "traces": 72,
+            "unsafe_cache_hits": 142
+          },
+          "reverse": {
+            "cache_hits": 289,
+            "cache_misses": 17,
+            "candidate_signature_digest": "1b70bd335bf8383ec8fbb4ed28607cf1ae3501b00dcc1210908ee44899e53212",
+            "candidate_signature_mismatches": 8,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 16,
+            "trace_digest": "5afcba600a31b7c905c64f4f4c58415a8d40cea4c90992254d42b5f72048e9cd",
+            "trace_mismatches": 29,
+            "traces": 72,
+            "unsafe_cache_hits": 139
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 334,
+            "cache_misses": 125,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 3,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "6f8ddbda00d835e6c23eb88f3f6c62843bff3007806a85aee9fb3798786a5af9",
+            "trace_mismatches": 26,
+            "traces": 72,
+            "unsafe_cache_hits": 211
+          },
+          "reverse": {
+            "cache_hits": 431,
+            "cache_misses": 102,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 5,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "ec5211667778696084f6773c0f6deeb16437fdcf5452a788d0ff7921afbd98f9",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 322
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 116,
+            "cache_misses": 154,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 116,
+            "cache_misses": 154,
+            "candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd254a7125be02b2853558dd339a10c2757dccfdb9d10c000adc0060b92a77ac",
+            "oracle_trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "signature_bit_flips": 0,
+            "trace_digest": "05f614940ff3dba72623c041d271e773ea8be4fdcdab489390133fa566be2f60",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 1983,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 29,
+        "transitions": 28,
+        "witness": [
+          "coast",
+          "brake",
+          "coast",
+          "brake"
+        ]
+      }
+    }
+  ],
+  "run_fingerprint": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+  "schema_version": 1,
+  "selection_end": 1983,
+  "selection_start": 1952,
+  "written_at": "2026-07-23T23:19:14+08:00"
+}

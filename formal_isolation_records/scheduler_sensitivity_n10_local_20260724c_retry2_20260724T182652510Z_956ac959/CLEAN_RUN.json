@@ -1,0 +1,189 @@
+{
+    "schema_version":  1,
+    "start_time_utc":  "2026-07-24T18:27:25.4012625Z",
+    "end_time_utc":  "2026-07-24T18:34:02.3113276Z",
+    "duration_seconds":  396.910065,
+    "wrapper_pid":  32300,
+    "runner_pid":  5388,
+    "runner_exit_code":  0,
+    "output_label":  "scheduler_sensitivity_n10",
+    "host":  {
+                 "os_caption":  "Microsoft Windows 10 专业版",
+                 "os_version":  "10.0.19045",
+                 "cpu_models":  [
+                                    "Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz"
+                                ],
+                 "physical_cores":  8,
+                 "logical_processors":  16,
+                 "total_memory_bytes":  34179989504
+             },
+    "preflight_stable_seconds":  30,
+    "pre_run_system_load":  {
+                                "time_utc":  "2026-07-24T18:27:25.3822736Z",
+                                "free_physical_memory_bytes":  17804652544,
+                                "cpu_load_percent":  [
+                                                         6
+                                                     ]
+                            },
+    "post_run_system_load":  {
+                                 "time_utc":  "2026-07-24T18:34:03.5667376Z",
+                                 "free_physical_memory_bytes":  18005749760,
+                                 "cpu_load_percent":  [
+                                                          13
+                                                      ]
+                             },
+    "command":  {
+                    "python_executable":  "python.exe",
+                    "script_path":  "${ARTIFACT_ROOT}\\experiments\\scheduler_sensitivity.py",
+                    "script":  {
+                                   "path_relative_to_repo":  "experiments/scheduler_sensitivity.py",
+                                   "bytes":  36559,
+                                   "sha256":  "6b28e9a7674776dba20c72c06ee8da680b739fdbdf9ea16dd23c99f1d7458126"
+                               },
+                    "input_files":  [
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                            "bytes":  397,
+                                            "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                            "bytes":  4124,
+                                            "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                            "bytes":  18497,
+                                            "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                            "bytes":  7817,
+                                            "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/model.py",
+                                            "bytes":  3747,
+                                            "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                            "bytes":  2126,
+                                            "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                            "bytes":  40763,
+                                            "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                            "bytes":  12503,
+                                            "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                        }
+                                    ],
+                    "argument_list":  [
+                                          "--output",
+                                          "results\\scheduler_sensitivity_n10_local_20260724c_retry2_20260724T182652510Z_956ac959",
+                                          "--workers",
+                                          "8",
+                                          "--repeats",
+                                          "10",
+                                          "--kernels",
+                                          "24624",
+                                          "--presentations",
+                                          "18"
+                                      ],
+                    "rendered":  "python.exe ${ARTIFACT_ROOT}\\experiments\\scheduler_sensitivity.py --output results\\scheduler_sensitivity_n10_local_20260724c_retry2_20260724T182652510Z_956ac959 --workers 8 --repeats 10 --kernels 24624 --presentations 18"
+                },
+    "poll_interval_seconds":  1,
+    "source_input_integrity":  {
+                                   "complete":  true,
+                                   "unchanged":  true,
+                                   "source_script":  {
+                                                         "path_relative_to_repo":  "experiments/scheduler_sensitivity.py",
+                                                         "bytes":  36559,
+                                                         "sha256":  "6b28e9a7674776dba20c72c06ee8da680b739fdbdf9ea16dd23c99f1d7458126"
+                                                     },
+                                   "input_files":  [
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                                           "bytes":  397,
+                                                           "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                                           "bytes":  4124,
+                                                           "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                                           "bytes":  18497,
+                                                           "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                                           "bytes":  7817,
+                                                           "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/model.py",
+                                                           "bytes":  3747,
+                                                           "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                                           "bytes":  2126,
+                                                           "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                                           "bytes":  40763,
+                                                           "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                                           "bytes":  12503,
+                                                           "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                                       }
+                                                   ],
+                                   "error":  null
+                               },
+    "foreign_python_count":  0,
+    "expected_output_dir":  "results/scheduler_sensitivity_n10_local_20260724c_retry2_20260724T182652510Z_956ac959",
+    "ignored_control_probe_count":  0,
+    "ignored_control_probe_processes":  [
+
+                                        ],
+    "result_tree":  {
+                        "path_relative_to_repo":  "results/scheduler_sensitivity_n10_local_20260724c_retry2_20260724T182652510Z_956ac959",
+                        "file_count":  3,
+                        "tree_sha256":  "63bac1393a68477f646b5612cce5643cb053d5eacd86feee7a1fa16c4e1fbe2f",
+                        "files":  [
+                                      {
+                                          "path":  "metadata.json",
+                                          "bytes":  1298,
+                                          "sha256":  "836e3002531abb6f7f48462abd4c90462b453054501553aecd21d3aa1a683c5e"
+                                      },
+                                      {
+                                          "path":  "runs.csv",
+                                          "bytes":  18369,
+                                          "sha256":  "7a2c09a13dde204d19d89c284487d6cd213c1b8ed1d4dce5c9d5b23cd5ae3eed"
+                                      },
+                                      {
+                                          "path":  "summary.json",
+                                          "bytes":  6527,
+                                          "sha256":  "d40d689c5bb533adc5ef86990e3eac024700fcd8b0e2ff0c0b56e31cf9b817bc"
+                                      }
+                                  ]
+                    },
+    "logs":  {
+                 "stdout_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\scheduler_sensitivity_n10_20260724T182652691Z_wrapper32300_d4582b1d\\stdout.log",
+                 "stderr_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\scheduler_sensitivity_n10_20260724T182652691Z_wrapper32300_d4582b1d\\stderr.log",
+                 "hashes":  {
+                                "stdout_sha256":  "a0b16bb2377a6991025e130fe05edddaebe2eef3b34e4ca503f15c2717fe99e6",
+                                "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                            }
+             },
+    "status":  "clean_run"
+}

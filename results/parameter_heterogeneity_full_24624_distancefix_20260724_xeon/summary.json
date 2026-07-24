@@ -1,0 +1,465 @@
+{
+  "acceptance_gates": [
+    {
+      "expected": 3,
+      "gate": "all frozen input hashes match",
+      "observed": 3,
+      "status": "PASS"
+    },
+    {
+      "expected": 24624,
+      "gate": "independently reconstructed requested grid",
+      "observed": 24624,
+      "status": "PASS"
+    },
+    {
+      "expected": 18,
+      "gate": "frozen presentation design",
+      "observed": 18,
+      "status": "PASS"
+    },
+    {
+      "expected": 189792,
+      "gate": "candidate-table row count",
+      "observed": 189792,
+      "status": "PASS"
+    },
+    {
+      "expected": 10544,
+      "gate": "valid-kernel count",
+      "observed": 10544,
+      "status": "PASS"
+    },
+    {
+      "expected": [
+        18
+      ],
+      "gate": "each valid kernel has every presentation",
+      "observed": [
+        18
+      ],
+      "status": "PASS"
+    },
+    {
+      "expected": {
+        "requested": 24624,
+        "valid": 10544
+      },
+      "gate": "primary cells partition requested and valid kernels",
+      "observed": {
+        "requested": 24624,
+        "valid": 10544
+      },
+      "status": "PASS"
+    },
+    {
+      "expected": 9494,
+      "gate": "all-18 robust-nonzero reconciliation",
+      "observed": 9494,
+      "status": "PASS"
+    },
+    {
+      "expected": 0,
+      "gate": "all-18 robust-full reconciliation",
+      "observed": 0,
+      "status": "PASS"
+    },
+    {
+      "expected": -0.240473781824313,
+      "gate": "aggregate delay reconciliation",
+      "observed": -0.24047378182431292,
+      "status": "PASS"
+    },
+    {
+      "expected": 0.0,
+      "gate": "friction-zero reference/friction-blind negative control",
+      "observed": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "analysis_id": "parameter_heterogeneity_full_24624_distancefix_20260724_xeon",
+  "analysis_question": "Does presentation-robust computational distinguishability exhibit materially heterogeneous behavior across pre-specified mechanism-parameter strata in the frozen braking domain?",
+  "claim_scope": "Complete finite-domain descriptive census for the declared braking grid, 18 presentations, four computational agents, and six agent pairs; not a human-effect, causal, or cross-domain analysis.",
+  "design": {
+    "anti_data_mining_boundaries": [
+      "The nine friction-by-speed cells and all marginal levels are fixed before computing their outputs.",
+      "No additional interaction, adaptive binning, best-cell search, per-cell minimum-cover search, p-value, or sampled confidence interval is permitted.",
+      "Positive or negative delay deltas describe only the six declared computational-agent pairs and carry no human-learning or diagnostic-effect interpretation.",
+      "A primary cell below 100 valid kernels is not merged or re-binned; it makes the analysis appendix-only."
+    ],
+    "frozen_metrics": [
+      "requested_kernels",
+      "valid_kernels",
+      "validity_rate",
+      "robust_nonzero_rate",
+      "robust_full_rate",
+      "mean_robust_pairs",
+      "mean_union_pairs",
+      "mean_presentation_gap",
+      "mean_delay_delta",
+      "delay_positive_zero_negative_rates",
+      "reference_friction_blind_candidate_rate",
+      "reference_friction_blind_robust_rate"
+    ],
+    "primary_stratification": {
+      "factors": [
+        "friction",
+        "start_speed_band"
+      ],
+      "friction_levels": [
+        0,
+        1,
+        2
+      ],
+      "start_speed_bands": [
+        {
+          "maximum": 6,
+          "minimum": 3,
+          "name": "low"
+        },
+        {
+          "maximum": 10,
+          "minimum": 7,
+          "name": "medium"
+        },
+        {
+          "maximum": 14,
+          "minimum": 11,
+          "name": "high"
+        }
+      ]
+    },
+    "secondary_marginals": {
+      "brake_force": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "goal_start_bands": [
+        {
+          "maximum": 14,
+          "minimum": 4,
+          "name": "near"
+        },
+        {
+          "maximum": 26,
+          "minimum": 16,
+          "name": "middle"
+        },
+        {
+          "maximum": 40,
+          "minimum": 28,
+          "name": "far"
+        }
+      ],
+      "goal_width": [
+        1,
+        2,
+        3
+      ],
+      "horizon": [
+        8,
+        10,
+        12
+      ]
+    }
+  },
+  "global": {
+    "delay_negative_kernels": 5826,
+    "delay_negative_rate": 0.5525417298937785,
+    "delay_positive_kernels": 1304,
+    "delay_positive_rate": 0.1236722306525038,
+    "delay_zero_kernels": 3414,
+    "delay_zero_rate": 0.32378603945371776,
+    "mean_delay_delta": -0.24047378182431292,
+    "mean_presentation_gap": 2.434370257966616,
+    "mean_robust_pairs": 3.0452389984825494,
+    "mean_union_pairs": 5.479609256449165,
+    "reference_friction_blind_candidate_rate": 0.3616959618951273,
+    "reference_friction_blind_robust_rate": 0.20561456752655538,
+    "requested_kernels": 24624,
+    "robust_full_kernels": 0,
+    "robust_full_rate": 0.0,
+    "robust_nonzero_kernels": 9494,
+    "robust_nonzero_rate": 0.9004172989377845,
+    "valid_kernels": 10544,
+    "validity_rate": 0.4282001299545159
+  },
+  "hashes": {
+    "inputs": {
+      "candidate_signatures": {
+        "bytes": 595465,
+        "relative_path": "results/communication_full_24624_distancefix_20260723_xeon/candidate_signatures.csv.gz",
+        "sha256": "40e547e5ee06b03bc19e6f0cde3145dfbdbe442963fe0bd875261ec8c47cd162"
+      },
+      "communication_summary": {
+        "bytes": 27066,
+        "relative_path": "results/communication_full_24624_distancefix_20260723_xeon/summary.json",
+        "sha256": "298294cac0098b839322d80de5b33b107397c832d5fe65a3741e9d32e098c4aa"
+      },
+      "frozen_grid_config": {
+        "bytes": 1125,
+        "relative_path": "experiments/independent_trace_oracle_config.json",
+        "sha256": "0f5d347b9d1c47c07b2da43aec6dbc70b28f4159742a5f61fd8e982ffab538db"
+      }
+    },
+    "script_sha256": "b3f8823844469087a584c7594df3691d9d800d93a240e77c28ef3ee6038cf1d2",
+    "spec_sha256": "77bd5c1838e9c6555285f9493f85f56b5b3e77686d7e607444b664eae586bdb3"
+  },
+  "primary_strata": [
+    {
+      "delay_negative_kernels": 444,
+      "delay_negative_rate": 0.21459642339294346,
+      "delay_positive_kernels": 447,
+      "delay_positive_rate": 0.21604639922667956,
+      "delay_zero_kernels": 1178,
+      "delay_zero_rate": 0.5693571773803769,
+      "friction": 0,
+      "mean_delay_delta": -0.03351055260190108,
+      "mean_presentation_gap": 2.3653939101014982,
+      "mean_robust_pairs": 2.6302561623972935,
+      "mean_union_pairs": 4.995650072498791,
+      "reference_friction_blind_candidate_rate": 0.0,
+      "reference_friction_blind_robust_rate": 0.0,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1685,
+      "robust_nonzero_rate": 0.8144030932817786,
+      "speed_band_order": 0,
+      "start_speed_band": "low",
+      "start_speed_maximum": 6,
+      "start_speed_minimum": 3,
+      "valid_kernels": 2069,
+      "validity_rate": 0.7562134502923976
+    },
+    {
+      "delay_negative_kernels": 915,
+      "delay_negative_rate": 0.47483134405812144,
+      "delay_positive_kernels": 54,
+      "delay_positive_rate": 0.02802283341982356,
+      "delay_zero_kernels": 958,
+      "delay_zero_rate": 0.497145822522055,
+      "friction": 0,
+      "mean_delay_delta": -0.23732918180245632,
+      "mean_presentation_gap": 1.8214841722885313,
+      "mean_robust_pairs": 3.1785158277114687,
+      "mean_union_pairs": 5.0,
+      "reference_friction_blind_candidate_rate": 0.0,
+      "reference_friction_blind_robust_rate": 0.0,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1834,
+      "robust_nonzero_rate": 0.9517384535547483,
+      "speed_band_order": 1,
+      "start_speed_band": "medium",
+      "start_speed_maximum": 10,
+      "start_speed_minimum": 7,
+      "valid_kernels": 1927,
+      "validity_rate": 0.7043128654970761
+    },
+    {
+      "delay_negative_kernels": 504,
+      "delay_negative_rate": 0.45901639344262296,
+      "delay_positive_kernels": 24,
+      "delay_positive_rate": 0.02185792349726776,
+      "delay_zero_kernels": 570,
+      "delay_zero_rate": 0.5191256830601093,
+      "friction": 0,
+      "mean_delay_delta": -0.2355798421372192,
+      "mean_presentation_gap": 1.7295081967213115,
+      "mean_robust_pairs": 3.2704918032786887,
+      "mean_union_pairs": 5.0,
+      "reference_friction_blind_candidate_rate": 0.0,
+      "reference_friction_blind_robust_rate": 0.0,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1065,
+      "robust_nonzero_rate": 0.9699453551912568,
+      "speed_band_order": 2,
+      "start_speed_band": "high",
+      "start_speed_maximum": 14,
+      "start_speed_minimum": 11,
+      "valid_kernels": 1098,
+      "validity_rate": 0.40131578947368424
+    },
+    {
+      "delay_negative_kernels": 144,
+      "delay_negative_rate": 0.5853658536585366,
+      "delay_positive_kernels": 69,
+      "delay_positive_rate": 0.2804878048780488,
+      "delay_zero_kernels": 33,
+      "delay_zero_rate": 0.13414634146341464,
+      "friction": 1,
+      "mean_delay_delta": -0.2777777777777778,
+      "mean_presentation_gap": 2.9146341463414633,
+      "mean_robust_pairs": 2.8536585365853657,
+      "mean_union_pairs": 5.7682926829268295,
+      "reference_friction_blind_candidate_rate": 0.5121951219512195,
+      "reference_friction_blind_robust_rate": 0.1951219512195122,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 213,
+      "robust_nonzero_rate": 0.8658536585365854,
+      "speed_band_order": 0,
+      "start_speed_band": "low",
+      "start_speed_maximum": 6,
+      "start_speed_minimum": 3,
+      "valid_kernels": 246,
+      "validity_rate": 0.08991228070175439
+    },
+    {
+      "delay_negative_kernels": 1017,
+      "delay_negative_rate": 0.6340399002493765,
+      "delay_positive_kernels": 362,
+      "delay_positive_rate": 0.2256857855361596,
+      "delay_zero_kernels": 225,
+      "delay_zero_rate": 0.14027431421446385,
+      "friction": 1,
+      "mean_delay_delta": -0.256580770296481,
+      "mean_presentation_gap": 2.806733167082294,
+      "mean_robust_pairs": 3.1315461346633415,
+      "mean_union_pairs": 5.938279301745636,
+      "reference_friction_blind_candidate_rate": 0.6452964810196731,
+      "reference_friction_blind_robust_rate": 0.27057356608478805,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1478,
+      "robust_nonzero_rate": 0.9214463840399002,
+      "speed_band_order": 1,
+      "start_speed_band": "medium",
+      "start_speed_maximum": 10,
+      "start_speed_minimum": 7,
+      "valid_kernels": 1604,
+      "validity_rate": 0.5862573099415205
+    },
+    {
+      "delay_negative_kernels": 1353,
+      "delay_negative_rate": 0.8096947935368043,
+      "delay_positive_kernels": 111,
+      "delay_positive_rate": 0.06642728904847396,
+      "delay_zero_kernels": 207,
+      "delay_zero_rate": 0.12387791741472172,
+      "friction": 1,
+      "mean_delay_delta": -0.30580490724117293,
+      "mean_presentation_gap": 2.651705565529623,
+      "mean_robust_pairs": 3.3087971274685817,
+      "mean_union_pairs": 5.960502692998205,
+      "reference_friction_blind_candidate_rate": 0.6886096150009974,
+      "reference_friction_blind_robust_rate": 0.3644524236983842,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1584,
+      "robust_nonzero_rate": 0.947935368043088,
+      "speed_band_order": 2,
+      "start_speed_band": "high",
+      "start_speed_maximum": 14,
+      "start_speed_minimum": 11,
+      "valid_kernels": 1671,
+      "validity_rate": 0.6107456140350878
+    },
+    {
+      "delay_negative_kernels": 3,
+      "delay_negative_rate": 0.25,
+      "delay_positive_kernels": 6,
+      "delay_positive_rate": 0.5,
+      "delay_zero_kernels": 3,
+      "delay_zero_rate": 0.25,
+      "friction": 2,
+      "mean_delay_delta": -0.16666666666666666,
+      "mean_presentation_gap": 3.0,
+      "mean_robust_pairs": 2.25,
+      "mean_union_pairs": 5.25,
+      "reference_friction_blind_candidate_rate": 0.5416666666666666,
+      "reference_friction_blind_robust_rate": 0.25,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 9,
+      "robust_nonzero_rate": 0.75,
+      "speed_band_order": 0,
+      "start_speed_band": "low",
+      "start_speed_maximum": 6,
+      "start_speed_minimum": 3,
+      "valid_kernels": 12,
+      "validity_rate": 0.0043859649122807015
+    },
+    {
+      "delay_negative_kernels": 372,
+      "delay_negative_rate": 0.7005649717514124,
+      "delay_positive_kernels": 93,
+      "delay_positive_rate": 0.1751412429378531,
+      "delay_zero_kernels": 66,
+      "delay_zero_rate": 0.12429378531073447,
+      "friction": 2,
+      "mean_delay_delta": -0.4952919020715631,
+      "mean_presentation_gap": 3.457627118644068,
+      "mean_robust_pairs": 2.384180790960452,
+      "mean_union_pairs": 5.84180790960452,
+      "reference_friction_blind_candidate_rate": 0.7040175768989329,
+      "reference_friction_blind_robust_rate": 0.4406779661016949,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 390,
+      "robust_nonzero_rate": 0.7344632768361582,
+      "speed_band_order": 1,
+      "start_speed_band": "medium",
+      "start_speed_maximum": 10,
+      "start_speed_minimum": 7,
+      "valid_kernels": 531,
+      "validity_rate": 0.19407894736842105
+    },
+    {
+      "delay_negative_kernels": 1074,
+      "delay_negative_rate": 0.7748917748917749,
+      "delay_positive_kernels": 138,
+      "delay_positive_rate": 0.09956709956709957,
+      "delay_zero_kernels": 174,
+      "delay_zero_rate": 0.12554112554112554,
+      "friction": 2,
+      "mean_delay_delta": -0.3566618566618567,
+      "mean_presentation_gap": 2.772727272727273,
+      "mean_robust_pairs": 3.1774891774891776,
+      "mean_union_pairs": 5.95021645021645,
+      "reference_friction_blind_candidate_rate": 0.8092833092833093,
+      "reference_friction_blind_robust_rate": 0.6060606060606061,
+      "requested_kernels": 2736,
+      "robust_full_kernels": 0,
+      "robust_full_rate": 0.0,
+      "robust_nonzero_kernels": 1236,
+      "robust_nonzero_rate": 0.8917748917748918,
+      "speed_band_order": 2,
+      "start_speed_band": "high",
+      "start_speed_maximum": 14,
+      "start_speed_minimum": 11,
+      "valid_kernels": 1386,
+      "validity_rate": 0.506578947368421
+    }
+  ],
+  "promotion": {
+    "cell_size_threshold_pass": false,
+    "decision": "appendix_only",
+    "main_text_promotion_pass": false,
+    "minimum_observed_valid_kernels_per_cell": 12,
+    "minimum_required_valid_kernels_per_cell": 100,
+    "primary_metric": "robust_nonzero_rate",
+    "primary_range": 0.2354820783550986,
+    "primary_threshold": 0.1,
+    "primary_threshold_pass": true,
+    "rule": "Promote to the main text only if the primary robust-nonzero range reaches 0.10 and every primary cell contains at least 100 valid kernels. Secondary thresholds are descriptive support and cannot substitute for the primary threshold.",
+    "secondary_delay_delta_range": 0.46178134946966204,
+    "secondary_delay_sign_change": false,
+    "secondary_delay_threshold_pass": false,
+    "secondary_mean_robust_pairs_range": 1.0587971274685817,
+    "secondary_mean_robust_pairs_threshold_pass": true
+  },
+  "schema_version": 1,
+  "status": "PASS_saved_output_parameter_heterogeneity"
+}

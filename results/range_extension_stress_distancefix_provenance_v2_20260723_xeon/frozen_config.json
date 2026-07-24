@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "range_extension_stress_20260723_xeon",
+  "frozen_before_execution": true,
+  "scientific_role": "Out-of-primary-grid braking range-extension stress test for exactness and work accounting; not a second mechanism family and not a timing benchmark.",
+  "primary_grid_boundary": {
+    "goal_start_max": 40,
+    "start_speed_max": 14,
+    "horizon_max": 12,
+    "goal_width_max": 3
+  },
+  "stress_grid": {
+    "goal_start": [44, 64, 84],
+    "start_speed": [15, 18, 21],
+    "horizon": [16, 20],
+    "goal_width": [1, 5],
+    "brake_force": [1, 2, 3, 4],
+    "friction": [0, 1, 2]
+  },
+  "presentations": 18,
+  "factorized_workers": 8,
+  "methods": ["Flat", "LayerProbe-P8"],
+  "acceptance_gates": [
+    "identical_valid_kernel_names",
+    "identical_candidate_signatures",
+    "identical_minimum_suite",
+    "flat_graph_builds_equal_requested_kernels_times_presentations",
+    "factorized_graph_builds_equal_requested_kernels"
+  ],
+  "reporting_boundary": "Elapsed time is retained only as a diagnostic and must not be used as performance evidence because this run is not a matched isolated timing schedule."
+}

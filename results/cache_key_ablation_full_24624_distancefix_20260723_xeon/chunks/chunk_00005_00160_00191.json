@@ -1,0 +1,2217 @@
+{
+  "chunk_index": 5,
+  "first_collision_witnesses": {
+    "drop_memory": {
+      "differing_output_fields": [
+        "next_agent_memory"
+      ],
+      "first_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": -3,
+          "believed_speed": 2,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": -4,
+            "believed_speed": 1,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 6,
+            "speed": 0,
+            "step": 4,
+            "used_brake": true
+          },
+          "status": "win"
+        },
+        "perceived_memory": {
+          "believed_distance": -3,
+          "believed_speed": 2,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_05_exact_hidden_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 5,
+        "step": 3,
+        "world_state": {
+          "position": 6,
+          "speed": 1,
+          "step": 3,
+          "used_brake": true
+        }
+      },
+      "key_repr_for_debugging": "(WorldState(position=6, speed=1, step=3, used_brake=True), (2, -1, 1, 0))",
+      "omitted_component": "agent_memory",
+      "projected_key": {
+        "observation": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "world_state": {
+          "position": 6,
+          "speed": 1,
+          "step": 3,
+          "used_brake": true
+        }
+      },
+      "projected_key_sha256": "47957866aa06d511ec4301e84e4e945bc12ffb8598de3ae5533efb9a82dff3a9",
+      "rank": [
+        180,
+        0,
+        5,
+        3,
+        11,
+        3
+      ],
+      "scope": {
+        "agent": "reference",
+        "kernel": "brake_0180"
+      },
+      "second_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": -1,
+          "believed_speed": 1,
+          "previous_action": "brake"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": -2,
+            "believed_speed": 1,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 6,
+            "speed": 0,
+            "step": 4,
+            "used_brake": true
+          },
+          "status": "win"
+        },
+        "perceived_memory": {
+          "believed_distance": -1,
+          "believed_speed": 2,
+          "previous_action": "brake"
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_11_coarse_hidden_d1",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 11,
+        "step": 3,
+        "world_state": {
+          "position": 6,
+          "speed": 1,
+          "step": 3,
+          "used_brake": true
+        }
+      },
+      "variant": "drop_memory"
+    },
+    "drop_observation": {
+      "differing_output_fields": [
+        "action",
+        "next_world_state",
+        "next_agent_memory"
+      ],
+      "first_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 4,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          3,
+          4,
+          0,
+          0
+        ],
+        "output": {
+          "action": "coast",
+          "next_agent_memory": {
+            "believed_distance": 1,
+            "believed_speed": 3,
+            "previous_action": "coast"
+          },
+          "next_world_state": {
+            "position": 3,
+            "speed": 3,
+            "step": 1,
+            "used_brake": false
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 4,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 0,
+        "step": 0,
+        "world_state": {
+          "position": 0,
+          "speed": 3,
+          "step": 0,
+          "used_brake": false
+        }
+      },
+      "key_repr_for_debugging": "(WorldState(position=0, speed=3, step=0, used_brake=False), AgentMemory(believed_speed=3, believed_distance=4, previous_action='coast'))",
+      "omitted_component": "observation",
+      "projected_key": {
+        "agent_memory": {
+          "believed_distance": 4,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "world_state": {
+          "position": 0,
+          "speed": 3,
+          "step": 0,
+          "used_brake": false
+        }
+      },
+      "projected_key_sha256": "a5230d1fbdd9ae20b2ff8e93c3892649a50ec95971b53baaf364d6ead67f78bd",
+      "rank": [
+        180,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "scope": {
+        "agent": "reference",
+        "kernel": "brake_0180"
+      },
+      "second_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 4,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          3,
+          3,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": 1,
+            "believed_speed": 2,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 2,
+            "speed": 2,
+            "step": 1,
+            "used_brake": true
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 3,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_02_exact_coarse_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 2,
+        "step": 0,
+        "world_state": {
+          "position": 0,
+          "speed": 3,
+          "step": 0,
+          "used_brake": false
+        }
+      },
+      "variant": "drop_observation"
+    },
+    "drop_state": {
+      "differing_output_fields": [
+        "next_world_state",
+        "status"
+      ],
+      "first_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 1,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": -1,
+            "believed_speed": 2,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 5,
+            "speed": 2,
+            "step": 2,
+            "used_brake": true
+          },
+          "status": "running"
+        },
+        "perceived_memory": {
+          "believed_distance": 1,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "exact",
+          "name": "view_00_exact_exact_d0",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 0,
+        "step": 1,
+        "world_state": {
+          "position": 3,
+          "speed": 3,
+          "step": 1,
+          "used_brake": false
+        }
+      },
+      "key_repr_for_debugging": "(AgentMemory(believed_speed=3, believed_distance=1, previous_action='coast'), (3, 1, 0, 0))",
+      "omitted_component": "world_state",
+      "projected_key": {
+        "agent_memory": {
+          "believed_distance": 1,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "observation": [
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      "projected_key_sha256": "d182042111758bcb779f2f221b8e53f780eda6b8012bba61e333bbd19b7cdf6f",
+      "rank": [
+        180,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "scope": {
+        "agent": "reference",
+        "kernel": "brake_0180"
+      },
+      "second_context": {
+        "agent": "reference",
+        "agent_memory": {
+          "believed_distance": 1,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "observation": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "output": {
+          "action": "brake",
+          "next_agent_memory": {
+            "believed_distance": -1,
+            "believed_speed": 2,
+            "previous_action": "brake"
+          },
+          "next_world_state": {
+            "position": 8,
+            "speed": 2,
+            "step": 3,
+            "used_brake": true
+          },
+          "status": "overshoot"
+        },
+        "perceived_memory": {
+          "believed_distance": 1,
+          "believed_speed": 3,
+          "previous_action": "coast"
+        },
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "step": 2,
+        "world_state": {
+          "position": 6,
+          "speed": 3,
+          "step": 2,
+          "used_brake": false
+        }
+      },
+      "variant": "drop_state"
+    }
+  },
+  "first_nontermination_witnesses": {
+    "drop_state": {
+      "canonical": {
+        "agent": "instant_stop",
+        "agent_memory": {
+          "believed_distance": 4,
+          "believed_speed": 0,
+          "previous_action": "coast"
+        },
+        "display_memory": {
+          "previous": null
+        },
+        "guard": 80,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 1,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0187",
+          "start_position": 0,
+          "start_speed": 5
+        },
+        "kernel_index": 187,
+        "order": "canonical",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_16_hidden_hidden_d0",
+          "speed_mode": "hidden"
+        },
+        "presentation_index": 16,
+        "rank": [
+          187,
+          1,
+          16,
+          16,
+          80
+        ],
+        "step": 80,
+        "variant": "drop_state",
+        "world_state": {
+          "position": 6,
+          "speed": 1,
+          "step": 3,
+          "used_brake": true
+        }
+      },
+      "reverse": {
+        "agent": "speed_only",
+        "agent_memory": {
+          "believed_distance": -1,
+          "believed_speed": 1,
+          "previous_action": "coast"
+        },
+        "display_memory": {
+          "previous": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "guard": 80,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "order": "reverse",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "coarse",
+          "name": "view_03_exact_coarse_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 3,
+        "rank": [
+          180,
+          2,
+          14,
+          3,
+          80
+        ],
+        "step": 80,
+        "variant": "drop_state",
+        "world_state": {
+          "position": 6,
+          "speed": 1,
+          "step": 5,
+          "used_brake": true
+        }
+      }
+    }
+  },
+  "first_trace_mismatch_witnesses": {
+    "drop_memory": {
+      "canonical": {
+        "agent": "reference",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "brake",
+          "observation": [
+            2,
+            -1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "oracle_trace_length": 4,
+        "order": "canonical",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "hidden",
+          "name": "view_11_coarse_hidden_d1",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 11,
+        "rank": [
+          180,
+          0,
+          11,
+          11,
+          1
+        ],
+        "variant": "drop_memory",
+        "weak_step": {
+          "action": "coast",
+          "observation": [
+            2,
+            -1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 3
+      },
+      "reverse": {
+        "agent": "reference",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "coast",
+          "observation": [
+            2,
+            -1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "oracle_trace_length": 3,
+        "order": "reverse",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "hidden",
+          "name": "view_10_coarse_hidden_d0",
+          "speed_mode": "coarse"
+        },
+        "presentation_index": 10,
+        "rank": [
+          180,
+          0,
+          7,
+          10,
+          1
+        ],
+        "variant": "drop_memory",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            2,
+            -1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 4
+      }
+    },
+    "drop_observation": {
+      "canonical": {
+        "agent": "reference",
+        "first_difference_step": 1,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "coast",
+          "observation": [
+            3,
+            4,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "oracle_trace_length": 3,
+        "order": "canonical",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "rank": [
+          180,
+          0,
+          1,
+          1,
+          1
+        ],
+        "variant": "drop_observation",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            3,
+            4,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 4
+      },
+      "reverse": {
+        "agent": "reference",
+        "first_difference_step": 0,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "brake",
+          "observation": [
+            -1,
+            3,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "oracle_trace_length": 3,
+        "order": "reverse",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_14_hidden_coarse_d0",
+          "speed_mode": "hidden"
+        },
+        "presentation_index": 14,
+        "rank": [
+          180,
+          0,
+          3,
+          14,
+          0
+        ],
+        "variant": "drop_observation",
+        "weak_step": {
+          "action": "coast",
+          "observation": [
+            -1,
+            3,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 4
+      }
+    },
+    "drop_state": {
+      "canonical": {
+        "agent": "reference",
+        "first_difference_step": 2,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "brake",
+          "observation": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "status": "overshoot"
+        },
+        "oracle_trace_length": 3,
+        "order": "canonical",
+        "presentation": {
+          "delay": 1,
+          "distance_mode": "exact",
+          "name": "view_01_exact_exact_d1",
+          "speed_mode": "exact"
+        },
+        "presentation_index": 1,
+        "rank": [
+          180,
+          0,
+          1,
+          1,
+          2
+        ],
+        "variant": "drop_state",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "status": "running"
+        },
+        "weak_trace_length": 5
+      },
+      "reverse": {
+        "agent": "reference",
+        "first_difference_step": 2,
+        "kernel": {
+          "brake_force": 1,
+          "friction": 0,
+          "goal_end": 7,
+          "goal_start": 4,
+          "horizon": 10,
+          "name": "brake_0180",
+          "start_position": 0,
+          "start_speed": 3
+        },
+        "kernel_index": 180,
+        "oracle_step": {
+          "action": "brake",
+          "observation": [
+            -1,
+            0,
+            0,
+            0
+          ],
+          "status": "stopped"
+        },
+        "oracle_trace_length": 3,
+        "order": "reverse",
+        "presentation": {
+          "delay": 0,
+          "distance_mode": "coarse",
+          "name": "view_14_hidden_coarse_d0",
+          "speed_mode": "hidden"
+        },
+        "presentation_index": 14,
+        "rank": [
+          180,
+          0,
+          3,
+          14,
+          2
+        ],
+        "variant": "drop_state",
+        "weak_step": {
+          "action": "brake",
+          "observation": [
+            -1,
+            0,
+            1,
+            0
+          ],
+          "status": "win"
+        },
+        "weak_trace_length": 3
+      }
+    }
+  },
+  "jobs": [
+    {
+      "collision": {},
+      "elapsed_s": 8.590000015828991e-05,
+      "job_id": "kernel-00160",
+      "kernel_index": 160,
+      "kernel_name": "brake_0160",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 160,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 9.420000014870311e-05,
+      "job_id": "kernel-00161",
+      "kernel_index": 161,
+      "kernel_name": "brake_0161",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 161,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 7,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.789999997636187e-05,
+      "job_id": "kernel-00162",
+      "kernel_index": 162,
+      "kernel_name": "brake_0162",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 162,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.709999979648273e-05,
+      "job_id": "kernel-00163",
+      "kernel_index": 163,
+      "kernel_name": "brake_0163",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 163,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.890000006227638e-05,
+      "job_id": "kernel-00164",
+      "kernel_index": 164,
+      "kernel_name": "brake_0164",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 164,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.77000002724526e-05,
+      "job_id": "kernel-00165",
+      "kernel_index": 165,
+      "kernel_name": "brake_0165",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 165,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.60000000607397e-05,
+      "job_id": "kernel-00166",
+      "kernel_index": 166,
+      "kernel_name": "brake_0166",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 166,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.510000002890592e-05,
+      "job_id": "kernel-00167",
+      "kernel_index": 167,
+      "kernel_name": "brake_0167",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 167,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.469999996421393e-05,
+      "job_id": "kernel-00168",
+      "kernel_index": 168,
+      "kernel_name": "brake_0168",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 168,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.999999984851456e-05,
+      "job_id": "kernel-00169",
+      "kernel_index": 169,
+      "kernel_name": "brake_0169",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 169,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.010000015521655e-05,
+      "job_id": "kernel-00170",
+      "kernel_index": 170,
+      "kernel_name": "brake_0170",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 170,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.890000011277152e-05,
+      "job_id": "kernel-00171",
+      "kernel_index": 171,
+      "kernel_name": "brake_0171",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 171,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 6.0400000165827805e-05,
+      "job_id": "kernel-00172",
+      "kernel_index": 172,
+      "kernel_name": "brake_0172",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 172,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.620000001727021e-05,
+      "job_id": "kernel-00173",
+      "kernel_index": 173,
+      "kernel_name": "brake_0173",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 173,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.829999963680166e-05,
+      "job_id": "kernel-00174",
+      "kernel_index": 174,
+      "kernel_name": "brake_0174",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 174,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.779999992228113e-05,
+      "job_id": "kernel-00175",
+      "kernel_index": 175,
+      "kernel_name": "brake_0175",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 175,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.5500000144093065e-05,
+      "job_id": "kernel-00176",
+      "kernel_index": 176,
+      "kernel_name": "brake_0176",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 176,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.629999986922485e-05,
+      "job_id": "kernel-00177",
+      "kernel_index": 177,
+      "kernel_name": "brake_0177",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 177,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.629999986922485e-05,
+      "job_id": "kernel-00178",
+      "kernel_index": 178,
+      "kernel_name": "brake_0178",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 178,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 5.6799999583745375e-05,
+      "job_id": "kernel-00179",
+      "kernel_index": 179,
+      "kernel_name": "brake_0179",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 179,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 3,
+        "transitions": 2,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 2,
+          "conflicting_context_pairs": 4,
+          "contexts_in_unsafe_classes": 8,
+          "distinct_output_variants_in_unsafe_classes": 8,
+          "semantic_contexts": 267,
+          "unique_projected_keys": 191,
+          "unsafe_key_classes": 4
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 594,
+          "contexts_in_unsafe_classes": 181,
+          "distinct_output_variants_in_unsafe_classes": 63,
+          "semantic_contexts": 267,
+          "unique_projected_keys": 73,
+          "unsafe_key_classes": 20
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 45,
+          "contexts_in_unsafe_classes": 65,
+          "distinct_output_variants_in_unsafe_classes": 56,
+          "semantic_contexts": 267,
+          "unique_projected_keys": 177,
+          "unsafe_key_classes": 27
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 267,
+          "unique_projected_keys": 206,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.12195239999982732,
+      "job_id": "kernel-00180",
+      "kernel_index": 180,
+      "kernel_name": "brake_0180",
+      "oracle_contexts": 267,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 74,
+            "cache_misses": 191,
+            "candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 0,
+            "trace_digest": "b27a9517c2bef483f5830b2701cc3ed811f2ffbd1fec98fef975fa9e4ba1df41",
+            "trace_mismatches": 2,
+            "traces": 72,
+            "unsafe_cache_hits": 2
+          },
+          "reverse": {
+            "cache_hits": 78,
+            "cache_misses": 191,
+            "candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 0,
+            "trace_digest": "05f36d70c5565ab608b2b0f38cbcac425088a75a4d13c0cccf1b8809910847cd",
+            "trace_mismatches": 2,
+            "traces": 72,
+            "unsafe_cache_hits": 6
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 272,
+            "cache_misses": 16,
+            "candidate_signature_digest": "bca0c9ea5128b85fb2b8a225d3fc41626bdf51a5dc80b23a4417cd6c2a582bec",
+            "candidate_signature_mismatches": 7,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 15,
+            "trace_digest": "1292a9b3058684de5cf85dd610c85a21acc52fffa0d57218a8b2619818495ec6",
+            "trace_mismatches": 33,
+            "traces": 72,
+            "unsafe_cache_hits": 125
+          },
+          "reverse": {
+            "cache_hits": 255,
+            "cache_misses": 15,
+            "candidate_signature_digest": "d5a24d07c1600b63b7d896118b60e6ac11d3ab39b7d50bf65a0f28b1dea0a5e7",
+            "candidate_signature_mismatches": 12,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 23,
+            "trace_digest": "21beb9b57a5b03fe609f27c374291080f92437c37b93cb56c360feaa8d005a1a",
+            "trace_mismatches": 32,
+            "traces": 72,
+            "unsafe_cache_hits": 142
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 105,
+            "cache_misses": 180,
+            "candidate_signature_digest": "7758d0cf468792a8f3d0be72e2a2d76b22f6094f8254ee827a2c24c544bc87ba",
+            "candidate_signature_mismatches": 1,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 1,
+            "trace_digest": "05271894ec15e89a634c9fbf87711151bb00397a5135bb72cc205c598a1ba08c",
+            "trace_mismatches": 25,
+            "traces": 72,
+            "unsafe_cache_hits": 35
+          },
+          "reverse": {
+            "cache_hits": 381,
+            "cache_misses": 160,
+            "candidate_signature_digest": "c71ffc29cc1d7ac988643f40af9ff87e785431858109cb477dd5ac88dd0cb505",
+            "candidate_signature_mismatches": 1,
+            "candidates": 18,
+            "nontermination_guards": 4,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 2,
+            "trace_digest": "326b89e0e407bb130d5b975dfe62646e0eed0d7ae9293e497557942731151469",
+            "trace_mismatches": 24,
+            "traces": 72,
+            "unsafe_cache_hits": 325
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 61,
+            "cache_misses": 206,
+            "candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 0,
+            "trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 61,
+            "cache_misses": 206,
+            "candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "bd7c1b97b5abc849b668c88b41fb8df848587800ce1ccca7a70b6ff366cdf48b",
+            "oracle_trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "signature_bit_flips": 0,
+            "trace_digest": "eb4bdd00286f7d39748b2554c69e4d3457d2b3fb37038247f7394d75080264b7",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 180,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 36,
+        "transitions": 36,
+        "witness": [
+          "coast",
+          "brake",
+          "brake",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 9.739999995872495e-05,
+      "job_id": "kernel-00181",
+      "kernel_index": 181,
+      "kernel_name": "brake_0181",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 181,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 8,
+        "transitions": 8,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 7.83999998930085e-05,
+      "job_id": "kernel-00182",
+      "kernel_index": 182,
+      "kernel_name": "brake_0182",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 182,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 5,
+        "transitions": 4,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 3,
+          "conflicting_context_pairs": 5,
+          "contexts_in_unsafe_classes": 10,
+          "distinct_output_variants_in_unsafe_classes": 10,
+          "semantic_contexts": 280,
+          "unique_projected_keys": 164,
+          "unsafe_key_classes": 5
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 610,
+          "contexts_in_unsafe_classes": 203,
+          "distinct_output_variants_in_unsafe_classes": 76,
+          "semantic_contexts": 280,
+          "unique_projected_keys": 71,
+          "unsafe_key_classes": 28
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 44,
+          "contexts_in_unsafe_classes": 76,
+          "distinct_output_variants_in_unsafe_classes": 68,
+          "semantic_contexts": 280,
+          "unique_projected_keys": 158,
+          "unsafe_key_classes": 34
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 280,
+          "unique_projected_keys": 192,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.1164133999996011,
+      "job_id": "kernel-00183",
+      "kernel_index": 183,
+      "kernel_name": "brake_0183",
+      "oracle_contexts": 280,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 116,
+            "cache_misses": 164,
+            "candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 0,
+            "trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 5
+          },
+          "reverse": {
+            "cache_hits": 116,
+            "cache_misses": 164,
+            "candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 0,
+            "trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 5
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 272,
+            "cache_misses": 16,
+            "candidate_signature_digest": "2f4aa1ffa22fb33cc64663fb4e03ff1a6b3c08a8398287fa5881c8c165212996",
+            "candidate_signature_mismatches": 7,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 16,
+            "trace_digest": "e93f6fc59693fa26990013a020b3ce85a25165ddf2383fa62872eae2967ef1a5",
+            "trace_mismatches": 16,
+            "traces": 72,
+            "unsafe_cache_hits": 131
+          },
+          "reverse": {
+            "cache_hits": 255,
+            "cache_misses": 15,
+            "candidate_signature_digest": "df5d5dd6ebbe352e2d96a49833e437f7274bfba2530bd69e57b4eabd0094ab56",
+            "candidate_signature_mismatches": 13,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 24,
+            "trace_digest": "5e7cc8df7846e696794e590bf2d3c9e91392c7c99c605b1bb5b3a84073897499",
+            "trace_mismatches": 22,
+            "traces": 72,
+            "unsafe_cache_hits": 155
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 126,
+            "cache_misses": 157,
+            "candidate_signature_digest": "99a4782e36484853c58f311dad2e4befbee399e573d1e72d1d54f608f5f37535",
+            "candidate_signature_mismatches": 3,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 6,
+            "trace_digest": "8bdab5dac4f414aca6fcfa6eec8706e3fce97feb289dd51170d4648353506625",
+            "trace_mismatches": 15,
+            "traces": 72,
+            "unsafe_cache_hits": 29
+          },
+          "reverse": {
+            "cache_hits": 254,
+            "cache_misses": 166,
+            "candidate_signature_digest": "c0dae49b7e6499091459969a9357e37e6ef637aa6059e2d9395c68ec33a18632",
+            "candidate_signature_mismatches": 2,
+            "candidates": 18,
+            "nontermination_guards": 2,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 4,
+            "trace_digest": "53f88ef2c846f3b13aadce0bf68e919178b7bbbe5824aa08b10aebc8cc576677",
+            "trace_mismatches": 17,
+            "traces": 72,
+            "unsafe_cache_hits": 172
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 88,
+            "cache_misses": 192,
+            "candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 0,
+            "trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 88,
+            "cache_misses": 192,
+            "candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "8d68a5c64889d74462475d52c216879388c0350901ec7e0185b19fbfb3264ae1",
+            "oracle_trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "signature_bit_flips": 0,
+            "trace_digest": "6bf540c38ad3a21a64b085afbeba481e6d80e9ebb589a73ff0bd729729faeb41",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 183,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 19,
+        "transitions": 18,
+        "witness": [
+          "brake",
+          "brake",
+          "brake",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.00016820000018924475,
+      "job_id": "kernel-00184",
+      "kernel_index": 184,
+      "kernel_name": "brake_0184",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 184,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": true,
+        "states": 13,
+        "transitions": 14,
+        "witness": [
+          "coast",
+          "coast",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 8.74000002113462e-05,
+      "job_id": "kernel-00185",
+      "kernel_index": 185,
+      "kernel_name": "brake_0185",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 185,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 6,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.00010000000020227162,
+      "job_id": "kernel-00186",
+      "kernel_index": 186,
+      "kernel_name": "brake_0186",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 186,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 9,
+        "transitions": 8,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 225,
+          "unique_projected_keys": 169,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 577,
+          "contexts_in_unsafe_classes": 151,
+          "distinct_output_variants_in_unsafe_classes": 65,
+          "semantic_contexts": 225,
+          "unique_projected_keys": 64,
+          "unsafe_key_classes": 17
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 18,
+          "contexts_in_unsafe_classes": 35,
+          "distinct_output_variants_in_unsafe_classes": 34,
+          "semantic_contexts": 225,
+          "unique_projected_keys": 164,
+          "unsafe_key_classes": 17
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 225,
+          "unique_projected_keys": 181,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.09674469999981739,
+      "job_id": "kernel-00187",
+      "kernel_index": 187,
+      "kernel_name": "brake_0187",
+      "oracle_contexts": 225,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 56,
+            "cache_misses": 169,
+            "candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 0,
+            "trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 56,
+            "cache_misses": 169,
+            "candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 0,
+            "trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 204,
+            "cache_misses": 12,
+            "candidate_signature_digest": "b5ace1ae80e46582c42380b46ab062a7cc2efc8edf526afe54ec541031fc7477",
+            "candidate_signature_mismatches": 14,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 36,
+            "trace_digest": "01cfbf161d94e297e9b7f1d9a0379646aaf823737025952dfce56f89684d9fba",
+            "trace_mismatches": 21,
+            "traces": 72,
+            "unsafe_cache_hits": 111
+          },
+          "reverse": {
+            "cache_hits": 221,
+            "cache_misses": 13,
+            "candidate_signature_digest": "a6691d277d94ee1dc13ee35fbd2d7f3fc23f1119081afe5384cc1b38d8a7a1a2",
+            "candidate_signature_mismatches": 15,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 34,
+            "trace_digest": "be8b06096351925ab51c461641745612f696c1132fd288e22dec6ee27b6de529",
+            "trace_mismatches": 27,
+            "traces": 72,
+            "unsafe_cache_hits": 122
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 228,
+            "cache_misses": 166,
+            "candidate_signature_digest": "b7aeafbbef87ebb2195ae3e904326dea2f1f5868b51c53a7d5cbf1b62c1bba5f",
+            "candidate_signature_mismatches": 3,
+            "candidates": 18,
+            "nontermination_guards": 2,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 7,
+            "trace_digest": "5be8ec536567699021b8a7a1dc8dd5010aba1781e70391e81d4ddb1c5e8eb7e2",
+            "trace_mismatches": 18,
+            "traces": 72,
+            "unsafe_cache_hits": 173
+          },
+          "reverse": {
+            "cache_hits": 58,
+            "cache_misses": 146,
+            "candidate_signature_digest": "95434aa14839e7260dccd5fc5d96bb05b05e3682f369848f100d3b13db780c86",
+            "candidate_signature_mismatches": 3,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 7,
+            "trace_digest": "a2743521b1639df44ae26639a4ac2f28600ecf0482a12b3870dcc621602d3c91",
+            "trace_mismatches": 17,
+            "traces": 72,
+            "unsafe_cache_hits": 17
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 44,
+            "cache_misses": 181,
+            "candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 0,
+            "trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 44,
+            "cache_misses": 181,
+            "candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "c179685a15bb014898f7709d85ee085e8a013752696e569de33ada2037d8cc8f",
+            "oracle_trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "signature_bit_flips": 0,
+            "trace_digest": "05a1a4b76659866c3526332fb52b51814ef955b3ab99d22e1fadcc86c3376ae1",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 187,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 16,
+        "transitions": 18,
+        "witness": [
+          "coast",
+          "brake",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.00011309999990771757,
+      "job_id": "kernel-00188",
+      "kernel_index": 188,
+      "kernel_name": "brake_0188",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 188,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": true,
+        "states": 8,
+        "transitions": 8,
+        "witness": [
+          "coast",
+          "coast",
+          "coast"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 8.53000001370674e-05,
+      "job_id": "kernel-00189",
+      "kernel_index": 189,
+      "kernel_name": "brake_0189",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 189,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": false,
+        "states": 7,
+        "transitions": 6,
+        "witness": null
+      }
+    },
+    {
+      "collision": {
+        "drop_memory": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 230,
+          "unique_projected_keys": 98,
+          "unsafe_key_classes": 0
+        },
+        "drop_observation": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 588,
+          "contexts_in_unsafe_classes": 164,
+          "distinct_output_variants_in_unsafe_classes": 45,
+          "semantic_contexts": 230,
+          "unique_projected_keys": 41,
+          "unsafe_key_classes": 13
+        },
+        "drop_state": {
+          "affected_kernel": true,
+          "affected_kernel_agent_scopes": 4,
+          "conflicting_context_pairs": 36,
+          "contexts_in_unsafe_classes": 36,
+          "distinct_output_variants_in_unsafe_classes": 18,
+          "semantic_contexts": 230,
+          "unique_projected_keys": 107,
+          "unsafe_key_classes": 9
+        },
+        "full": {
+          "affected_kernel": false,
+          "affected_kernel_agent_scopes": 0,
+          "conflicting_context_pairs": 0,
+          "contexts_in_unsafe_classes": 0,
+          "distinct_output_variants_in_unsafe_classes": 0,
+          "semantic_contexts": 230,
+          "unique_projected_keys": 116,
+          "unsafe_key_classes": 0
+        }
+      },
+      "elapsed_s": 0.09121319999985644,
+      "job_id": "kernel-00190",
+      "kernel_index": 190,
+      "kernel_name": "brake_0190",
+      "oracle_contexts": 230,
+      "replay": {
+        "drop_memory": {
+          "canonical": {
+            "cache_hits": 132,
+            "cache_misses": 98,
+            "candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 0,
+            "trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 132,
+            "cache_misses": 98,
+            "candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 0,
+            "trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        },
+        "drop_observation": {
+          "canonical": {
+            "cache_hits": 221,
+            "cache_misses": 13,
+            "candidate_signature_digest": "0c9d4db17b58e4901e6241502015456ae6c5c97672cd28ff06eda1d9a5d4079d",
+            "candidate_signature_mismatches": 12,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 32,
+            "trace_digest": "7894c4d3ca2e9a076cb238e4538e39f4a6a8c9d19ddb21ae2629debda1ecd975",
+            "trace_mismatches": 14,
+            "traces": 72,
+            "unsafe_cache_hits": 98
+          },
+          "reverse": {
+            "cache_hits": 221,
+            "cache_misses": 13,
+            "candidate_signature_digest": "360a03d4be865a25e44d5107283b5ba0fc6e300e733faf2a2a4ffb2390708aa8",
+            "candidate_signature_mismatches": 16,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 48,
+            "trace_digest": "35f296a21427c6ccd92380a0671d2709ae8934158c2c857a37891f44117f8ef5",
+            "trace_mismatches": 24,
+            "traces": 72,
+            "unsafe_cache_hits": 129
+          }
+        },
+        "drop_state": {
+          "canonical": {
+            "cache_hits": 145,
+            "cache_misses": 109,
+            "candidate_signature_digest": "de814533547e3abcbdcae8936083e6ad9808bb315a2c8002e603679fb7d5e1c1",
+            "candidate_signature_mismatches": 6,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 18,
+            "trace_digest": "1fd6f4a614a33bf12da9ce4f36a026af129a2d765232deeb1780be15f9e64176",
+            "trace_mismatches": 18,
+            "traces": 72,
+            "unsafe_cache_hits": 18
+          },
+          "reverse": {
+            "cache_hits": 108,
+            "cache_misses": 98,
+            "candidate_signature_digest": "b7e296866b4650aea2f92f3550f4aaeebe94759159ed15d48636bb6bf0df8981",
+            "candidate_signature_mismatches": 6,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 14,
+            "trace_digest": "ab4a305aa26089387d5752581b6fa148ee0a4ad302dbcbb817d76451da49bb20",
+            "trace_mismatches": 18,
+            "traces": 72,
+            "unsafe_cache_hits": 18
+          }
+        },
+        "full": {
+          "canonical": {
+            "cache_hits": 114,
+            "cache_misses": 116,
+            "candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 0,
+            "trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          },
+          "reverse": {
+            "cache_hits": 114,
+            "cache_misses": 116,
+            "candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "candidate_signature_mismatches": 0,
+            "candidates": 18,
+            "nontermination_guards": 0,
+            "oracle_candidate_signature_digest": "d26219dcc4e57fee5781cc859eae68c2780cc0c25d70206916922fc8dd741d00",
+            "oracle_trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "signature_bit_flips": 0,
+            "trace_digest": "f6dae23b8cac094814cf7076343ff82181868c3dabccd334de41c390a1be8472",
+            "trace_mismatches": 0,
+            "traces": 72,
+            "unsafe_cache_hits": 0
+          }
+        }
+      },
+      "selection_position": 190,
+      "valid": true,
+      "verification": {
+        "faithful": true,
+        "principle_required": true,
+        "solvable": true,
+        "states": 12,
+        "transitions": 12,
+        "witness": [
+          "brake",
+          "brake",
+          "brake"
+        ]
+      }
+    },
+    {
+      "collision": {},
+      "elapsed_s": 0.00018120000004273606,
+      "job_id": "kernel-00191",
+      "kernel_index": 191,
+      "kernel_name": "brake_0191",
+      "oracle_contexts": 0,
+      "replay": {},
+      "selection_position": 191,
+      "valid": false,
+      "verification": {
+        "faithful": true,
+        "principle_required": false,
+        "solvable": true,
+        "states": 11,
+        "transitions": 12,
+        "witness": [
+          "coast",
+          "coast",
+          "coast"
+        ]
+      }
+    }
+  ],
+  "run_fingerprint": "3c0aef35d3aadd35a15133038b1ce4ea9574f9147b6f4eba0809d294ea769398",
+  "schema_version": 1,
+  "selection_end": 191,
+  "selection_start": 160,
+  "written_at": "2026-07-23T23:18:59+08:00"
+}

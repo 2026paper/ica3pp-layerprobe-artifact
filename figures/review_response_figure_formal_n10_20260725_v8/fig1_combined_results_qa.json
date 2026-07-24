@@ -1,0 +1,489 @@
+{
+  "status": "PASS_ALL_CHECKS",
+  "script_version": "2026-07-25-review-response-v4-scheduler-tradeoff",
+  "generated_at": "2026-07-25T03:09:32.426088+08:00",
+  "claim_scope": "single-host technical-repeat evidence; bootstrap intervals describe repeat-level timing stability and are not population-level inferential intervals",
+  "figure": {
+    "width_in": 4.72,
+    "height_in": 4.2,
+    "dpi": 300,
+    "minimum_allowed_font_pt": 6.0,
+    "palette": "Okabe-Ito categorical colors plus marker redundancy",
+    "dual_y_axes": false,
+    "mean_only_bars": false,
+    "raw_new_experiment_points_visible": true,
+    "grayscale_preview_generated": true
+  },
+  "font": {
+    "required": "Times New Roman",
+    "resolved": "Times New Roman",
+    "path": "times.ttf",
+    "sha256": "2cff2a03d8034801979dd6d16f09b9a825c3d710fcf068f2ebfbf0e1425c87cf",
+    "fallback_allowed": false
+  },
+  "generator": {
+    "path": "build_review_response_figure.py",
+    "sha256": "7ea7aed330e0864180ace75f249611a19517e44ab9fd7aca273baf976f7ebff9",
+    "unchanged_during_generation": true
+  },
+  "inputs": {
+    "method_runs": {
+      "path": "runs.csv",
+      "sha256": "645efcdb1949b9d0d88f3ec35c9bc69f7b4a0a063d32b171426ecd1476f8170c"
+    },
+    "method_summary": {
+      "path": "summary.json",
+      "sha256": "94cffd3c5c4d9cb413bc9372db3dc6c408bf6764f5f27139ea8b44b4ebbe6bd0"
+    },
+    "deliberative_runs": {
+      "path": "runs.csv",
+      "sha256": "18dec3e577330db721ec146bcfe3a2874bc59090f8cbc8c4775a37c6373a2da4"
+    },
+    "deliberative_summary": {
+      "path": "summary.json",
+      "sha256": "b7197b5b0dbd92148582a6859e9653532e020010e3f8dd6a2729c7475be02cb1"
+    },
+    "scaling_runs": {
+      "path": "runs.csv",
+      "sha256": "c143f4d7e1bff4ba158ede2dc9691a221d84c9fda27606009ec319cf0362f74c"
+    },
+    "scaling_summary": {
+      "path": "summary.json",
+      "sha256": "d4641c76a2831a8d4156b67958f4cfe4c5a80ee42e002847b7ddbc54b8ffcdab"
+    },
+    "scheduler_runs": {
+      "path": "runs.csv",
+      "sha256": "7a2c09a13dde204d19d89c284487d6cd213c1b8ed1d4dce5c9d5b23cd5ae3eed"
+    },
+    "scheduler_summary": {
+      "path": "summary.json",
+      "sha256": "d40d689c5bb533adc5ef86990e3eac024700fcd8b0e2ff0c0b56e31cf9b817bc"
+    }
+  },
+  "outputs": {
+    "pdf": {
+      "path": "fig1_combined_results.pdf",
+      "bytes": 68235,
+      "sha256": "ece3841a76d9dab288d4716a4ead61acdfe4d672de10c999ad24c30630a68acb"
+    },
+    "png": {
+      "path": "fig1_combined_results.png",
+      "bytes": 159012,
+      "sha256": "70fe6732cce3df8bfc2649e93e3d748fd90e71e9f9a4100abba448899103f9e6"
+    },
+    "grayscale": {
+      "path": "fig1_combined_results_grayscale.png",
+      "bytes": 156147,
+      "sha256": "0ef426946f4b6c0a6552aaf199ce9bc525de6524e5eb6dd6ac252cb6283c0a08"
+    },
+    "caption": {
+      "path": "fig1_combined_results_caption.txt",
+      "bytes": 1211,
+      "sha256": "0796468298f29834b22c53e62dd3bf7d26457a23ecee45cc21fb7856b635a0c7"
+    }
+  },
+  "checks": {
+    "all_new_experiments_exactly_n10": true,
+    "method_digest_equality_per_repeat": true,
+    "deliberative_candidate_digest_equality_per_pair": true,
+    "deliberative_complete_trace_digest_equality_per_pair": true,
+    "scheduler_digest_equality_per_repeat": true,
+    "scaling_digest_equality_across_all_runs": true,
+    "scaling_summary_recomputed_from_raw_runs": true,
+    "all_inputs_unchanged_during_generation": true,
+    "summary_raw_median_agreement": true,
+    "ratio_direction_explicit": true,
+    "technical_bootstrap_interpretation_explicit": true,
+    "layout": {
+      "visible_text_count": 63,
+      "minimum_font_size_pt": 6.0,
+      "resolved_text_fonts": [
+        "Times New Roman"
+      ],
+      "font_exact_match": true,
+      "text_out_of_bounds": [],
+      "overlapping_x_tick_pairs": [],
+      "panel_label_strategy": "panel labels are prefixes of left-aligned axes titles, with the same title x-position, pad, font size, and weight",
+      "pass": true
+    },
+    "export": {
+      "expected_pixels": [
+        1416,
+        1260
+      ],
+      "png_pixels": [
+        1416,
+        1260
+      ],
+      "grayscale_pixels": [
+        1416,
+        1260
+      ],
+      "dimensions_pass": true,
+      "nonempty_files_pass": true,
+      "pdf_vector_configuration": {
+        "matplotlib_pdf_fonttype": 42,
+        "rasterized_artists_added_by_script": false
+      },
+      "pass": true
+    }
+  },
+  "statistics": {
+    "panel_a": {
+      "case": "24624k_18p",
+      "repeat_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "ratio_direction": null,
+      "technical_repeat_definition": "one complete schedule-matched execution per method",
+      "elapsed_s": {
+        "flat_parallel": [
+          29.439635699993232,
+          27.799664699996356,
+          27.538847799994983,
+          28.386764100010623,
+          27.83237229999213,
+          27.941588100002264,
+          27.508486599996104,
+          27.339892999996664,
+          27.305877499995404,
+          27.520024299999932
+        ],
+        "kernel_memo_parallel": [
+          11.788640300001134,
+          10.938975299999584,
+          10.986257500000647,
+          10.690228799998295,
+          10.66073580000375,
+          10.79749530000845,
+          10.745683300003293,
+          10.54987840000831,
+          10.582436800003052,
+          10.977605100008077
+        ],
+        "factorized": [
+          10.797442199997022,
+          10.839235000006738,
+          10.65264759999991,
+          10.34985400000005,
+          10.351589600002626,
+          10.481718399998499,
+          10.35890350000409,
+          10.308543599996483,
+          10.450853400005144,
+          10.516411200005678
+        ]
+      },
+      "medians_s": {
+        "flat_parallel": 27.66925624999567,
+        "kernel_memo_parallel": 10.771589300005871,
+        "factorized": 10.466285900001822
+      }
+    },
+    "panel_b": {
+      "ratio_definition": "KernelMemo-P8 elapsed / LayerProbe-P8 elapsed; values above 1 favor LayerProbe",
+      "interval_definition": "95% technical bootstrap interval for the median; not a population-level inferential confidence interval",
+      "depths": [
+        {
+          "depth": 0,
+          "repeat_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "raw_paired_ratios": [
+            1.0605914006109125,
+            0.9694469508873805,
+            0.8867484264130316,
+            1.0310184593689915,
+            0.9940236902892516,
+            0.9837365886274869,
+            1.0356787256096283,
+            1.000868499326555,
+            1.0300987671659365,
+            1.0311952466347976
+          ],
+          "median": 1.0154836332462458,
+          "technical_bootstrap_ci95": [
+            0.9817353205883161,
+            1.0333485924893098
+          ]
+        },
+        {
+          "depth": 2,
+          "repeat_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "raw_paired_ratios": [
+            1.247712273665219,
+            1.2538946488558018,
+            1.2690218823159136,
+            1.2287145086018505,
+            1.2291453304358213,
+            1.339074857656753,
+            1.318306168744683,
+            1.2327965763122066,
+            1.2218490559202255,
+            1.1502323766715348
+          ],
+          "median": 1.2402544249887129,
+          "technical_bootstrap_ci95": [
+            1.2254971931780234,
+            1.2861004088002423
+          ]
+        },
+        {
+          "depth": 4,
+          "repeat_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "raw_paired_ratios": [
+            1.372054481097082,
+            1.4366015954473481,
+            1.35762326074195,
+            1.3323533480369234,
+            1.3312456926613163,
+            1.29722788050887,
+            1.4004450631034424,
+            1.3545371465330032,
+            1.3445538854927495,
+            1.5362357528960444
+          ],
+          "median": 1.3560802036374766,
+          "technical_bootstrap_ci95": [
+            1.3323533480369234,
+            1.4043280382722152
+          ]
+        },
+        {
+          "depth": 6,
+          "repeat_ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "raw_paired_ratios": [
+            1.380102277209542,
+            1.4884873568485852,
+            1.4144740300246428,
+            1.4516535818855376,
+            1.4530647490825985,
+            1.4539409316902367,
+            1.4714517162372691,
+            1.431409317531668,
+            1.4391604894203427,
+            1.4441084607265724
+          ],
+          "median": 1.447881021306055,
+          "technical_bootstrap_ci95": [
+            1.4268172597224926,
+            1.4622582326599338
+          ]
+        }
+      ]
+    },
+    "panel_c": {
+      "physical_cores": 8,
+      "logical_cores": 16,
+      "points": [
+        {
+          "workers": 1,
+          "technical_repeats": 10,
+          "median_elapsed_s": 64.03695454999252,
+          "speedup_over_one_worker": 1.0
+        },
+        {
+          "workers": 2,
+          "technical_repeats": 10,
+          "median_elapsed_s": 30.92358624999906,
+          "speedup_over_one_worker": 2.070812681048417
+        },
+        {
+          "workers": 4,
+          "technical_repeats": 10,
+          "median_elapsed_s": 17.295189650001703,
+          "speedup_over_one_worker": 3.7025875891442572
+        },
+        {
+          "workers": 6,
+          "technical_repeats": 10,
+          "median_elapsed_s": 12.753251950009144,
+          "speedup_over_one_worker": 5.021225551020859
+        },
+        {
+          "workers": 8,
+          "technical_repeats": 10,
+          "median_elapsed_s": 10.496382349992928,
+          "speedup_over_one_worker": 6.100859554724172
+        },
+        {
+          "workers": 12,
+          "technical_repeats": 10,
+          "median_elapsed_s": 8.021545750001678,
+          "speedup_over_one_worker": 7.983119032884543
+        },
+        {
+          "workers": 16,
+          "technical_repeats": 10,
+          "median_elapsed_s": 7.427332699997351,
+          "speedup_over_one_worker": 8.621796967572942
+        }
+      ]
+    },
+    "panel_d": {
+      "metric_definition": {
+        "x": "maximum worker load divided by mean worker load; 1 is ideal",
+        "y": "wall-clock elapsed time in seconds"
+      },
+      "repeat_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "raw_imbalance": {
+        "current_chunksize": [
+          1.0780578765714453,
+          1.076443072789744,
+          1.082335365921495,
+          1.0815320320457324,
+          1.0807307779408215,
+          1.0685493904785688,
+          1.0751361566827993,
+          1.083047181747627,
+          1.080374757365697,
+          1.0781923990702706
+        ],
+        "fine_chunksize_1": [
+          1.0053376395075784,
+          1.0092778256882808,
+          1.0093603443864325,
+          1.0079829243000058,
+          1.0104023604603374,
+          1.0043925769830468,
+          1.0067149431685596,
+          1.0114337526392667,
+          1.0076354094950344,
+          1.0034623496219817
+        ],
+        "static_contiguous": [
+          1.2240295085157233,
+          1.2213774084409206,
+          1.2495102484468312,
+          1.2110308094727116,
+          1.2262340818978743,
+          1.2225409967813796,
+          1.2239470343995629,
+          1.2207250421055043,
+          1.222867124659575,
+          1.2348603126750355
+        ]
+      },
+      "raw_elapsed_s": {
+        "current_chunksize": [
+          10.962103199999547,
+          10.812374399989494,
+          10.850623200007249,
+          10.381114800009527,
+          10.680620800005272,
+          11.169449000008171,
+          10.508568400007789,
+          10.330103600004804,
+          10.339819799992256,
+          10.392597199999727
+        ],
+        "fine_chunksize_1": [
+          15.723513399992953,
+          15.547137100002146,
+          15.489032400000724,
+          15.561021500005154,
+          15.476869600010104,
+          15.662105199997313,
+          15.563147199995,
+          16.24623169998813,
+          15.46922739999718,
+          15.599062099994626
+        ],
+        "static_contiguous": [
+          12.655902699989383,
+          12.976082099994528,
+          13.749541099998169,
+          12.702616599999601,
+          13.228914800012717,
+          12.762638899992453,
+          13.014933700003894,
+          12.50050409999676,
+          12.741713600000367,
+          12.883110800001305
+        ]
+      },
+      "imbalance_medians": {
+        "current_chunksize": 1.079283578217984,
+        "fine_chunksize_1": 1.0078091668975202,
+        "static_contiguous": 1.223407079529569
+      },
+      "elapsed_medians_s": {
+        "current_chunksize": 10.59459460000653,
+        "fine_chunksize_1": 15.562084350000077,
+        "static_contiguous": 12.822874849996879
+      }
+    }
+  },
+  "caption": "Work decomposition and when exact reuse affects elapsed time. (a) P8 elapsed time for Flat, KernelMemo, and LayerProbe; each point is one of n=10 technical repeats, gray segments join the same repeat, and diamonds/short bars mark medians. Flat repeats all presentation-loop work, KernelMemo hoists mechanism-invariant construction, and LayerProbe additionally reuses complete-key semantic steps. (b) Paired KernelMemo-P8/LayerProbe-P8 elapsed-time ratios for the original policy (depth 0) and finite-depth deliberation (n=10 technical repeats per depth); values above 1 favor LayerProbe. Whiskers are 95% technical bootstrap intervals for the median and are not population-level inferential confidence intervals. (c) Single-host strong scaling (n=10 technical repeats per worker count); the dashed guide shows linear scaling through 8 physical cores and shading marks worker counts that use SMT. (d) Elapsed time against load imbalance (maximum/mean worker load; 1 is ideal) for three semantics-equivalent schedules; each small point is one of n=10 paired technical repeats and the enlarged marker is the bivariate median. All paired comparisons require identical semantic digests and deterministic reduction.",
+  "manual_visual_review": {
+    "status": "PASS",
+    "required": true,
+    "clipping_free": true,
+    "overlap_free": true,
+    "alignment_pass": true,
+    "grayscale_separation_pass": true,
+    "review_note": "Color and true-grayscale PNGs were inspected at their delivered 300-dpi resolution. All four panels are clipped-free and aligned; schedule labels do not cover points, the parity and ideal-balance guides remain legible, and marker-shape redundancy preserves category identity in grayscale."
+  }
+}

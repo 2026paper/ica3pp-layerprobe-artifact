@@ -1,0 +1,66 @@
+{
+  "agents": [
+    "reference",
+    "instant_stop",
+    "speed_only",
+    "friction_blind"
+  ],
+  "catalog_digest": "e035bf71af6ffd8eb08838a6b34a5cd6180160ffefc48f2f320ceb1c3c83d977",
+  "claim_scope": "fixed-seed sampled sensitivity audit in the frozen braking domain; not exhaustive verification and not a second domain",
+  "code_fingerprint": "4ecdf873cbf83896c002b2a4529ff7ec7c871bd7fe3a0336de4302a0d36c9bbe",
+  "command": [
+    "experiments\\randomized_mutation_audit.py",
+    "--output",
+    "results\\randomized_mutation_audit_seed20260724_128",
+    "--seed",
+    "20260724",
+    "--per-family",
+    "20",
+    "--sample-kernels",
+    "128",
+    "--workers",
+    "8",
+    "--no-resume"
+  ],
+  "config_path": "${ARTIFACT_ROOT}\\experiments\\independent_trace_oracle_config.json",
+  "config_sha256": "0f5d347b9d1c47c07b2da43aec6dbc70b28f4159742a5f61fd8e982ffab538db",
+  "created_at": "2026-07-24T19:36:41+08:00",
+  "detection_semantics": {
+    "independent_oracle_detected": "at least one exact trace or downstream signature differs from the independent frozen oracle",
+    "oracle_comparison_detected": "at least one exact trace or downstream signature differs from the independent frozen oracle",
+    "signature_detected": "at least one six-bit pairwise behavioral signature differs; this is a lower-resolution downstream check",
+    "trace_detected": "at least one complete observation/action/status trace differs exactly from the oracle"
+  },
+  "environment": {
+    "hostname": "DEEP-2019KGCXQF",
+    "logical_cpus": 16,
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "experiment": "randomized_mutation_sensitivity",
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "families": [
+    "agent_policy",
+    "boundary_offset",
+    "cache_key_projection"
+  ],
+  "file_sha256": {
+    "experiments/independent_trace_oracle.py": "b3b591a2cfe951870160a92abcca80681667b81e0ca7bb8c58e4a96d93afac8d",
+    "experiments/randomized_mutation_audit.py": "c070e8f3c76462ca8ee2cfd500389f82256a34d9108a8e00d11bbb7a24beb6b4",
+    "src/layerprobe/model.py": "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+  },
+  "key_replay_orders": [
+    "canonical",
+    "reverse"
+  ],
+  "mutation_count": 60,
+  "per_family": 20,
+  "presentations": 18,
+  "sample_digest": "c5f814c9608e2cdf21a39332af52e0658008455cc3dca7d7b35f677c3493eb75",
+  "sample_kernels": 128,
+  "sample_strategy": "valid mechanisms stratified by friction, brake force, and horizon; evenly spaced within each stratum",
+  "schema_version": 1,
+  "seed": 20260724,
+  "valid_population": 10544,
+  "workers": 8
+}

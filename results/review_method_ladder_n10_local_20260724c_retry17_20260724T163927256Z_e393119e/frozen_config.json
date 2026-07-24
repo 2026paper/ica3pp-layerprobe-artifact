@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "profile_name": "ica3pp_review_response_8c32g",
+  "paper_scope": "primary braking performance case plus a second finite-state semantic transfer audit",
+  "venue": "ICA3PP 2026",
+  "venue_track": "Track 8: Performance Modeling and Evaluation",
+  "venue_deadline_date": "2026-07-25",
+  "internal_experiment_freeze": "2026-07-24T18:00:00+08:00",
+  "python_minimum": "3.12",
+  "minimum_physical_cores": 4,
+  "primary_workers": 8,
+  "throughput_workers": 16,
+  "maximum_workers": 16,
+  "minimum_available_memory_gib": 8,
+  "warmup": {
+    "kernels": 300,
+    "presentations": 18
+  },
+  "correctness_gate": {
+    "kernel_counts": [
+      100,
+      500,
+      1200
+    ],
+    "presentation_counts": [
+      2,
+      8,
+      18
+    ],
+    "workers": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16
+    ]
+  },
+  "method_ladder": {
+    "kernel_counts": [
+      24624
+    ],
+    "presentations": 18,
+    "sequential_pair_repeats": 10,
+    "flat_pair_repeats": 10,
+    "parallel_pair_repeats": 10
+  },
+  "parallel_scaling": {
+    "kernels": 24624,
+    "presentations": 18,
+    "workers": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16
+    ],
+    "repeats": 10
+  },
+  "presentation_scaling": {
+    "kernels": 24624,
+    "presentation_counts": [
+      2,
+      6,
+      10,
+      14,
+      18
+    ],
+    "subset_replicates": 3,
+    "repeats": 10
+  },
+  "capacity_scan": {
+    "kernel_counts": [
+      1000,
+      5000,
+      10000,
+      24624
+    ],
+    "presentations": 18,
+    "repeats": 3
+  }
+}

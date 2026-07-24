@@ -1,0 +1,345 @@
+{
+  "artifact_sha256": {
+    "functions.csv": "ae851408eaab0b48506f317fb403cfd4dc2776efc6561df5c3cc0e8d857c574d",
+    "layerprobe_profile.prof": "684c4cc249d5fc2642dfe708ffcc8af91a571b6e68841b2241da77f94e325cb2"
+  },
+  "cache_counters": {
+    "cache_hits": 1094103,
+    "computed_steps": 2288074,
+    "hit_rate": 0.323490757580103,
+    "peak_cache_entries": null,
+    "peak_cache_entries_basis": "unavailable from the production RunResult/WorkMetrics API; the profiler does not alter evaluator semantics to instrument it",
+    "reported_prefix_groups": 2288074,
+    "semantic_requests": 3382177,
+    "total_cache_entries_across_ephemeral_caches": 2288074,
+    "total_cache_entries_basis": "prefix_groups equals computed_steps and is incremented once per cache insertion in _memoized_agent_traces"
+  },
+  "category_breakdown": {
+    "aggregation/digest": {
+      "cumulative_seconds_sum_nonadditive": 1.3273656,
+      "function_rows": 6,
+      "interpretation": "Candidate-signature construction, frontier reduction, exact cover, and result/metric aggregation. The semantic SHA-256 is computed after profiling and is therefore not charged to this category.",
+      "primitive_calls_sum": 256596,
+      "self_seconds": 1.0504028,
+      "self_time_share": 0.010577999048214243,
+      "total_calls_sum_nonexclusive": 256596
+    },
+    "evaluator/cache-loop residual": {
+      "cumulative_seconds_sum_nonadditive": 378.6468342,
+      "function_rows": 26,
+      "interpretation": "Remainder after the named project functions above. It includes the evaluator/cache loop, Python container operations, generated dataclass hash/equality methods, interpreter/runtime work, and profiler overhead. It is not an exact measurement of cache lookup, key serialization, hashing, or allocation.",
+      "primitive_calls_sum": 46179301,
+      "self_seconds": 44.983867100000005,
+      "self_time_share": 0.4530065069978831,
+      "total_calls_sum_nonexclusive": 46179301
+    },
+    "mechanism validation": {
+      "cumulative_seconds_sum_nonadditive": 11.7492292,
+      "function_rows": 2,
+      "interpretation": "Kernel specification validation and exhaustive bounded graph verification.",
+      "primitive_calls_sum": 49248,
+      "self_seconds": 3.3681597,
+      "self_time_share": 0.033918788202805215,
+      "total_calls_sum_nonexclusive": 49248
+    },
+    "observation": {
+      "cumulative_seconds_sum_nonadditive": 43.5001033,
+      "function_rows": 4,
+      "interpretation": "Presentation validation, observation encoding, and read-only display memory updates.",
+      "primitive_calls_sum": 16910885,
+      "self_seconds": 20.1999536,
+      "self_time_share": 0.20342204909847142,
+      "total_calls_sum_nonexclusive": 16910885
+    },
+    "policy/memory": {
+      "cumulative_seconds_sum_nonadditive": 28.8142964,
+      "function_rows": 5,
+      "interpretation": "Observation ingestion, policy choice, stopping-distance calculation, and agent-memory initialization/update.",
+      "primitive_calls_sum": 8775742,
+      "self_seconds": 14.204352,
+      "self_time_share": 0.1430438132271735,
+      "total_calls_sum_nonexclusive": 8775742
+    },
+    "transition/terminal": {
+      "cumulative_seconds_sum_nonadditive": 25.4087624,
+      "function_rows": 3,
+      "interpretation": "World-state initialization, state transition, and terminal checks.",
+      "primitive_calls_sum": 17977547,
+      "self_seconds": 15.4939733,
+      "self_time_share": 0.15603084342545248,
+      "total_calls_sum_nonexclusive": 17977547
+    }
+  },
+  "interpretation_limits": [
+    "cProfile instrumentation changes absolute timings; these seconds are not used for a wall-clock speedup claim",
+    "self time is additive, whereas cumulative function time overlaps across callers and callees",
+    "Remainder after the named project functions above. It includes the evaluator/cache loop, Python container operations, generated dataclass hash/equality methods, interpreter/runtime work, and profiler overhead. It is not an exact measurement of cache lookup, key serialization, hashing, or allocation."
+  ],
+  "production_metrics": {
+    "candidates": 189792,
+    "graph_builds": 24624,
+    "graph_states": 870555,
+    "graph_transitions": 967728,
+    "observation_calls": 3382177,
+    "policy_calls": 2288074,
+    "prefix_groups": 2288074,
+    "transition_calls": 2288074
+  },
+  "profile_scope": "production run_factorized(kernels, presentations, workers=1); workload construction, semantic digest, and artifact writes are outside the profiled region",
+  "profile_status": "complete",
+  "profile_total_calls": 90149319,
+  "profile_total_primitive_calls": 90149319,
+  "profile_total_self_seconds": 99.30070850000001,
+  "result_counts": {
+    "candidates": 189792,
+    "frontier": 1,
+    "minimum_suite_size": 1,
+    "valid_kernels": 10544
+  },
+  "schema_version": 1,
+  "semantic_digest_sha256": "a171500c18441ecbe3f8e05125a928ca5b88d5b874ee80a16d3d8e88b67fa411",
+  "top_functions_by_cumulative_time": [
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 120.8281422,
+      "function": "src/layerprobe/evaluator.py:481(run_factorized)",
+      "primitive_calls": 1,
+      "self_seconds": 0.27961430000000004,
+      "total_calls": 1
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 120.18980680000001,
+      "function": "src/layerprobe/evaluator.py:451(_factorized_kernel_group)",
+      "primitive_calls": 24624,
+      "self_seconds": 1.1655531000000001,
+      "total_calls": 24624
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 106.4048844,
+      "function": "src/layerprobe/evaluator.py:401(_memoized_agent_traces)",
+      "primitive_calls": 42176,
+      "self_seconds": 21.510673500000003,
+      "total_calls": 42176
+    },
+    {
+      "category": "observation",
+      "cumulative_seconds": 24.1882661,
+      "function": "src/layerprobe/mechanics.py:148(observe)",
+      "primitive_calls": 3382177,
+      "self_seconds": 5.9933379,
+      "total_calls": 3382177
+    },
+    {
+      "category": "transition/terminal",
+      "cumulative_seconds": 16.9070629,
+      "function": "src/layerprobe/mechanics.py:63(transition)",
+      "primitive_calls": 3255802,
+      "self_seconds": 8.432955,
+      "total_calls": 3255802
+    },
+    {
+      "category": "observation",
+      "cumulative_seconds": 15.254309800000001,
+      "function": "src/layerprobe/mechanics.py:134(_raw_observation)",
+      "primitive_calls": 3382177,
+      "self_seconds": 10.1490883,
+      "total_calls": 3382177
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 12.022020300000001,
+      "function": "~:0(<method 'get' of 'dict' objects>)",
+      "primitive_calls": 3382179,
+      "self_seconds": 5.2357582,
+      "total_calls": 3382179
+    },
+    {
+      "category": "mechanism validation",
+      "cumulative_seconds": 11.7275991,
+      "function": "src/layerprobe/mechanics.py:82(verify_kernel)",
+      "primitive_calls": 24624,
+      "self_seconds": 3.3465296,
+      "total_calls": 24624
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 9.8939033,
+      "function": "src/layerprobe/mechanics.py:208(advance_belief)",
+      "primitive_calls": 2288074,
+      "self_seconds": 5.1800614000000005,
+      "total_calls": 2288074
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 6.8641775,
+      "function": "src/layerprobe/mechanics.py:193(choose_action)",
+      "primitive_calls": 2288074,
+      "self_seconds": 2.5462723,
+      "total_calls": 2288074
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 6.821588200000001,
+      "function": "src/layerprobe/mechanics.py:173(ingest)",
+      "primitive_calls": 2288074,
+      "self_seconds": 3.5191992,
+      "total_calls": 2288074
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 6.5592091,
+      "function": "~:0(<built-in method builtins.max>)",
+      "primitive_calls": 16953545,
+      "self_seconds": 6.5592091,
+      "total_calls": 16953545
+    },
+    {
+      "category": "transition/terminal",
+      "cumulative_seconds": 5.9058212,
+      "function": "src/layerprobe/mechanics.py:51(terminal_status)",
+      "primitive_calls": 13937953,
+      "self_seconds": 5.9058212,
+      "total_calls": 13937953
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 4.9194106,
+      "function": "<string>:2(__hash__)",
+      "primitive_calls": 5670251,
+      "self_seconds": 3.2249293000000003,
+      "total_calls": 5670251
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 3.8810561000000003,
+      "function": "~:0(<built-in method builtins.hash>)",
+      "primitive_calls": 13178785,
+      "self_seconds": 3.8810561000000003,
+      "total_calls": 13178785
+    }
+  ],
+  "top_functions_by_self_time": [
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 106.4048844,
+      "function": "src/layerprobe/evaluator.py:401(_memoized_agent_traces)",
+      "primitive_calls": 42176,
+      "self_seconds": 21.510673500000003,
+      "total_calls": 42176
+    },
+    {
+      "category": "observation",
+      "cumulative_seconds": 15.254309800000001,
+      "function": "src/layerprobe/mechanics.py:134(_raw_observation)",
+      "primitive_calls": 3382177,
+      "self_seconds": 10.1490883,
+      "total_calls": 3382177
+    },
+    {
+      "category": "transition/terminal",
+      "cumulative_seconds": 16.9070629,
+      "function": "src/layerprobe/mechanics.py:63(transition)",
+      "primitive_calls": 3255802,
+      "self_seconds": 8.432955,
+      "total_calls": 3255802
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 6.5592091,
+      "function": "~:0(<built-in method builtins.max>)",
+      "primitive_calls": 16953545,
+      "self_seconds": 6.5592091,
+      "total_calls": 16953545
+    },
+    {
+      "category": "observation",
+      "cumulative_seconds": 24.1882661,
+      "function": "src/layerprobe/mechanics.py:148(observe)",
+      "primitive_calls": 3382177,
+      "self_seconds": 5.9933379,
+      "total_calls": 3382177
+    },
+    {
+      "category": "transition/terminal",
+      "cumulative_seconds": 5.9058212,
+      "function": "src/layerprobe/mechanics.py:51(terminal_status)",
+      "primitive_calls": 13937953,
+      "self_seconds": 5.9058212,
+      "total_calls": 13937953
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 12.022020300000001,
+      "function": "~:0(<method 'get' of 'dict' objects>)",
+      "primitive_calls": 3382179,
+      "self_seconds": 5.2357582,
+      "total_calls": 3382179
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 9.8939033,
+      "function": "src/layerprobe/mechanics.py:208(advance_belief)",
+      "primitive_calls": 2288074,
+      "self_seconds": 5.1800614000000005,
+      "total_calls": 2288074
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 3.8810561000000003,
+      "function": "~:0(<built-in method builtins.hash>)",
+      "primitive_calls": 13178785,
+      "self_seconds": 3.8810561000000003,
+      "total_calls": 13178785
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 6.821588200000001,
+      "function": "src/layerprobe/mechanics.py:173(ingest)",
+      "primitive_calls": 2288074,
+      "self_seconds": 3.5191992,
+      "total_calls": 2288074
+    },
+    {
+      "category": "mechanism validation",
+      "cumulative_seconds": 11.7275991,
+      "function": "src/layerprobe/mechanics.py:82(verify_kernel)",
+      "primitive_calls": 24624,
+      "self_seconds": 3.3465296,
+      "total_calls": 24624
+    },
+    {
+      "category": "evaluator/cache-loop residual",
+      "cumulative_seconds": 4.9194106,
+      "function": "<string>:2(__hash__)",
+      "primitive_calls": 5670251,
+      "self_seconds": 3.2249293000000003,
+      "total_calls": 5670251
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 6.8641775,
+      "function": "src/layerprobe/mechanics.py:193(choose_action)",
+      "primitive_calls": 2288074,
+      "self_seconds": 2.5462723,
+      "total_calls": 2288074
+    },
+    {
+      "category": "observation",
+      "cumulative_seconds": 2.2223883,
+      "function": "src/layerprobe/mechanics.py:126(_encode)",
+      "primitive_calls": 6764354,
+      "self_seconds": 2.2223883,
+      "total_calls": 6764354
+    },
+    {
+      "category": "policy/memory",
+      "cumulative_seconds": 3.204873,
+      "function": "src/layerprobe/mechanics.py:182(stopping_distance)",
+      "primitive_calls": 1152352,
+      "self_seconds": 1.9763060000000001,
+      "total_calls": 1152352
+    }
+  ]
+}

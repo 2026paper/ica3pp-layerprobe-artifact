@@ -1,0 +1,121 @@
+{
+  "affected_kernels": 1,
+  "cache_hits": 32820,
+  "cache_misses": 45020,
+  "completed_at": "2026-07-24T19:37:11+08:00",
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "first_witness": {
+    "agent": "reference",
+    "difference": {
+      "observed_length": 5,
+      "observed_step": [
+        [
+          4,
+          -1,
+          0,
+          0
+        ],
+        "coast",
+        "overshoot"
+      ],
+      "oracle_length": 5,
+      "oracle_step": [
+        [
+          4,
+          -1,
+          0,
+          0
+        ],
+        "brake",
+        "overshoot"
+      ],
+      "step_index": 4
+    },
+    "family": "cache_key_projection",
+    "kernel": {
+      "brake_force": 3,
+      "friction": 0,
+      "goal_end": 21,
+      "goal_start": 18,
+      "horizon": 10,
+      "name": "brake_9906",
+      "start_position": 0,
+      "start_speed": 5
+    },
+    "kind": "randomized_mutation_trace",
+    "mutant_signature_mask": 42,
+    "mutation_id": "cache_key_projection_018_ada1244168",
+    "observed_trace_sha256": "eff1cbff020282b7c8a0e99d9e3eaa1eb5f35fc3c5f28778d8cc53d1cc3d96c3",
+    "operator": "delete_fields",
+    "oracle_signature_mask": 59,
+    "oracle_trace_sha256": "3a01b87987175535af150947f9ef250e66840db62e60587ad1904e18634eaca5",
+    "parameters": {
+      "deleted_fields": [
+        "state.step",
+        "state.used_brake",
+        "memory.believed_distance",
+        "observation.within_goal"
+      ],
+      "kept_fields": [
+        "state.position",
+        "state.speed",
+        "memory.believed_speed",
+        "memory.previous_action",
+        "observation.speed",
+        "observation.distance",
+        "observation.status"
+      ]
+    },
+    "presentation": {
+      "delay": 1,
+      "distance_mode": "hidden",
+      "name": "view_11_coarse_hidden_d1",
+      "speed_mode": "coarse"
+    },
+    "replay_order": "canonical",
+    "sample_rank": 127
+  },
+  "independent_oracle_detected": true,
+  "mutation": {
+    "family": "cache_key_projection",
+    "family_index": 18,
+    "mutation_id": "cache_key_projection_018_ada1244168",
+    "operator": "delete_fields",
+    "parameters": {
+      "deleted_fields": [
+        "state.step",
+        "state.used_brake",
+        "memory.believed_distance",
+        "observation.within_goal"
+      ],
+      "kept_fields": [
+        "state.position",
+        "state.speed",
+        "memory.believed_speed",
+        "memory.previous_action",
+        "observation.speed",
+        "observation.distance",
+        "observation.status"
+      ]
+    },
+    "seed": 20260724
+  },
+  "nontermination_guards": 0,
+  "oracle_comparison_detected": true,
+  "sample_scope": {
+    "agents": 4,
+    "kernels": 128,
+    "key_replay_orders": [
+      "canonical",
+      "reverse"
+    ],
+    "presentations": 18
+  },
+  "schema_version": 1,
+  "signature_cases": 4608,
+  "signature_detected": true,
+  "signature_mismatches": 2,
+  "trace_cases": 18432,
+  "trace_detected": true,
+  "trace_mismatches": 4
+}

@@ -1,0 +1,217 @@
+{
+    "schema_version":  1,
+    "start_time_utc":  "2026-07-24T17:53:40.9284391Z",
+    "end_time_utc":  "2026-07-24T18:19:25.8951630Z",
+    "duration_seconds":  1544.966724,
+    "wrapper_pid":  32044,
+    "runner_pid":  9824,
+    "runner_exit_code":  0,
+    "output_label":  "parallel_scaling_n10",
+    "host":  {
+                 "os_caption":  "Microsoft Windows 10 专业版",
+                 "os_version":  "10.0.19045",
+                 "cpu_models":  [
+                                    "Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz"
+                                ],
+                 "physical_cores":  8,
+                 "logical_processors":  16,
+                 "total_memory_bytes":  34179989504
+             },
+    "preflight_stable_seconds":  30,
+    "pre_run_system_load":  {
+                                "time_utc":  "2026-07-24T17:53:40.9044527Z",
+                                "free_physical_memory_bytes":  18275069952,
+                                "cpu_load_percent":  [
+                                                         12
+                                                     ]
+                            },
+    "post_run_system_load":  {
+                                 "time_utc":  "2026-07-24T18:19:27.1866468Z",
+                                 "free_physical_memory_bytes":  18093883392,
+                                 "cpu_load_percent":  [
+                                                          17
+                                                      ]
+                             },
+    "command":  {
+                    "python_executable":  "python.exe",
+                    "script_path":  "${ARTIFACT_ROOT}\\experiments\\deadline_runner.py",
+                    "script":  {
+                                   "path_relative_to_repo":  "experiments/deadline_runner.py",
+                                   "bytes":  44030,
+                                   "sha256":  "abe6a5267d3dc2aefa124429ac3d4e46d7f59faae7a86cde364ca88aa4c84520"
+                               },
+                    "input_files":  [
+                                        {
+                                            "path_relative_to_repo":  "experiments/deadline_profile_review_8c32g.json",
+                                            "bytes":  1329,
+                                            "sha256":  "299fa3608e533fd8c00843d43e1dbc3732753520ec26170a9c51ff84e8b928b5"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                            "bytes":  397,
+                                            "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                            "bytes":  4124,
+                                            "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                            "bytes":  18497,
+                                            "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                            "bytes":  7817,
+                                            "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/model.py",
+                                            "bytes":  3747,
+                                            "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                            "bytes":  2126,
+                                            "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                            "bytes":  40372,
+                                            "sha256":  "4b3068cbe46909405b081958993191e7b7b6e59822225af175af069296f50e0f"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                            "bytes":  11618,
+                                            "sha256":  "28ee2b224d3990295e98613530eb3ada7db37891b8ced2fa5d4638ca1dcf1ac3"
+                                        }
+                                    ],
+                    "argument_list":  [
+                                          "--config",
+                                          "experiments\\deadline_profile_review_8c32g.json",
+                                          "--mode",
+                                          "paper",
+                                          "--only",
+                                          "parallel_scaling",
+                                          "--output",
+                                          "results\\parallel_scaling_n10_local_20260724c",
+                                          "--ignore-freeze"
+                                      ],
+                    "rendered":  "python.exe ${ARTIFACT_ROOT}\\experiments\\deadline_runner.py --config experiments\\deadline_profile_review_8c32g.json --mode paper --only parallel_scaling --output results\\parallel_scaling_n10_local_20260724c --ignore-freeze"
+                },
+    "poll_interval_seconds":  1,
+    "source_input_integrity":  {
+                                   "complete":  true,
+                                   "unchanged":  true,
+                                   "source_script":  {
+                                                         "path_relative_to_repo":  "experiments/deadline_runner.py",
+                                                         "bytes":  44030,
+                                                         "sha256":  "abe6a5267d3dc2aefa124429ac3d4e46d7f59faae7a86cde364ca88aa4c84520"
+                                                     },
+                                   "input_files":  [
+                                                       {
+                                                           "path_relative_to_repo":  "experiments/deadline_profile_review_8c32g.json",
+                                                           "bytes":  1329,
+                                                           "sha256":  "299fa3608e533fd8c00843d43e1dbc3732753520ec26170a9c51ff84e8b928b5"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                                           "bytes":  397,
+                                                           "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                                           "bytes":  4124,
+                                                           "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                                           "bytes":  18497,
+                                                           "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                                           "bytes":  7817,
+                                                           "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/model.py",
+                                                           "bytes":  3747,
+                                                           "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                                           "bytes":  2126,
+                                                           "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                                           "bytes":  40372,
+                                                           "sha256":  "4b3068cbe46909405b081958993191e7b7b6e59822225af175af069296f50e0f"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                                           "bytes":  11618,
+                                                           "sha256":  "28ee2b224d3990295e98613530eb3ada7db37891b8ced2fa5d4638ca1dcf1ac3"
+                                                       }
+                                                   ],
+                                   "error":  null
+                               },
+    "foreign_python_count":  0,
+    "ignored_control_probe_count":  0,
+    "ignored_control_probe_processes":  [
+
+                                        ],
+    "result_tree":  {
+                        "path_relative_to_repo":  "results/parallel_scaling_n10_local_20260724c",
+                        "file_count":  7,
+                        "tree_sha256":  "1396339aa9851152c46831ac8fe331d434252afb2c09484f33bd22d0e620eeb8",
+                        "files":  [
+                                      {
+                                          "path":  "frozen_config.json",
+                                          "bytes":  1634,
+                                          "sha256":  "01953cacc8d5101989e47f5b434ff2d0cdff10802a38c1e5d3016ecd5aef069c"
+                                      },
+                                      {
+                                          "path":  "metadata.json",
+                                          "bytes":  1260,
+                                          "sha256":  "9c40bd1282ab12bdde2fafa25c06dae4e8aba58c0bb113d6b620996ced90d358"
+                                      },
+                                      {
+                                          "path":  "progress.json",
+                                          "bytes":  154,
+                                          "sha256":  "bf1a3e95d77ebe1e7791ede61d3b7e45effaa961d00c7287a70d635aa6dae1f2"
+                                      },
+                                      {
+                                          "path":  "runs.csv",
+                                          "bytes":  52700,
+                                          "sha256":  "c143f4d7e1bff4ba158ede2dc9691a221d84c9fda27606009ec319cf0362f74c"
+                                      },
+                                      {
+                                          "path":  "semantic_checks.json",
+                                          "bytes":  1473,
+                                          "sha256":  "85dc146f8b112c5c4c18fccb9fb2cb4c48a59fc325718072ec5f55ce31fcee8c"
+                                      },
+                                      {
+                                          "path":  "summary.json",
+                                          "bytes":  4892,
+                                          "sha256":  "d4641c76a2831a8d4156b67958f4cfe4c5a80ee42e002847b7ddbc54b8ffcdab"
+                                      },
+                                      {
+                                          "path":  "SUMMARY.md",
+                                          "bytes":  1503,
+                                          "sha256":  "fe76e7b5db56d824ea6ecf72d054c539899b29143db8fd0089201f310ba995a0"
+                                      }
+                                  ]
+                    },
+    "logs":  {
+                 "stdout_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15\\stdout.log",
+                 "stderr_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\parallel_scaling_n10_20260724T175308263Z_wrapper32044_d24c7c15\\stderr.log",
+                 "hashes":  {
+                                "stdout_sha256":  "7343186b0a2f090aee6c23bd5c920009161d74fb68795cfaf5fbc05e610b070f",
+                                "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                            }
+             },
+    "status":  "clean_run"
+}

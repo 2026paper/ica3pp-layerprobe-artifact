@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "audit_id": "distance_sentinel_impact_audit_20260724_xeon",
+  "scientific_role": "Read-only semantic impact audit of the signed-distance/missing-sentinel repair.",
+  "claim_boundary": "This audit compares saved semantic outputs only. It must not compare or report old/new wall-clock time, and it is not evidence about human learning or users.",
+  "inputs": [
+    {
+      "id": "old_communication_candidates",
+      "path": "results/communication_full_24624_20260723_xeon/candidate_signatures.csv.gz",
+      "sha256": "d285caebdbd6fad45682ff5598d54d2bb80267c5665157aba79631affbd8a5b7",
+      "role": "pre-repair full-domain candidate masks"
+    },
+    {
+      "id": "old_communication_summary",
+      "path": "results/communication_full_24624_20260723_xeon/summary.json",
+      "sha256": "306b8e5f41aae4726013947bcb75f612bee6720cd4d61a16779f0d86a37a879b",
+      "role": "pre-repair communication counts and model-pair order"
+    },
+    {
+      "id": "new_communication_candidates",
+      "path": "results/communication_full_24624_distancefix_provenance_v2_20260723_xeon/candidate_signatures.csv.gz",
+      "sha256": "3505e0be250e919e524281caf75a826b8580bdb46ba0206012aaafed4e7bbc72",
+      "role": "corrected provenance-v2 full-domain candidate masks"
+    },
+    {
+      "id": "new_communication_summary",
+      "path": "results/communication_full_24624_distancefix_provenance_v2_20260723_xeon/summary.json",
+      "sha256": "6dbb98660d761c1b43d5369c8a4349e542166a667cc91b02a8b8db82add2a6a1",
+      "role": "corrected provenance-v2 communication counts and provenance"
+    },
+    {
+      "id": "old_oracle_kernel_checks",
+      "path": "results/independent_trace_oracle_full_24624_20260723_xeon/kernel_checks.jsonl",
+      "sha256": "d8f22ad9ce3027f7e8c6907960d5e8fb1578ae3a37f55847e9fca3c8938a1340",
+      "role": "pre-repair per-kernel independent-oracle checks"
+    },
+    {
+      "id": "old_oracle_summary",
+      "path": "results/independent_trace_oracle_full_24624_20260723_xeon/summary.json",
+      "sha256": "7655b92946fbd038961d417e5c4a48a796888978c7b0117f8743af62801f1c2a",
+      "role": "pre-repair independent-oracle aggregate"
+    },
+    {
+      "id": "new_oracle_kernel_checks",
+      "path": "results/independent_trace_oracle_full_24624_distancefix_20260723_xeon/kernel_checks.jsonl",
+      "sha256": "7342039e177175cdefbfd064fdc6b91304e8560013dab3c8a58f07f6073eeba1",
+      "role": "corrected per-kernel independent-oracle checks"
+    },
+    {
+      "id": "new_oracle_summary",
+      "path": "results/independent_trace_oracle_full_24624_distancefix_20260723_xeon/summary.json",
+      "sha256": "a5d6531a346092b8185aab916515de9a69729981770823ab5b2b5b70614e64e7",
+      "role": "corrected independent-oracle aggregate and seven-mutant gate"
+    },
+    {
+      "id": "old_cache_summary",
+      "path": "results/cache_key_ablation_full_24624_20260723_xeon/summary.json",
+      "sha256": "fc040dbb6ba04be16296d8c0a79811e6aa4be73fe6dc0b97b803651eedd440c1",
+      "role": "pre-repair cache-key control aggregate"
+    },
+    {
+      "id": "new_cache_summary",
+      "path": "results/cache_key_ablation_full_24624_distancefix_20260723_xeon/summary.json",
+      "sha256": "babe4e941e22495d42f84b89d842d1b102edabf926989c40c51b1425d99aab76",
+      "role": "corrected cache-key control aggregate"
+    },
+    {
+      "id": "old_range_summary",
+      "path": "results/range_extension_stress_20260723_xeon/summary.json",
+      "sha256": "7531b9b29aeccc9f327f1a2e5071d88c3b2a501f78a6e356b24e73a96e5c7ed7",
+      "role": "pre-repair range-extension stress summary"
+    },
+    {
+      "id": "old_range_valid_names",
+      "path": "results/range_extension_stress_20260723_xeon/valid_kernel_names.txt",
+      "sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "role": "pre-repair range-extension valid-set certificate"
+    },
+    {
+      "id": "new_range_summary",
+      "path": "results/range_extension_stress_distancefix_provenance_v2_20260723_xeon/summary.json",
+      "sha256": "0698995bdd05e98bca00b08480a151f0e278acd3bdcca7d997befbec44588d59",
+      "role": "corrected provenance-v2 range-extension stress summary"
+    },
+    {
+      "id": "new_range_valid_names",
+      "path": "results/range_extension_stress_distancefix_provenance_v2_20260723_xeon/valid_kernel_names.txt",
+      "sha256": "13a13956352c1269c19ec92cf14998484be25fe77cb3082588bc112e3aed36bf",
+      "role": "corrected range-extension valid-set certificate"
+    },
+    {
+      "id": "new_enhanced_verifier_report",
+      "path": "results/enhanced_output_verification_distancefix_provenance_v3_20260723_xeon/verification_report.json",
+      "sha256": "2b43dc03509a1a1ad2975b2194cf3d7edecfe9dffd17b814376a8e4c48fcf611",
+      "role": "corrected provenance-v3 read-only enhanced-bundle verification"
+    },
+    {
+      "id": "corrected_mechanics_source",
+      "path": "src/layerprobe/mechanics.py",
+      "sha256": "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5",
+      "role": "corrected visible-distance semantics under audit"
+    }
+  ],
+  "model_pairs": [
+    ["reference", "instant_stop"],
+    ["reference", "speed_only"],
+    ["reference", "friction_blind"],
+    ["instant_stop", "speed_only"],
+    ["instant_stop", "friction_blind"],
+    ["speed_only", "friction_blind"]
+  ],
+  "presentations": [
+    {"name": "view_00_exact_exact_d0", "speed_mode": "exact", "distance_mode": "exact", "delay": 0},
+    {"name": "view_01_exact_exact_d1", "speed_mode": "exact", "distance_mode": "exact", "delay": 1},
+    {"name": "view_02_exact_coarse_d0", "speed_mode": "exact", "distance_mode": "coarse", "delay": 0},
+    {"name": "view_03_exact_coarse_d1", "speed_mode": "exact", "distance_mode": "coarse", "delay": 1},
+    {"name": "view_04_exact_hidden_d0", "speed_mode": "exact", "distance_mode": "hidden", "delay": 0},
+    {"name": "view_05_exact_hidden_d1", "speed_mode": "exact", "distance_mode": "hidden", "delay": 1},
+    {"name": "view_06_coarse_exact_d0", "speed_mode": "coarse", "distance_mode": "exact", "delay": 0},
+    {"name": "view_07_coarse_exact_d1", "speed_mode": "coarse", "distance_mode": "exact", "delay": 1},
+    {"name": "view_08_coarse_coarse_d0", "speed_mode": "coarse", "distance_mode": "coarse", "delay": 0},
+    {"name": "view_09_coarse_coarse_d1", "speed_mode": "coarse", "distance_mode": "coarse", "delay": 1},
+    {"name": "view_10_coarse_hidden_d0", "speed_mode": "coarse", "distance_mode": "hidden", "delay": 0},
+    {"name": "view_11_coarse_hidden_d1", "speed_mode": "coarse", "distance_mode": "hidden", "delay": 1},
+    {"name": "view_12_hidden_exact_d0", "speed_mode": "hidden", "distance_mode": "exact", "delay": 0},
+    {"name": "view_13_hidden_exact_d1", "speed_mode": "hidden", "distance_mode": "exact", "delay": 1},
+    {"name": "view_14_hidden_coarse_d0", "speed_mode": "hidden", "distance_mode": "coarse", "delay": 0},
+    {"name": "view_15_hidden_coarse_d1", "speed_mode": "hidden", "distance_mode": "coarse", "delay": 1},
+    {"name": "view_16_hidden_hidden_d0", "speed_mode": "hidden", "distance_mode": "hidden", "delay": 0},
+    {"name": "view_17_hidden_hidden_d1", "speed_mode": "hidden", "distance_mode": "hidden", "delay": 1}
+  ],
+  "expected": {
+    "requested_kernels": 24624,
+    "valid_kernels": 10544,
+    "presentations": 18,
+    "candidates": 189792,
+    "trace_cases": 759168,
+    "old_oracle_trace_steps": 3381840,
+    "new_oracle_trace_steps": 3382177,
+    "trace_step_delta": 337,
+    "new_oracle_mismatch_total": 0,
+    "new_mutants_total": 7,
+    "new_mutants_detected": 7,
+    "changed_candidates": 2986,
+    "changed_kernels": 1579,
+    "trace_hash_changed_kernels": 7890,
+    "nonzero_trace_step_delta_kernels": 390,
+    "hidden_distance_changed_candidates": 0,
+    "range_requested_kernels": 432,
+    "range_valid_kernels": 272,
+    "range_candidates": 4896,
+    "enhanced_verifier_passed": 61,
+    "enhanced_verifier_failed": 0,
+    "enhanced_verifier_total": 61
+  },
+  "expected_candidate_changes_by_presentation": {
+    "view_00_exact_exact_d0": 319,
+    "view_01_exact_exact_d1": 0,
+    "view_02_exact_coarse_d0": 228,
+    "view_03_exact_coarse_d1": 0,
+    "view_04_exact_hidden_d0": 0,
+    "view_05_exact_hidden_d1": 0,
+    "view_06_coarse_exact_d0": 292,
+    "view_07_coarse_exact_d1": 0,
+    "view_08_coarse_coarse_d0": 246,
+    "view_09_coarse_coarse_d1": 0,
+    "view_10_coarse_hidden_d0": 0,
+    "view_11_coarse_hidden_d1": 0,
+    "view_12_hidden_exact_d0": 1230,
+    "view_13_hidden_exact_d1": 42,
+    "view_14_hidden_coarse_d0": 629,
+    "view_15_hidden_coarse_d1": 0,
+    "view_16_hidden_hidden_d0": 0,
+    "view_17_hidden_hidden_d1": 0
+  },
+  "expected_mask_transitions": [
+    {"old_mask": 25, "new_mask": 0, "count": 66},
+    {"old_mask": 31, "new_mask": 30, "count": 75},
+    {"old_mask": 51, "new_mask": 42, "count": 288},
+    {"old_mask": 59, "new_mask": 42, "count": 1228},
+    {"old_mask": 63, "new_mask": 47, "count": 45},
+    {"old_mask": 63, "new_mask": 62, "count": 1284}
+  ],
+  "expected_pair_flips": {
+    "reference__instant_stop": {"zero_to_one": 0, "one_to_zero": 2941},
+    "reference__speed_only": {"zero_to_one": 0, "one_to_zero": 0},
+    "reference__friction_blind": {"zero_to_one": 0, "one_to_zero": 0},
+    "instant_stop__speed_only": {"zero_to_one": 288, "one_to_zero": 66},
+    "instant_stop__friction_blind": {"zero_to_one": 0, "one_to_zero": 1627},
+    "speed_only__friction_blind": {"zero_to_one": 0, "one_to_zero": 0}
+  },
+  "expected_trace_step_delta_distribution": {
+    "-4": 26,
+    "-3": 3,
+    "-2": 11,
+    "-1": 42,
+    "0": 10154,
+    "1": 102,
+    "2": 206
+  }
+}

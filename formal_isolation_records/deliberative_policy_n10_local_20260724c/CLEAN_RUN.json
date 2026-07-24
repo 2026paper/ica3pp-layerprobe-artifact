@@ -1,0 +1,198 @@
+{
+    "schema_version":  1,
+    "start_time_utc":  "2026-07-24T18:34:36.4430931Z",
+    "end_time_utc":  "2026-07-24T18:37:29.6020935Z",
+    "duration_seconds":  173.159,
+    "wrapper_pid":  32300,
+    "runner_pid":  24128,
+    "runner_exit_code":  0,
+    "output_label":  "deliberative_policy_n10",
+    "host":  {
+                 "os_caption":  "Microsoft Windows 10 专业版",
+                 "os_version":  "10.0.19045",
+                 "cpu_models":  [
+                                    "Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz"
+                                ],
+                 "physical_cores":  8,
+                 "logical_processors":  16,
+                 "total_memory_bytes":  34179989504
+             },
+    "preflight_stable_seconds":  30,
+    "pre_run_system_load":  {
+                                "time_utc":  "2026-07-24T18:34:36.4241047Z",
+                                "free_physical_memory_bytes":  17940934656,
+                                "cpu_load_percent":  [
+                                                         4
+                                                     ]
+                            },
+    "post_run_system_load":  {
+                                 "time_utc":  "2026-07-24T18:37:30.8313755Z",
+                                 "free_physical_memory_bytes":  17990778880,
+                                 "cpu_load_percent":  [
+                                                          15
+                                                      ]
+                             },
+    "command":  {
+                    "python_executable":  "python.exe",
+                    "script_path":  "${ARTIFACT_ROOT}\\experiments\\deliberative_policy_benchmark.py",
+                    "script":  {
+                                   "path_relative_to_repo":  "experiments/deliberative_policy_benchmark.py",
+                                   "bytes":  52556,
+                                   "sha256":  "cb9aa0da6d201ff39cdb90d0a7f646c72abf33a777b7160c37aeb30cac771ba4"
+                               },
+                    "input_files":  [
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                            "bytes":  397,
+                                            "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                            "bytes":  4124,
+                                            "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                            "bytes":  18497,
+                                            "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                            "bytes":  7817,
+                                            "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/model.py",
+                                            "bytes":  3747,
+                                            "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                            "bytes":  2126,
+                                            "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                            "bytes":  40763,
+                                            "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                        },
+                                        {
+                                            "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                            "bytes":  12503,
+                                            "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                        }
+                                    ],
+                    "argument_list":  [
+                                          "--output",
+                                          "results\\deliberative_policy_n10_local_20260724c",
+                                          "--workers",
+                                          "8",
+                                          "--repeats",
+                                          "10",
+                                          "--depths",
+                                          "0",
+                                          "2",
+                                          "4",
+                                          "6",
+                                          "--population-kernels",
+                                          "24624",
+                                          "--sample-size",
+                                          "512",
+                                          "--presentations",
+                                          "18",
+                                          "--bootstrap-samples",
+                                          "10000"
+                                      ],
+                    "rendered":  "python.exe ${ARTIFACT_ROOT}\\experiments\\deliberative_policy_benchmark.py --output results\\deliberative_policy_n10_local_20260724c --workers 8 --repeats 10 --depths 0 2 4 6 --population-kernels 24624 --sample-size 512 --presentations 18 --bootstrap-samples 10000"
+                },
+    "poll_interval_seconds":  1,
+    "source_input_integrity":  {
+                                   "complete":  true,
+                                   "unchanged":  true,
+                                   "source_script":  {
+                                                         "path_relative_to_repo":  "experiments/deliberative_policy_benchmark.py",
+                                                         "bytes":  52556,
+                                                         "sha256":  "cb9aa0da6d201ff39cdb90d0a7f646c72abf33a777b7160c37aeb30cac771ba4"
+                                                     },
+                                   "input_files":  [
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/__init__.py",
+                                                           "bytes":  397,
+                                                           "sha256":  "6a9de8ac4cb7676cff47667b14245abdbfa88b1ff02b9d069b02ca6fec9cc5fb"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/cli.py",
+                                                           "bytes":  4124,
+                                                           "sha256":  "42eb6ecd9f3159e6c4ce84d054af2159144b64126c7c9e50b8e47e347e87916b"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/evaluator.py",
+                                                           "bytes":  18497,
+                                                           "sha256":  "e9b183db3df914db4496f88ee6d654f7175be2b1e6e44cf7b034a9ce9f3f82b1"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/mechanics.py",
+                                                           "bytes":  7817,
+                                                           "sha256":  "d1879d552b06d256a79d4593a519704c1df3537db6549192f5a120dbd8d30ae5"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/model.py",
+                                                           "bytes":  3747,
+                                                           "sha256":  "8b1867b293b40310af4f5b08dc7b6539bf74892f138c9bc9d8828a43ad979c2c"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "src/layerprobe/workloads.py",
+                                                           "bytes":  2126,
+                                                           "sha256":  "648cb7c7b710ba49c30b56ff5ea748d870ee08a0a74613b1bf75da1814154104"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/run_isolated_formal.ps1",
+                                                           "bytes":  40763,
+                                                           "sha256":  "f5a01ed0dc80db7ef75e57a5b8f9c780067bb44257d9425a1ed0abce7e2b10ce"
+                                                       },
+                                                       {
+                                                           "path_relative_to_repo":  "scripts/queue_formal_singlehost.ps1",
+                                                           "bytes":  12503,
+                                                           "sha256":  "5a16d4d508a5142a461bd065926e29ccb00ae844d9c77ade52986a908bcd0974"
+                                                       }
+                                                   ],
+                                   "error":  null
+                               },
+    "foreign_python_count":  0,
+    "expected_output_dir":  "results/deliberative_policy_n10_local_20260724c",
+    "ignored_control_probe_count":  0,
+    "ignored_control_probe_processes":  [
+
+                                        ],
+    "result_tree":  {
+                        "path_relative_to_repo":  "results/deliberative_policy_n10_local_20260724c",
+                        "file_count":  3,
+                        "tree_sha256":  "d44a0255c9657817878fa4c0136d0e9cf6f0d1ce159f97d7020c28c19e2395a2",
+                        "files":  [
+                                      {
+                                          "path":  "metadata.json",
+                                          "bytes":  9018,
+                                          "sha256":  "12e4ce2d6c94d413fe8e8f92993fc01c55c1b74e841c503856fbb683a18b90a3"
+                                      },
+                                      {
+                                          "path":  "runs.csv",
+                                          "bytes":  30840,
+                                          "sha256":  "18dec3e577330db721ec146bcfe3a2874bc59090f8cbc8c4775a37c6373a2da4"
+                                      },
+                                      {
+                                          "path":  "summary.json",
+                                          "bytes":  22533,
+                                          "sha256":  "b7197b5b0dbd92148582a6859e9653532e020010e3f8dd6a2729c7475be02cb1"
+                                      }
+                                  ]
+                    },
+    "logs":  {
+                 "stdout_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\deliberative_policy_n10_20260724T183403785Z_wrapper32300_044d7ca2\\stdout.log",
+                 "stderr_path":  "${ARTIFACT_ROOT}\\artifact_runs\\formal_isolation\\deliberative_policy_n10_20260724T183403785Z_wrapper32300_044d7ca2\\stderr.log",
+                 "hashes":  {
+                                "stdout_sha256":  "61f1e18ed6844531a740c564dd68a2323d4a40821a923fb25098ae1b007842ac",
+                                "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                            }
+             },
+    "status":  "clean_run"
+}

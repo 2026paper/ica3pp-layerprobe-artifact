@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-07-23T23:29:35.721511+08:00",
+  "experiment_id": "range_extension_stress_20260723_xeon",
+  "scientific_role": "Out-of-primary-grid braking range-extension stress test for exactness and work accounting; not a second mechanism family and not a timing benchmark.",
+  "reporting_boundary": "Elapsed time is retained only as a diagnostic and must not be used as performance evidence because this run is not a matched isolated timing schedule.",
+  "config_sha256": "dfb3b47b3b0f5a794c74d8ae549427d29d608fcfce11f5730d5f6510a6cfa16e",
+  "script_sha256": "d24268b5dc4dee9e0b8bb3b852c50dbdf71cc4ff4c849d56b7091c9633cd900a",
+  "core_source_sha256": "308a79a70edb6559f630ad9119ca0c8f87fecac7887fb3d6f1e5794d068e3ded",
+  "requested_kernels": 432,
+  "presentations": 18,
+  "results": {
+    "Flat": {
+      "valid_kernels": 272,
+      "candidates": 4896,
+      "minimum_suite": [
+        "stress_brake_0002::view_04_exact_hidden_d0"
+      ],
+      "candidate_signature_sha256": "d34f7d68a001757f350aec1750e162afb539f1f5cc1197f853d4935a52d8798e",
+      "metrics": {
+        "graph_builds": 7776,
+        "graph_states": 1001448,
+        "graph_transitions": 1258848,
+        "observation_calls": 120096,
+        "policy_calls": 120096,
+        "transition_calls": 120096,
+        "prefix_groups": 0,
+        "candidates": 4896
+      },
+      "elapsed_diagnostic_seconds": 10.68880529999933
+    },
+    "LayerProbe-P8": {
+      "valid_kernels": 272,
+      "candidates": 4896,
+      "minimum_suite": [
+        "stress_brake_0002::view_04_exact_hidden_d0"
+      ],
+      "candidate_signature_sha256": "d34f7d68a001757f350aec1750e162afb539f1f5cc1197f853d4935a52d8798e",
+      "metrics": {
+        "graph_builds": 432,
+        "graph_states": 55636,
+        "graph_transitions": 69936,
+        "observation_calls": 120096,
+        "policy_calls": 87310,
+        "transition_calls": 87310,
+        "prefix_groups": 87310,
+        "candidates": 4896
+      },
+      "elapsed_diagnostic_seconds": 0.7532409999994343
+    }
+  },
+  "work_deltas": {
+    "graph_build_reduction": 0.9444444444444444,
+    "graph_build_ratio_flat_over_factorized": 18.0,
+    "policy_transition_call_reduction": 0.27299826805222493
+  },
+  "gates": {
+    "identical_valid_kernel_names": true,
+    "identical_candidate_signatures": true,
+    "identical_minimum_suite": true,
+    "flat_graph_builds_equal_requested_kernels_times_presentations": true,
+    "factorized_graph_builds_equal_requested_kernels": true
+  },
+  "first_mismatch": null
+}

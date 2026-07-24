@@ -1,0 +1,94 @@
+{
+  "affected_kernels": 26,
+  "cache_hits": 0,
+  "cache_misses": 0,
+  "completed_at": "2026-07-24T19:36:53+08:00",
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "first_witness": {
+    "agent": "speed_only",
+    "difference": {
+      "observed_length": 11,
+      "observed_step": [
+        [
+          1,
+          5,
+          0,
+          0
+        ],
+        "coast",
+        "running"
+      ],
+      "oracle_length": 10,
+      "oracle_step": [
+        [
+          1,
+          5,
+          0,
+          0
+        ],
+        "coast",
+        "timeout"
+      ],
+      "step_index": 9
+    },
+    "family": "boundary_offset",
+    "kernel": {
+      "brake_force": 4,
+      "friction": 0,
+      "goal_end": 19,
+      "goal_start": 18,
+      "horizon": 10,
+      "name": "brake_10170",
+      "start_position": 0,
+      "start_speed": 9
+    },
+    "kind": "randomized_mutation_trace",
+    "mutant_signature_mask": 59,
+    "mutation_id": "boundary_offset_000_88b4a16fb0",
+    "observed_trace_sha256": "31404e3fb9b9a0716a60ff88311e2717db852e0da195ef854ad03d83d7ae9a06",
+    "operator": "boundary_offsets",
+    "oracle_signature_mask": 59,
+    "oracle_trace_sha256": "8f1e9363492c79d489f9a74428c4a75924a51d4de7822471aa4c4c8b9c36f601",
+    "parameters": {
+      "offsets": {
+        "terminal_horizon": 1
+      }
+    },
+    "presentation": {
+      "delay": 0,
+      "distance_mode": "exact",
+      "name": "view_00_exact_exact_d0",
+      "speed_mode": "exact"
+    },
+    "replay_order": "not_applicable",
+    "sample_rank": 31
+  },
+  "independent_oracle_detected": true,
+  "mutation": {
+    "family": "boundary_offset",
+    "family_index": 0,
+    "mutation_id": "boundary_offset_000_88b4a16fb0",
+    "operator": "boundary_offsets",
+    "parameters": {
+      "offsets": {
+        "terminal_horizon": 1
+      }
+    },
+    "seed": 20260724
+  },
+  "nontermination_guards": 0,
+  "oracle_comparison_detected": true,
+  "sample_scope": {
+    "agents": 4,
+    "kernels": 128,
+    "key_replay_orders": [],
+    "presentations": 18
+  },
+  "schema_version": 1,
+  "signature_cases": 2304,
+  "signature_detected": false,
+  "signature_mismatches": 0,
+  "trace_cases": 9216,
+  "trace_detected": true,
+  "trace_mismatches": 288
+}

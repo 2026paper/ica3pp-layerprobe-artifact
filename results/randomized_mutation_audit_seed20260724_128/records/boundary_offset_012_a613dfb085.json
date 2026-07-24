@@ -1,0 +1,96 @@
+{
+  "affected_kernels": 100,
+  "cache_hits": 0,
+  "cache_misses": 0,
+  "completed_at": "2026-07-24T19:36:57+08:00",
+  "experiment_fingerprint": "63ccaf2e3c6fddde7c9bdc5ca19d081080f0d42793c2a38f03460e51e2feea89",
+  "first_witness": {
+    "agent": "reference",
+    "difference": {
+      "observed_length": 4,
+      "observed_step": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        "brake",
+        "running"
+      ],
+      "oracle_length": 3,
+      "oracle_step": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        "brake",
+        "overshoot"
+      ],
+      "step_index": 2
+    },
+    "family": "boundary_offset",
+    "kernel": {
+      "brake_force": 1,
+      "friction": 0,
+      "goal_end": 5,
+      "goal_start": 4,
+      "horizon": 8,
+      "name": "brake_0000",
+      "start_position": 0,
+      "start_speed": 3
+    },
+    "kind": "randomized_mutation_trace",
+    "mutant_signature_mask": 42,
+    "mutation_id": "boundary_offset_012_a613dfb085",
+    "observed_trace_sha256": "39c91d55b34d02dc74628a64f0791f48302a043bd16fed8690442ad2d10d33d3",
+    "operator": "boundary_offsets",
+    "oracle_signature_mask": 42,
+    "oracle_trace_sha256": "9f9c2ae8a8d990ef3b4923626cdb1415dad2a614e8dadb3aa8931dedb72bee38",
+    "parameters": {
+      "offsets": {
+        "terminal_horizon": -1,
+        "terminal_overshoot_end": 1
+      }
+    },
+    "presentation": {
+      "delay": 0,
+      "distance_mode": "exact",
+      "name": "view_00_exact_exact_d0",
+      "speed_mode": "exact"
+    },
+    "replay_order": "not_applicable",
+    "sample_rank": 0
+  },
+  "independent_oracle_detected": true,
+  "mutation": {
+    "family": "boundary_offset",
+    "family_index": 12,
+    "mutation_id": "boundary_offset_012_a613dfb085",
+    "operator": "boundary_offsets",
+    "parameters": {
+      "offsets": {
+        "terminal_horizon": -1,
+        "terminal_overshoot_end": 1
+      }
+    },
+    "seed": 20260724
+  },
+  "nontermination_guards": 0,
+  "oracle_comparison_detected": true,
+  "sample_scope": {
+    "agents": 4,
+    "kernels": 128,
+    "key_replay_orders": [],
+    "presentations": 18
+  },
+  "schema_version": 1,
+  "signature_cases": 2304,
+  "signature_detected": true,
+  "signature_mismatches": 62,
+  "trace_cases": 9216,
+  "trace_detected": true,
+  "trace_mismatches": 2095
+}
